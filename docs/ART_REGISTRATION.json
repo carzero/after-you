@@ -1,0 +1,224 @@
+{
+  "artVersion": "0.3",
+  "status": "draft_visually_registered",
+  "logicalCanvas": [
+    128,
+    154
+  ],
+  "ground": [
+    64,
+    154
+  ],
+  "characterRegistration": {
+    "potato": {
+      "scale": 0.10207336523125997,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    "pigeon": {
+      "scale": 0.10207336523125997,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    "duck": {
+      "scale": 0.099,
+      "size": [
+        1178,
+        1335
+      ]
+    },
+    "rabbit": {
+      "scale": 0.104,
+      "size": [
+        1199,
+        1312
+      ]
+    }
+  },
+  "characterLayout": {
+    "potato": {
+      "idle": {
+        "foot": [
+          675,
+          1194
+        ]
+      },
+      "jump": {
+        "foot": [
+          640,
+          1120
+        ]
+      },
+      "land": {
+        "foot": [
+          690,
+          1100
+        ]
+      },
+      "hover": {
+        "foot": [
+          635,
+          1200
+        ]
+      },
+      "fall": {
+        "foot": [
+          650,
+          1205
+        ]
+      },
+      "rescued": {
+        "foot": [
+          665,
+          1195
+        ]
+      },
+      "finished": {
+        "foot": [
+          670,
+          1190
+        ]
+      }
+    },
+    "pigeon": {
+      "idle": {
+        "foot": [
+          625,
+          1194
+        ]
+      },
+      "jump": {
+        "foot": [
+          640,
+          1105
+        ]
+      },
+      "land": {
+        "foot": [
+          630,
+          1120
+        ]
+      },
+      "hover": {
+        "foot": [
+          635,
+          1190
+        ]
+      },
+      "fall": {
+        "foot": [
+          650,
+          1205
+        ]
+      },
+      "rescued": {
+        "foot": [
+          640,
+          1200
+        ]
+      },
+      "finished": {
+        "foot": [
+          635,
+          1195
+        ]
+      }
+    },
+    "duck": {
+      "idle": {
+        "foot": [
+          630,
+          1265
+        ]
+      },
+      "jump": {
+        "foot": [
+          630,
+          1265
+        ]
+      },
+      "land": {
+        "foot": [
+          660,
+          1120
+        ],
+        "size": [
+          1312,
+          1199
+        ]
+      },
+      "hover": {
+        "foot": [
+          630,
+          1265
+        ]
+      },
+      "fall": {
+        "foot": [
+          630,
+          1265
+        ]
+      },
+      "rescued": {
+        "foot": [
+          630,
+          1265
+        ]
+      },
+      "finished": {
+        "foot": [
+          630,
+          1265
+        ]
+      }
+    },
+    "rabbit": {
+      "idle": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "jump": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "land": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "hover": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "fall": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "rescued": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "finished": {
+        "foot": [
+          620,
+          1255
+        ]
+      }
+    }
+  }
+}

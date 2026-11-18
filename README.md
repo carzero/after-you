@@ -1,8 +1,10 @@
+[최신 실행 소스와 아트 다운로드](https://github.com/carzero/after-you/tree/handoff/v0.4/downloads) · [다음 에이전트 시작 안내](START_HERE_KO.md)
+
 # after-you
 
 먼저 가세요 — CARZERO STUDIO 모바일 구름다리 코미디 게임
 
-계속 올라가는 구름다리 웹 게임 프로토타입입니다. 추락하면 한 스테이지 아래에서 다시 출발하고, 올라갈수록 힌트가 짧아집니다. 감자·비둘기 7포즈와 환경·회수 아트 v0.2 초안을 반영했습니다. 오리·토끼는 임시 SVG, 음원은 임시 합성음이며 최종 완성본이 아닙니다. 외부 API와 서버 계정 없이 실행됩니다.
+계속 올라가는 구름다리 웹 게임 프로토타입입니다. 추락하면 한 스테이지 아래에서 다시 출발하고, 올라갈수록 힌트가 짧아집니다. 주연 4인 각 7포즈와 도약·착지·구조 효과를 포함한 아트 v0.3 초안을 반영했습니다. 음원은 임시 합성음이며 최종 완성본이 아닙니다. 외부 API와 서버 계정 없이 실행됩니다.
 
 ## 실행
 
@@ -25,7 +27,7 @@ npm run test:browser
 
 상세 구현 범위·판정 정책·검증·미완료 항목은 [HANDOFF](docs/HANDOFF.md), 기획 원본은 [기획 및 인계서](docs/GAME_PLAN_AND_HANDOFF.md)를 참고하세요.
 
-아트 원본은 `assets/source/art-v02/`, 실행용 WebP는 `assets/runtime/art-v02/`에 있습니다. 원본 검증과 실행용 재생성은 `npm run art:prepare`로 수행합니다. 적용 규약은 [ART_MANIFEST](docs/ART_MANIFEST.md)를 참고하세요.
+아트 원본은 `assets/source/art-v03/`, 실행용 WebP는 `assets/runtime/art-v03/`에 있습니다. 원본 검증과 실행용 재생성은 `npm run art:prepare`로 수행합니다. 적용 규약은 [ART_MANIFEST](docs/ART_MANIFEST.md)를 참고하세요.
 
 반복 플레이 개선: 같은 방문에서 두 번째 추락부터 ‘연출 건너뛰기’로 결과 화면에 바로 갈 수 있습니다. 실패 판정과 해금 조건은 그대로입니다. 기기의 움직임 줄이기 설정도 따르며, 모바일 가로 화면에서는 게임과 제목을 나란히 배치합니다.
 

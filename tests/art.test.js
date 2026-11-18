@@ -19,3 +19,11 @@ test('rescue and delayed result cues can finish; reset stops even scheduled soun
   bus.stop();assert.equal(bus.nodes.size,0);assert.equal(nodes[1].stops.at(-1),undefined);
   bus.settings.sound=false;bus.event('rescue');assert.equal(nodes.length,2);
 });
+test('VFX follow simulation clocks and are omitted for reduced motion',async()=>{
+  const {worldEffects}=await import('../src/art-layout.js');
+  assert.deepEqual(worldEffects(100,100,undefined),[{kind:'takeoff',opacity:1}]);
+  assert.deepEqual(worldEffects(260,100,undefined),[]);
+  assert.equal(worldEffects(219,undefined,100)[0].kind,'landing');
+  assert.deepEqual(worldEffects(220,undefined,100),[]);
+  assert.deepEqual(worldEffects(100,100,100,true),[]);
+});

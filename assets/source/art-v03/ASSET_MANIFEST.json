@@ -1,0 +1,924 @@
+[
+  {
+    "file": "assets/characters/potato/idle_v01.png",
+    "source": "exec-4097ba1f-e0e9-4536-81f9-00212008336e.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1234,
+      1254
+    ],
+    "sha256": "514c7ee6c950ef0bcd8a3c2529792a7b58c8f7005cdcc4a6aabf424938c8c8f4",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/jump_v01.png",
+    "source": "exec-0ea9f967-21df-47f5-81ab-b097f5872392.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1228,
+      1254
+    ],
+    "sha256": "0b9af30ac125856791239d97df975dacf82d83ba64faaf1d536e1587ec338f58",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/land_v01.png",
+    "source": "exec-5360a255-2ef2-4471-924d-80b53a8328bd.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      25,
+      1246,
+      1254
+    ],
+    "sha256": "dda5ba4ddd77d08205f8047ab415302cd745b75e904f1bedaaad002644226d09",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/hover_v01.png",
+    "source": "exec-c5efe192-3ace-4ad1-b0d1-106c769f42f4.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1234,
+      1254
+    ],
+    "sha256": "b5149c99ac6d6379d6865ed871e926f9e11e76b90f7389dbac27cf437dbd0f75",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/fall_v01.png",
+    "source": "exec-50ed7796-e395-4112-b1ee-57d826154689.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1240,
+      1254
+    ],
+    "sha256": "2ff4df9dc1cefb3880a9a167f5d6941dc52bf07d9ff98fd4ddf9dbe5c36cf369",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/rescued_v01.png",
+    "source": "exec-a13ff240-055f-49d0-9462-9d6610147dbf.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1240,
+      1254
+    ],
+    "sha256": "92b798be104b01063de5ddf3055e269ed335e7a9dcfdf999bc059d4fc51077d2",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/potato/finished_v01.png",
+    "source": "exec-3c10bf29-7acc-446e-bafb-1d06a5680984.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      39,
+      1224,
+      1252
+    ],
+    "sha256": "076cadc2007c639b48911455f622b4318edc6fb7edf76d32e5dbb3260018c739",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/idle_v01.png",
+    "source": "exec-ca1ae423-4100-4a36-bac3-bafb47ee6536.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      23,
+      1238,
+      1190
+    ],
+    "sha256": "6fed113cd2130055256ad450e1bf11414842fdaead2286fd4c44c6587e4bfe27",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/jump_v01.png",
+    "source": "exec-b0db5fb3-3c9b-484f-8476-8c73e07a888a.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1235,
+      1254
+    ],
+    "sha256": "8a8d140c914eb3e98ce957df28f02dfe618e3ff4533a834a42b391436a03f66d",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/land_v01.png",
+    "source": "exec-8f307213-72c2-4bde-be61-1ce1a231bdaa.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1241,
+      1254
+    ],
+    "sha256": "676d6f87dcf6f2eb3e5cfcbebfb1be4ced724f82bd4261d732c1c10cc6fa558e",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/hover_v01.png",
+    "source": "exec-6b6f2f91-dbc9-4827-ade7-4aa47fdfce1f.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      53,
+      1218,
+      1216
+    ],
+    "sha256": "953bbcba3c3a59e0df28a31d0dee1f7c789e8b1c295c8efc7164bf8413d91f98",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/fall_v01.png",
+    "source": "exec-50091685-1515-4602-b3f8-71917353c9d6.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1253,
+      1254
+    ],
+    "sha256": "45c1a66311be3fae2babdc2b54ad4d866d931b26f77d92290e943d6089bbbba5",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/rescued_v01.png",
+    "source": "exec-6daf41b0-6fda-4746-9218-4188d2b56f04.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      9,
+      1253,
+      1215
+    ],
+    "sha256": "30b656ee1803ba69d9a0c9d0ac05c23370854df079bfd4bd17806ccad0aa7ca9",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/pigeon/finished_v01.png",
+    "source": "exec-433e340b-f4bc-4d34-8487-6b14254c0737.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1240,
+      1238
+    ],
+    "sha256": "1a1239d6900547b17607ac9c7e7d892d5d5a4806870020276bfc6f9661aec22f",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/sky_v01.png",
+    "source": "exec-d1264898-4c19-41e9-a096-a5244d782d96.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "42641866441af53403cd3dd11af014a964c98dad31f393a7b4ec0d6fa03ad773",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/office_v01.png",
+    "source": "exec-0be71ebd-0dab-4f47-a732-9a5d383d032a.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      5,
+      1722,
+      887
+    ],
+    "sha256": "5649b1f69e7f842aa2dcb5b1f69866ae4faddbd244a8a3fbe78de3a50f4f06fc",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/tile_v01.png",
+    "source": "exec-5ae3ead1-aa05-4668-b50e-7fec6bf3aab6.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1450,
+      1024
+    ],
+    "sha256": "dd303c2f0b8a4b560ee15fc5836824b600e4023da9be5d5aaa64368461a9489f",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/tile_cracked_v01.png",
+    "source": "exec-a673749d-5344-4c71-9d51-ab57f1450ec4.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      18,
+      1412,
+      1024
+    ],
+    "sha256": "c8c208b04df03608e8de6e44d0a2344876027435b4a8a7c631e3996c68bc536c",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/cushion_v01.png",
+    "source": "exec-71a52671-38cd-4be6-8b3e-1f3ce6d4b47d.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "sha256": "b12c581dc99714ae16fc546afa65161feec3d39e933d45ee0ebe6d3cf5c2454f",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/worker_v01.png",
+    "source": "exec-59f43ed0-3ff1-4f04-a07f-edcacac1077d.png",
+    "width": 1312,
+    "height": 1199,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1308,
+      1199
+    ],
+    "sha256": "bae0e7bb39b5947635e03af7653a5b4265c8ca141d0aec2618e4b420303cfe60",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_v01.png",
+    "source": "exec-ca7393cf-f4f7-4de3-a584-5f54fbc92df5.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      5,
+      1516,
+      1024
+    ],
+    "sha256": "6c0af7602fdcba1ddcf41509341245e70a4f668d0dc23348d02f9286bf6cc662",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_revision_v01.png",
+    "source": "exec-77464571-bbbc-4471-8920-dc15db2af0e7.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      46,
+      1516,
+      994
+    ],
+    "sha256": "cc9c1a221d5deed9c596f38265de49a0577793bc0d8c23ed61e57427e75eca01",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_front_v01.png",
+    "source": "exec-9829aae1-f1ab-4199-a20d-f8eca976c166.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      20,
+      1468,
+      979
+    ],
+    "sha256": "77ad8cf10e0a1a36f611db560c4bfbcd831ac228fbfd152bfe9028474cba0240",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/cushion_front_v01.png",
+    "source": "exec-7f36cc9b-d4f8-40b7-823b-44268ea8d712.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      33,
+      94,
+      2134,
+      724
+    ],
+    "sha256": "a6e4a8e2f436aa0852c9ea827df5639bbedf5c852e8670ac7648c27f15f48b3d",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/concept/mobile_v01.png",
+    "source": "exec-2e4bff42-6f66-4170-bee3-016417f797e9.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "1a21cb0e1eae75ba43372ef90a9b79ea568e03bf3309706a581c36d9f52418c5",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/concept/lineup_v01.png",
+    "source": "exec-89b96340-888c-4d30-b3f7-32f20e006e9e.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "7d2484057afd336e5b0007956742aa1aeedf90e2ae9981d601c02acac048ec13",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/idle_v01.png",
+    "source": "exec-a49399c6-d648-4519-960d-1b1ce12752f6.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      31,
+      1158,
+      1286
+    ],
+    "sha256": "5b1fae786b2b0be6f11701ee716dc2bd269caa8b94cce3c4c836b059ffb85eff",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/jump_v01.png",
+    "source": "exec-c9a671f1-f2f3-4d55-acc1-590c92bd3766.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      33,
+      1175,
+      1335
+    ],
+    "sha256": "b05006a9aa7bb822b31a14df91dbde6bfccc8e1cd0249acf4ae8ca7b9566d0bd",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/land_v01.png",
+    "source": "exec-5612f5b7-a5be-48e7-bfd2-0ccf4c943bc0.png",
+    "width": 1312,
+    "height": 1199,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      35,
+      1274,
+      1199
+    ],
+    "sha256": "9ce82e29de01d603e6fb2fe730605727f07cd08163cdcf4caa2b2f9fbb684967",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/hover_v01.png",
+    "source": "exec-84a29cd2-48d0-4231-95d7-c5e0990679f4.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1164,
+      1319
+    ],
+    "sha256": "29017255e3a75ee5b20d2a8dadd2e4a2a0fcb7245f2a7a0b22fd023d20da0fdd",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/fall_v01.png",
+    "source": "exec-8f8c2823-8870-4cdd-8802-5ed534b58979.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      26,
+      1142,
+      1335
+    ],
+    "sha256": "3f6d91061ffa7370ea8c40ea1774b75b3154e223fdda1ffd08a016fd48364036",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/rescued_v01.png",
+    "source": "exec-e38fb237-2052-4837-804a-81bc75a9a731.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      9,
+      1164,
+      1335
+    ],
+    "sha256": "aa6d770679cf9087e043dfa9cffd28b9cbdc6a483b258870046738e74d1c54da",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/duck/finished_v01.png",
+    "source": "exec-040992f5-1a56-4876-9242-01bf6f7600d5.png",
+    "width": 1178,
+    "height": 1335,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      20,
+      1168,
+      1335
+    ],
+    "sha256": "1578e63085b64b31c1fd81ea56d8d7b3be87c1224565802b6712c2534736f57d",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/idle_v01.png",
+    "source": "exec-79ff58f9-b798-456a-9fc9-1bfe67789fe6.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      3,
+      1159,
+      1312
+    ],
+    "sha256": "ef99e37155706bc566356f9742b23db699a582a73b2634e82ecb6490d3a9ee12",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/jump_v01.png",
+    "source": "exec-6bb2fd2b-f7c0-4ae0-a273-c6b9ddc81a44.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1183,
+      1288
+    ],
+    "sha256": "366aada923a7ed5d496c1475956a4ddc14579b9c51c8d910a93e92ce8e90e228",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/land_v01.png",
+    "source": "exec-aab3980d-8ca1-4c37-8a0a-77b3477b87f9.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1199,
+      1312
+    ],
+    "sha256": "6e0152f32af91ee670036a4bb840011eca5b363bcdbf0537c0be203070457c3e",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/hover_v01.png",
+    "source": "exec-085ea933-d159-4509-9e24-25bfc3bf9b7d.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1177,
+      1294
+    ],
+    "sha256": "b541a8fa33eeb59e269fb2012ee245091f0d217c5db90bc0220ddc11c1e0e3fa",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/fall_v01.png",
+    "source": "exec-b2b317ec-052f-48ae-9c2a-15f45c9e025f.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1193,
+      1312
+    ],
+    "sha256": "f6940da98be436b4bbb9b4587984d0f0aa199a93b626adc2f28c75c000414e9f",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/rescued_v01.png",
+    "source": "exec-aa3518a9-65d1-4de1-a07a-affd5787a9ba.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      9,
+      1189,
+      1312
+    ],
+    "sha256": "488c236253b44f1cb38da92862e7d089492827f3348396210ce091569e9d6ded",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/characters/rabbit/finished_v01.png",
+    "source": "exec-5c2331f0-dc7b-4f3a-bead-2c60ac0cdf86.png",
+    "width": 1199,
+    "height": 1312,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      18,
+      1187,
+      1280
+    ],
+    "sha256": "70b4325481c761cf998ebbbbd4b46b4fb17fe5b0a9303594154a56e6733c3fc3",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/vfx/takeoff_v01.png",
+    "source": "exec-7e552eff-d56e-4a17-8bc1-bdd22ea800a8.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1464,
+      887
+    ],
+    "sha256": "b966c50bbb1f4d635aca55b1730426be37963e656b8f4e7658748a1438116828",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/vfx/landing_v01.png",
+    "source": "exec-6cef5ae7-3a11-4eff-a4d8-67c903cb62a3.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1774,
+      887
+    ],
+    "sha256": "def79bf2b6337d335fd700b309d4dc9e8ff6312a8dacedd2b7b7b705ab9b05cf",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  },
+  {
+    "file": "assets/vfx/rescue_v01.png",
+    "source": "exec-e41a4b6d-2cf2-4b65-9599-df134af5f589.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      32,
+      1520,
+      1024
+    ],
+    "sha256": "7cc6ac336e7c4752aa8436d650705ecdb60fbe8dcb1f4c13e84366ca568c71cb",
+    "status": "draft_not_runtime_ready",
+    "anchor_px": null,
+    "anchor_status": "requires_visual_calibration",
+    "loop": false
+  }
+]
