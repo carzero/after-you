@@ -1,0 +1,24 @@
+{
+  "name": "after-you",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "playwright test",
+    "art:prepare": "node scripts/prepare-art.mjs",
+    "simulate": "node scripts/simulate-play.mjs",
+    "serve": "node server/index.mjs",
+    "dev:online": "vite --host 0.0.0.0",
+    "test:online": "npm run build && playwright test -c playwright.online.config.js",
+    "export:playtest": "node scripts/export-playtest.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "sharp": "0.34.5",
+    "vite": "7.3.1"
+  }
+}

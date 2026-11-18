@@ -1,0 +1,95 @@
+{
+  "note": "Automated seeded policies, not human playtest results. Seeds 1–300; input pacing 1200ms; seconds count active game time excluding hints/recovery; no hidden route access for observe-first or blind.",
+  "results": [
+    {
+      "stage": 1,
+      "rows": 8,
+      "policy": "remember-all",
+      "samples": 300,
+      "success": 300,
+      "fall": 0,
+      "timeout": 0,
+      "meanSeconds": 9.32
+    },
+    {
+      "stage": 1,
+      "rows": 8,
+      "policy": "observe-first",
+      "samples": 300,
+      "success": 58,
+      "fall": 190,
+      "timeout": 52,
+      "meanSeconds": 22.14
+    },
+    {
+      "stage": 1,
+      "rows": 8,
+      "policy": "blind",
+      "samples": 300,
+      "success": 3,
+      "fall": 297,
+      "timeout": 0,
+      "meanSeconds": 2.16
+    },
+    {
+      "stage": 2,
+      "rows": 10,
+      "policy": "remember-all",
+      "samples": 300,
+      "success": 300,
+      "fall": 0,
+      "timeout": 0,
+      "meanSeconds": 11.72
+    },
+    {
+      "stage": 2,
+      "rows": 10,
+      "policy": "observe-first",
+      "samples": 300,
+      "success": 33,
+      "fall": 219,
+      "timeout": 48,
+      "meanSeconds": 23.44
+    },
+    {
+      "stage": 2,
+      "rows": 10,
+      "policy": "blind",
+      "samples": 300,
+      "success": 0,
+      "fall": 300,
+      "timeout": 0,
+      "meanSeconds": 2.14
+    },
+    {
+      "stage": 3,
+      "rows": 12,
+      "policy": "remember-all",
+      "samples": 300,
+      "success": 300,
+      "fall": 0,
+      "timeout": 0,
+      "meanSeconds": 14.12
+    },
+    {
+      "stage": 3,
+      "rows": 12,
+      "policy": "observe-first",
+      "samples": 300,
+      "success": 8,
+      "fall": 253,
+      "timeout": 39,
+      "meanSeconds": 23.71
+    },
+    {
+      "stage": 3,
+      "rows": 12,
+      "policy": "blind",
+      "samples": 300,
+      "success": 0,
+      "fall": 300,
+      "timeout": 0,
+      "meanSeconds": 2.25
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+import { stageConfig } from './progression.js';
+export const STAGES = Object.freeze([0, 1, 2].map(stageConfig));
+export const PEOPLE = ['potato', 'pigeon', 'duck', 'rabbit'];
+export const JUMP_MS = 420;
+export const FALL_MS = 1400;
+
+// This decision boundary receives public observations only, never the route.
+export function chooseNpc({ row, observed, courage }, random) {
+  if (row >= observed.length) return null;
+  const known = observed[row];
+  const safe = known.indexOf('safe');
+  if (safe !== -1) return safe;
+  const broken = known.indexOf('broken');
+  if (broken !== -1) return 1 - broken;
+  return random() < courage ? (random() < 0.5 ? 0 : 1) : null;
+}
+
+export class Game {
+  #route;
+  constructor({ stage = 0, character = 'potato', random = Math.random } = {}) {
+    this.stage = Number.isSafeInteger(stage) ? Math.max(0, stage) : 0;
+    this.config = stageConfig(this.stage);
+    this.random = random;
+    this.#route = Object.freeze(Array.from({ length: this.config.rows }, () => random() < 0.5 ? 0 : 1));
+    this.observed = this.#route.map(() => ['unknown', 'unknown']);
+    this.phase = 'hint'; this.clock = 0; this.activeTime = 0;
+    this.remaining = this.config.seconds * 1000; this.paused = false;
+    this.events = []; this.result = null;
+    this.actors = [character, ...PEOPLE.filter(p => p !== character)].map((id, i) => ({
+      id, player: i === 0, row: -1, side: i % 2, state: 'idle', until: 0,
+      nextThink: [0, 1600, 900, 500][i], courage: [0, .18, .42, .7][i],
+      delay: [0, 1500, 1100, 850][i],
+    }));
+  }
+  get player() { return this.actors[0]; }
+  emit(type, actor, extra = {}) { this.events.push({ type, actor: actor.id, player: actor.player, time: this.clock, ...extra }); }
+  drainEvents() { return this.events.splice(0); }
+  setPaused(value) { this.paused = Boolean(value); }
+  hintRoute() { return this.phase === 'hint' ? [...this.#route] : null; }
+  move(side, actor = this.player) {
+    if (this.paused || this.phase !== 'playing' || actor.state !== 'idle' || ![0, 1].includes(side)) return false;
+    actor.side = side; actor.state = 'jump'; actor.until = this.clock + JUMP_MS;
+    this.emit('jump', actor, { row: actor.row + 1, side }); return true;
+  }
+  skipRescue() {
+    if (this.paused || this.phase !== 'rescuing' || this.player.state !== 'fall') return false;
+    this.player.state = 'rescued';
+    this.emit('rescue', this.player, { skipped: true });
+    this.finish('fall');
+    return true;
+  }
+  finish(outcome) {
+    if (this.result) return;
+    this.result = outcome; this.phase = 'result';
+    this.emit('finish', this.player, { outcome, elapsed: this.activeTime });
+  }
+  // Bounded substeps process landings and NPC decisions even during a slow display frame.
+  advance(ms) {
+    if (this.paused || this.phase === 'result' || !Number.isFinite(ms) || ms <= 0) return;
+    while (ms > 0 && this.phase !== 'result') {
+      const dt = Math.min(10, ms); ms -= dt; this.clock += dt;
+      if (this.phase === 'hint') {
+        if (this.clock >= this.config.hint) { this.phase = 'playing'; this.playStart = this.clock; }
+        continue;
+      }
+      if (this.phase === 'playing') {
+        this.activeTime += dt; this.remaining = Math.max(0, this.remaining - dt);
+        // Deadline wins ties with landing, and cancels in-flight gameplay.
+        if (this.remaining <= 0) { this.finish('timeout'); break; }
+      }
+      for (const actor of this.actors) {
+        if (actor.state === 'jump' && this.clock >= actor.until) {
+          actor.row += 1;
+          if (this.#route[actor.row] === actor.side) {
+            this.observed[actor.row][actor.side] = 'safe';
+            actor.state = 'idle'; actor.nextThink = this.clock - this.playStart + actor.delay;
+            this.emit('land_safe', actor, { row: actor.row, side: actor.side });
+            if (actor.row === this.config.rows - 1) {
+              actor.state = 'finished';
+              if (actor.player) this.finish('success');
+            }
+          } else {
+            this.observed[actor.row][actor.side] = 'broken';
+            actor.state = 'fall'; actor.until = this.clock + FALL_MS;
+            this.emit('tile_crack', actor, { row: actor.row, side: actor.side });
+            if (actor.player) this.phase = 'rescuing';
+          }
+        }
+        if (actor.state === 'fall') {
+          const elapsed = FALL_MS - (actor.until - this.clock);
+          if (elapsed >= 600 && !actor.fallEmitted) { actor.fallEmitted = true; this.emit('fall', actor); }
+          if (this.clock >= actor.until) {
+            actor.state = 'rescued'; this.emit('rescue', actor);
+            if (actor.player) this.finish('fall');
+          }
+        }
+        if (!actor.player && actor.state === 'idle' && this.phase === 'playing' && this.clock - this.playStart >= actor.nextThink) {
+          const side = chooseNpc({ row: actor.row + 1, observed: this.observed, courage: actor.courage }, this.random);
+          actor.nextThink = this.clock - this.playStart + actor.delay;
+          if (side !== null) this.move(side, actor);
+        }
+        if (this.phase === 'result') break;
+      }
+    }
+  }
+}

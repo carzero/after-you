@@ -1,0 +1,576 @@
+[
+  {
+    "file": "assets/potato/idle_v01.png",
+    "source": "exec-4097ba1f-e0e9-4536-81f9-00212008336e.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1234,
+      1254
+    ],
+    "sha256": "514c7ee6c950ef0bcd8a3c2529792a7b58c8f7005cdcc4a6aabf424938c8c8f4",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/jump_v01.png",
+    "source": "exec-0ea9f967-21df-47f5-81ab-b097f5872392.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1228,
+      1254
+    ],
+    "sha256": "0b9af30ac125856791239d97df975dacf82d83ba64faaf1d536e1587ec338f58",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/land_v01.png",
+    "source": "exec-5360a255-2ef2-4471-924d-80b53a8328bd.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      25,
+      1246,
+      1254
+    ],
+    "sha256": "dda5ba4ddd77d08205f8047ab415302cd745b75e904f1bedaaad002644226d09",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/hover_v01.png",
+    "source": "exec-c5efe192-3ace-4ad1-b0d1-106c769f42f4.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1234,
+      1254
+    ],
+    "sha256": "b5149c99ac6d6379d6865ed871e926f9e11e76b90f7389dbac27cf437dbd0f75",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/fall_v01.png",
+    "source": "exec-50ed7796-e395-4112-b1ee-57d826154689.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1240,
+      1254
+    ],
+    "sha256": "2ff4df9dc1cefb3880a9a167f5d6941dc52bf07d9ff98fd4ddf9dbe5c36cf369",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/rescued_v01.png",
+    "source": "exec-a13ff240-055f-49d0-9462-9d6610147dbf.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      27,
+      1240,
+      1254
+    ],
+    "sha256": "92b798be104b01063de5ddf3055e269ed335e7a9dcfdf999bc059d4fc51077d2",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/potato/finished_v01.png",
+    "source": "exec-3c10bf29-7acc-446e-bafb-1d06a5680984.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      39,
+      1224,
+      1252
+    ],
+    "sha256": "076cadc2007c639b48911455f622b4318edc6fb7edf76d32e5dbb3260018c739",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/idle_v01.png",
+    "source": "exec-ca1ae423-4100-4a36-bac3-bafb47ee6536.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      23,
+      1238,
+      1190
+    ],
+    "sha256": "6fed113cd2130055256ad450e1bf11414842fdaead2286fd4c44c6587e4bfe27",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/jump_v01.png",
+    "source": "exec-b0db5fb3-3c9b-484f-8476-8c73e07a888a.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1235,
+      1254
+    ],
+    "sha256": "8a8d140c914eb3e98ce957df28f02dfe618e3ff4533a834a42b391436a03f66d",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/land_v01.png",
+    "source": "exec-8f307213-72c2-4bde-be61-1ce1a231bdaa.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1241,
+      1254
+    ],
+    "sha256": "676d6f87dcf6f2eb3e5cfcbebfb1be4ced724f82bd4261d732c1c10cc6fa558e",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/hover_v01.png",
+    "source": "exec-6b6f2f91-dbc9-4827-ade7-4aa47fdfce1f.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      53,
+      1218,
+      1216
+    ],
+    "sha256": "953bbcba3c3a59e0df28a31d0dee1f7c789e8b1c295c8efc7164bf8413d91f98",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/fall_v01.png",
+    "source": "exec-50091685-1515-4602-b3f8-71917353c9d6.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1253,
+      1254
+    ],
+    "sha256": "45c1a66311be3fae2babdc2b54ad4d866d931b26f77d92290e943d6089bbbba5",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/rescued_v01.png",
+    "source": "exec-6daf41b0-6fda-4746-9218-4188d2b56f04.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      9,
+      1253,
+      1215
+    ],
+    "sha256": "30b656ee1803ba69d9a0c9d0ac05c23370854df079bfd4bd17806ccad0aa7ca9",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/pigeon/finished_v01.png",
+    "source": "exec-433e340b-f4bc-4d34-8487-6b14254c0737.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1240,
+      1238
+    ],
+    "sha256": "1a1239d6900547b17607ac9c7e7d892d5d5a4806870020276bfc6f9661aec22f",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "front_3quarter",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/sky_v01.png",
+    "source": "exec-d1264898-4c19-41e9-a096-a5244d782d96.png",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "42641866441af53403cd3dd11af014a964c98dad31f393a7b4ec0d6fa03ad773",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/office_v01.png",
+    "source": "exec-0be71ebd-0dab-4f47-a732-9a5d383d032a.png",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      5,
+      1722,
+      887
+    ],
+    "sha256": "5649b1f69e7f842aa2dcb5b1f69866ae4faddbd244a8a3fbe78de3a50f4f06fc",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/tile_v01.png",
+    "source": "exec-5ae3ead1-aa05-4668-b50e-7fec6bf3aab6.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1450,
+      1024
+    ],
+    "sha256": "dd303c2f0b8a4b560ee15fc5836824b600e4023da9be5d5aaa64368461a9489f",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/environment/tile_cracked_v01.png",
+    "source": "exec-a673749d-5344-4c71-9d51-ab57f1450ec4.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      18,
+      1412,
+      1024
+    ],
+    "sha256": "c8c208b04df03608e8de6e44d0a2344876027435b4a8a7c631e3996c68bc536c",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/cushion_v01.png",
+    "source": "exec-71a52671-38cd-4be6-8b3e-1f3ce6d4b47d.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "sha256": "b12c581dc99714ae16fc546afa65161feec3d39e933d45ee0ebe6d3cf5c2454f",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/worker_v01.png",
+    "source": "exec-59f43ed0-3ff1-4f04-a07f-edcacac1077d.png",
+    "width": 1312,
+    "height": 1199,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1308,
+      1199
+    ],
+    "sha256": "bae0e7bb39b5947635e03af7653a5b4265c8ca141d0aec2618e4b420303cfe60",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_v01.png",
+    "source": "exec-ca7393cf-f4f7-4de3-a584-5f54fbc92df5.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      5,
+      1516,
+      1024
+    ],
+    "sha256": "6c0af7602fdcba1ddcf41509341245e70a4f668d0dc23348d02f9286bf6cc662",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_revision_v01.png",
+    "source": "exec-77464571-bbbc-4471-8920-dc15db2af0e7.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      46,
+      1516,
+      994
+    ],
+    "sha256": "cc9c1a221d5deed9c596f38265de49a0577793bc0d8c23ed61e57427e75eca01",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/box_front_v01.png",
+    "source": "exec-9829aae1-f1ab-4199-a20d-f8eca976c166.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      20,
+      1468,
+      979
+    ],
+    "sha256": "77ad8cf10e0a1a36f611db560c4bfbcd831ac228fbfd152bfe9028474cba0240",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/rescue/cushion_front_v01.png",
+    "source": "exec-7f36cc9b-d4f8-40b7-823b-44268ea8d712.png",
+    "width": 2172,
+    "height": 724,
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      33,
+      94,
+      2134,
+      724
+    ],
+    "sha256": "a6e4a8e2f436aa0852c9ea827df5639bbedf5c852e8670ac7648c27f15f48b3d",
+    "status": "draft_not_runtime_ready",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/concept/mobile_v01.png",
+    "source": "exec-2e4bff42-6f66-4170-bee3-016417f797e9.png",
+    "width": 941,
+    "height": 1672,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "1a21cb0e1eae75ba43372ef90a9b79ea568e03bf3309706a581c36d9f52418c5",
+    "status": "concept_only",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  },
+  {
+    "file": "assets/concept/lineup_v01.png",
+    "source": "exec-89b96340-888c-4d30-b3f7-32f20e006e9e.png",
+    "width": 1536,
+    "height": 1024,
+    "mode": "RGB",
+    "alpha_range": null,
+    "alpha_bbox": null,
+    "sha256": "7d2484057afd336e5b0007956742aa1aeedf90e2ae9981d601c02acac048ec13",
+    "status": "concept_only",
+    "foot_anchor": null,
+    "anchor_note": "미측정. alpha_bbox는 발바닥 좌표가 아님",
+    "view": "asset_specific",
+    "loop": false
+  }
+]
