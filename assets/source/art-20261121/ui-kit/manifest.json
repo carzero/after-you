@@ -1,0 +1,338 @@
+[
+  {
+    "id": "arrow_left",
+    "file": "icons/arrow_left_v001.svg",
+    "label_ko": "왼쪽 선택",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "arrow_right",
+    "file": "icons/arrow_right_v001.svg",
+    "label_ko": "오른쪽 선택",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "settings",
+    "file": "icons/settings_v001.svg",
+    "label_ko": "설정",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "timer",
+    "file": "icons/timer_v001.svg",
+    "label_ko": "남은 시간",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "safe_check",
+    "file": "icons/safe_check_v001.svg",
+    "label_ko": "확인된 안전",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "lock",
+    "file": "icons/lock_v001.svg",
+    "label_ko": "잠김",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "play",
+    "file": "icons/play_v001.svg",
+    "label_ko": "시작 / 재개",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "pause",
+    "file": "icons/pause_v001.svg",
+    "label_ko": "일시정지",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "retry",
+    "file": "icons/retry_v001.svg",
+    "label_ko": "다시하기",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "home",
+    "file": "icons/home_v001.svg",
+    "label_ko": "홈",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "back",
+    "file": "icons/back_v001.svg",
+    "label_ko": "뒤로",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "close",
+    "file": "icons/close_v001.svg",
+    "label_ko": "닫기",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "music",
+    "file": "icons/music_v001.svg",
+    "label_ko": "음악",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "sound",
+    "file": "icons/sound_v001.svg",
+    "label_ko": "효과음",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "vibration",
+    "file": "icons/vibration_v001.svg",
+    "label_ko": "진동",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "reduce_motion",
+    "file": "icons/reduce_motion_v001.svg",
+    "label_ko": "움직임 줄이기",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "finish_flag",
+    "file": "icons/finish_flag_v001.svg",
+    "label_ko": "도착",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "unlock",
+    "file": "icons/unlock_v001.svg",
+    "label_ko": "해금",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "chapter_complete",
+    "file": "icons/chapter_complete_v001.svg",
+    "label_ko": "챕터 완료",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "invitation",
+    "file": "icons/invitation_v001.svg",
+    "label_ko": "초대장",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "wish",
+    "file": "icons/wish_v001.svg",
+    "label_ko": "소원",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "info",
+    "file": "icons/info_v001.svg",
+    "label_ko": "안내",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "warning",
+    "file": "icons/warning_v001.svg",
+    "label_ko": "주의",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  },
+  {
+    "id": "record",
+    "file": "icons/record_v001.svg",
+    "label_ko": "최고 기록",
+    "viewBox": [
+      0,
+      0,
+      24,
+      24
+    ],
+    "status": "draft",
+    "stroke": "#514237",
+    "stroke_width": 2.2
+  }
+]

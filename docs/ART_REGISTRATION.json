@@ -1,5 +1,5 @@
 {
-  "artVersion": "0.3",
+  "artVersion": "20261121",
   "status": "draft_visually_registered",
   "logicalCanvas": [
     128,
@@ -82,6 +82,24 @@
           670,
           1190
         ]
+      },
+      "after_you": {
+        "foot": [
+          800,
+          960
+        ]
+      },
+      "inspect": {
+        "foot": [
+          800,
+          980
+        ]
+      },
+      "relief": {
+        "foot": [
+          660,
+          1140
+        ]
       }
     },
     "pigeon": {
@@ -125,6 +143,24 @@
         "foot": [
           635,
           1195
+        ]
+      },
+      "after_you": {
+        "foot": [
+          780,
+          960
+        ]
+      },
+      "inspect": {
+        "foot": [
+          600,
+          1290
+        ]
+      },
+      "relief": {
+        "foot": [
+          660,
+          1140
         ]
       }
     },
@@ -174,6 +210,24 @@
           630,
           1265
         ]
+      },
+      "after_you": {
+        "foot": [
+          800,
+          980
+        ]
+      },
+      "inspect": {
+        "foot": [
+          620,
+          1265
+        ]
+      },
+      "relief": {
+        "foot": [
+          620,
+          1265
+        ]
       }
     },
     "rabbit": {
@@ -218,7 +272,577 @@
           620,
           1255
         ]
+      },
+      "after_you": {
+        "foot": [
+          620,
+          1255
+        ]
+      },
+      "inspect": {
+        "foot": [
+          530,
+          1460
+        ]
+      },
+      "relief": {
+        "foot": [
+          780,
+          980
+        ]
       }
     }
+  },
+  "poseFiles": {
+    "potato": {
+      "idle": "characters/potato/idle_v01",
+      "jump": "characters/potato/jump_v01",
+      "land": "characters/potato/land_v01",
+      "hover": "characters/potato/hover_v01",
+      "fall": "characters/potato/fall_v01",
+      "rescued": "characters/potato/rescued_v01",
+      "finished": "characters/potato/finished_v01",
+      "return_parcel": "characters/potato/return_parcel",
+      "after_you": "characters/potato/after_you",
+      "inspect": "characters/potato/inspect",
+      "relief": "characters/potato/relief"
+    },
+    "pigeon": {
+      "idle": "characters/pigeon/idle_v01",
+      "jump": "characters/pigeon/jump_v01",
+      "land": "characters/pigeon/land_v01",
+      "hover": "characters/pigeon/hover_v01",
+      "fall": "characters/pigeon/fall_v01",
+      "rescued": "characters/pigeon/rescued_v01",
+      "finished": "characters/pigeon/finished_v01",
+      "return_parcel": "characters/pigeon/return_parcel",
+      "after_you": "characters/pigeon/after_you",
+      "inspect": "characters/pigeon/inspect",
+      "relief": "characters/pigeon/relief"
+    },
+    "duck": {
+      "idle": "characters/duck/idle_v01",
+      "jump": "characters/duck/jump_v02",
+      "land": "characters/duck/land_v01",
+      "hover": "characters/duck/hover_v01",
+      "fall": "characters/duck/fall_v01",
+      "rescued": "characters/duck/rescued_v01",
+      "finished": "characters/duck/finished_v01",
+      "return_parcel": "characters/duck/return_parcel",
+      "after_you": "characters/duck/after_you",
+      "inspect": "characters/duck/inspect",
+      "relief": "characters/duck/relief"
+    },
+    "rabbit": {
+      "idle": "characters/rabbit/idle_v01",
+      "jump": "characters/rabbit/jump_v01",
+      "land": "characters/rabbit/land_v01",
+      "hover": "characters/rabbit/hover_v01",
+      "fall": "characters/rabbit/fall_v02",
+      "rescued": "characters/rabbit/rescued_v01",
+      "finished": "characters/rabbit/finished_v01",
+      "return_parcel": "characters/rabbit/return_parcel",
+      "after_you": "characters/rabbit/after_you",
+      "inspect": "characters/rabbit/inspect",
+      "relief": "characters/rabbit/relief"
+    }
+  },
+  "sourceSizes": {
+    "characters/potato/idle_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/jump_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/land_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/hover_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/fall_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/rescued_v01": [
+      1254,
+      1254
+    ],
+    "characters/potato/finished_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/idle_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/jump_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/land_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/hover_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/fall_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/rescued_v01": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/finished_v01": [
+      1254,
+      1254
+    ],
+    "rescue/cushion_v01": [
+      1536,
+      1024
+    ],
+    "rescue/worker_v01": [
+      1312,
+      1199
+    ],
+    "rescue/box_v01": [
+      1536,
+      1024
+    ],
+    "rescue/box_front_v01": [
+      1536,
+      1024
+    ],
+    "rescue/cushion_front_v01": [
+      2172,
+      724
+    ],
+    "characters/duck/idle_v01": [
+      1178,
+      1335
+    ],
+    "characters/duck/land_v01": [
+      1312,
+      1199
+    ],
+    "characters/duck/hover_v01": [
+      1178,
+      1335
+    ],
+    "characters/duck/fall_v01": [
+      1178,
+      1335
+    ],
+    "characters/duck/rescued_v01": [
+      1178,
+      1335
+    ],
+    "characters/duck/finished_v01": [
+      1178,
+      1335
+    ],
+    "characters/rabbit/idle_v01": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/jump_v01": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/land_v01": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/hover_v01": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/rescued_v01": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/finished_v01": [
+      1199,
+      1312
+    ],
+    "vfx/takeoff_v01": [
+      1774,
+      887
+    ],
+    "vfx/landing_v01": [
+      1774,
+      887
+    ],
+    "vfx/rescue_v01": [
+      1536,
+      1024
+    ],
+    "props/no_flying_v001": [
+      1199,
+      1312
+    ],
+    "ui/title": [
+      1086,
+      1448
+    ],
+    "ui/invitation": [
+      1312,
+      1199
+    ],
+    "ui/stamp": [
+      1312,
+      1199
+    ],
+    "ui/potato": [
+      1254,
+      1254
+    ],
+    "ui/pigeon": [
+      1254,
+      1254
+    ],
+    "ui/duck": [
+      1254,
+      1254
+    ],
+    "ui/rabbit": [
+      1254,
+      1254
+    ],
+    "characters/duck/jump_v02": [
+      1178,
+      1335
+    ],
+    "characters/rabbit/fall_v02": [
+      1199,
+      1312
+    ],
+    "branding/app_icon": [
+      1254,
+      1254
+    ],
+    "staff/guide": [
+      1312,
+      1199
+    ],
+    "characters/potato/after_you": [
+      1536,
+      1024
+    ],
+    "characters/pigeon/after_you": [
+      1536,
+      1024
+    ],
+    "characters/duck/after_you": [
+      1536,
+      1024
+    ],
+    "characters/rabbit/after_you": [
+      1199,
+      1312
+    ],
+    "characters/potato/relief": [
+      1312,
+      1199
+    ],
+    "characters/pigeon/relief": [
+      1312,
+      1199
+    ],
+    "characters/duck/relief": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/relief": [
+      1536,
+      1024
+    ],
+    "characters/potato/inspect": [
+      1536,
+      1024
+    ],
+    "characters/pigeon/inspect": [
+      1166,
+      1349
+    ],
+    "characters/duck/inspect": [
+      1199,
+      1312
+    ],
+    "characters/rabbit/inspect": [
+      1024,
+      1536
+    ],
+    "characters/potato/return_parcel": [
+      1254,
+      1254
+    ],
+    "characters/pigeon/return_parcel": [
+      1254,
+      1254
+    ],
+    "characters/duck/return_parcel": [
+      1086,
+      1448
+    ],
+    "characters/rabbit/return_parcel": [
+      1199,
+      1312
+    ],
+    "chapters/ch01/sky": [
+      1024,
+      1536
+    ],
+    "chapters/ch01/landmark": [
+      1774,
+      887
+    ],
+    "chapters/ch01/tile": [
+      1254,
+      1254
+    ],
+    "chapters/ch01/crack": [
+      1254,
+      1254
+    ],
+    "chapters/ch01/collapse": [
+      1254,
+      1254
+    ],
+    "chapters/ch01/start": [
+      2172,
+      724
+    ],
+    "chapters/ch01/finish": [
+      2172,
+      724
+    ],
+    "chapters/ch01/back_cloud_1": [
+      2172,
+      724
+    ],
+    "chapters/ch01/back_cloud_2": [
+      1774,
+      887
+    ],
+    "chapters/ch01/back_cloud_3": [
+      2172,
+      724
+    ],
+    "chapters/ch01/front_left": [
+      1774,
+      887
+    ],
+    "chapters/ch01/front_right": [
+      1774,
+      887
+    ],
+    "chapters/ch02/sky": [
+      941,
+      1672
+    ],
+    "chapters/ch02/landmark": [
+      1323,
+      1189
+    ],
+    "chapters/ch02/windsock": [
+      1312,
+      1199
+    ],
+    "chapters/ch02/mail_balloon": [
+      1086,
+      1448
+    ],
+    "chapters/ch02/mailbox": [
+      1199,
+      1312
+    ],
+    "chapters/ch02/back_cloud_1": [
+      2172,
+      724
+    ],
+    "chapters/ch02/back_cloud_2": [
+      1774,
+      887
+    ],
+    "chapters/ch02/back_cloud_3": [
+      2172,
+      724
+    ],
+    "chapters/ch02/front_left": [
+      887,
+      1774
+    ],
+    "chapters/ch02/front_right": [
+      941,
+      1671
+    ],
+    "chapters/ch02/start": [
+      1774,
+      887
+    ],
+    "chapters/ch02/finish": [
+      1536,
+      1024
+    ],
+    "chapters/ch02/tile": [
+      1254,
+      1254
+    ],
+    "chapters/ch02/crack": [
+      1254,
+      1254
+    ],
+    "chapters/ch02/collapse": [
+      1254,
+      1254
+    ],
+    "chapters/ch03/sky": [
+      941,
+      1672
+    ],
+    "chapters/ch03/landmark": [
+      1536,
+      1024
+    ],
+    "chapters/ch03/lantern": [
+      1216,
+      1293
+    ],
+    "chapters/ch03/barricade": [
+      1536,
+      1024
+    ],
+    "chapters/ch03/crates": [
+      1536,
+      1024
+    ],
+    "chapters/ch03/back_cloud_1": [
+      2172,
+      724
+    ],
+    "chapters/ch03/back_cloud_2": [
+      1774,
+      887
+    ],
+    "chapters/ch03/back_cloud_3": [
+      2172,
+      724
+    ],
+    "chapters/ch03/front_left": [
+      1086,
+      1448
+    ],
+    "chapters/ch03/front_right": [
+      1199,
+      1312
+    ],
+    "chapters/ch03/start": [
+      1774,
+      887
+    ],
+    "chapters/ch03/finish": [
+      1774,
+      887
+    ],
+    "chapters/ch03/tile": [
+      1254,
+      1254
+    ],
+    "chapters/ch03/crack": [
+      1254,
+      1254
+    ],
+    "chapters/ch03/collapse": [
+      1254,
+      1254
+    ],
+    "chapters/ch04/sky": [
+      941,
+      1672
+    ],
+    "chapters/ch04/landmark": [
+      1536,
+      1024
+    ],
+    "chapters/ch04/ticket_machine": [
+      1199,
+      1312
+    ],
+    "chapters/ch04/bench": [
+      1536,
+      1024
+    ],
+    "chapters/ch04/star": [
+      1536,
+      1024
+    ],
+    "chapters/ch04/start": [
+      1254,
+      1254
+    ],
+    "chapters/ch04/finish": [
+      1254,
+      1254
+    ],
+    "chapters/ch04/tile": [
+      1254,
+      1254
+    ],
+    "chapters/ch04/crack": [
+      1254,
+      1254
+    ],
+    "chapters/ch04/collapse": [
+      1254,
+      1254
+    ],
+    "chapters/ch05/sky": [
+      941,
+      1672
+    ],
+    "chapters/ch05/landmark": [
+      1536,
+      1024
+    ],
+    "chapters/ch05/paper_stack": [
+      1145,
+      1374
+    ],
+    "chapters/ch05/stamp": [
+      1217,
+      1293
+    ],
+    "chapters/ch05/bell": [
+      1536,
+      1024
+    ],
+    "chapters/ch05/start": [
+      1536,
+      1024
+    ],
+    "chapters/ch05/finish": [
+      1536,
+      1024
+    ],
+    "chapters/ch05/tile": [
+      1254,
+      1254
+    ],
+    "chapters/ch05/crack": [
+      1254,
+      1254
+    ],
+    "chapters/ch05/collapse": [
+      1536,
+      1024
+    ]
   }
 }

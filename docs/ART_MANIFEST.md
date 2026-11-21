@@ -1,3 +1,9 @@
+# 현재 아트: 통합 전달 2026-11-21 · 게임 v0.6
+
+최신 적용 규약은 [ART_INTEGRATION_20261121.md](ART_INTEGRATION_20261121.md), 원본 manifest는 assets/source/art-20261121/ASSET_MANIFEST.json, 실제 사용 역할은 ART_USAGE_20261121.json, 기준점은 ART_REGISTRATION.json을 따른다. 아래 v0.3/v0.2는 과거 이력이다.
+
+---
+
 # 아트 v0.3 적용 기록 · 게임 v0.5
 
 2026-11-18 · 제공 패키지의 PNG 43개 해시를 확인했고 원본은 `assets/source/art-v03/`에 보존했다. 원본 manifest의 미측정 anchor/null 및 초안 상태는 변경하지 않았다. v0.2의 기존 26장은 픽셀이 동일하고 캐릭터 경로가 characters/{id}로 통일됐다.

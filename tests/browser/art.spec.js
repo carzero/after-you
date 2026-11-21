@@ -6,7 +6,7 @@ test('draft art is loaded, poses freeze with pause, rescue layers reset on retry
   page.on('response',r=>{if(r.url().includes('.webp')&&!r.ok()) failures.push(r.url());});
   await page.addInitScript(()=>{Math.random=()=>0;});
   await page.clock.install({time:new Date('2026-11-15T12:00:00Z')});
-  await page.goto('/');await page.clock.pauseAt(new Date('2026-11-15T12:00:01Z'));
+  await page.clock.pauseAt(new Date('2026-11-15T12:00:01Z'));await page.goto('/');
   await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();
   await page.clock.runFor(2700);await expect(page.locator('#left')).toBeEnabled();
   const player=page.locator('.actor.player');
@@ -27,7 +27,7 @@ test('draft art is loaded, poses freeze with pause, rescue layers reset on retry
   await page.screenshot({path:'test-results/art-rescue-375.png'});
   await page.clock.runFor(400);await expect(page.locator('#result')).toBeVisible();
   await expect(page.locator('#result-art .in-box')).toBeVisible();
-  await expect(page.locator('#result-art .box-front')).toBeVisible();await page.screenshot({path:'test-results/art-result-375.png'});
+  await expect(page.locator('#result-art .parcel-art')).toBeVisible();await page.screenshot({path:'test-results/art-result-375.png'});
   await page.setViewportSize({width:320,height:568});
   const resultBox = await page.locator('#result .panel').boundingBox();expect(resultBox.y).toBeGreaterThanOrEqual(0);expect(resultBox.y+resultBox.height).toBeLessThanOrEqual(568);
   await page.screenshot({path:'test-results/art-result-320.png'});

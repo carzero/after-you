@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('clear stage one then fall on stage two: return to one with shorter hint on ascent and preserved peak',async({page})=>{
   await page.addInitScript(()=>{Math.random=()=>0;});
-  await page.clock.install({time:new Date('2026-11-18T00:00:00Z')});await page.goto('/');await page.clock.pauseAt(new Date('2026-11-18T00:00:01Z'));
+  await page.clock.install({time:new Date('2026-11-18T00:00:00Z')});await page.clock.pauseAt(new Date('2026-11-18T00:00:01Z'));await page.goto('/');
   await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();await page.clock.runFor(2700);
   for(let i=0;i<8;i++){await page.locator('#left').click();await page.clock.runFor(440);}
   await expect(page.locator('#result-text')).toContainText('최고 8층');

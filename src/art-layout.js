@@ -46,3 +46,20 @@ export function worldEffects(clock, jumpedAt, landedAt, reducedMotion = false) {
   }
   return result;
 }
+
+// Additional acting uses the same per-character scale. Independent-image proportions remain draft.
+const acting={
+ potato:{after_you:[800,960],inspect:[800,980],relief:[660,1140]},
+ pigeon:{after_you:[780,960],inspect:[600,1290],relief:[660,1140]},
+ duck:{after_you:[800,980],inspect:[620,1265],relief:[620,1265]},
+ rabbit:{after_you:[620,1255],inspect:[530,1460],relief:[780,980]},
+};
+for(const[id,poses]of Object.entries(acting))for(const[pose,foot]of Object.entries(poses))characterLayout[id][pose]={foot};
+export function actingPose(actor,clock,landedAt,observed){
+ const base=poseFor(actor,clock,landedAt);
+ if(base!=='idle')return base;
+ if(landedAt!==undefined&&clock-landedAt<500)return 'relief';
+ const next=observed[actor.row+1];
+ if(next&&next.every(value=>value==='unknown'))return actor.player&&actor.row>=0?'inspect':!actor.player?'after_you':'idle';
+ return 'idle';
+}

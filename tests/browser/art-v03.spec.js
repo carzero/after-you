@@ -3,7 +3,7 @@ for(const id of ['duck','rabbit'])test(`${id}: aspect-correct art, VFX, rescue a
   await page.setViewportSize({width:320,height:568});
   await page.route('**/api/**',route=>route.fulfill({status:404,contentType:'application/json',body:'{}'}));
   await page.addInitScript(()=>{localStorage.setItem('after-you.save.v1',JSON.stringify({version:1,chapterComplete:true}));Math.random=()=>0;});
-  await page.clock.install({time:new Date('2026-11-18T00:00:00Z')});await page.goto('/');await page.clock.pauseAt(new Date('2026-11-18T00:00:01Z'));
+  await page.clock.install({time:new Date('2026-11-18T00:00:00Z')});await page.clock.pauseAt(new Date('2026-11-18T00:00:01Z'));await page.goto('/');
   await page.locator(`button[data-character="${id}"]`).click();await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();
   await page.clock.runFor(2700);
   const player=page.locator('.actor.player');await expect(player.locator('svg')).toHaveAttribute('data-art-character',id);
@@ -22,7 +22,7 @@ for(const id of ['duck','rabbit'])test(`${id}: aspect-correct art, VFX, rescue a
   await page.locator('#right').click();await page.clock.runFor(1150);await expect(player.locator('[data-pose="fall"]')).toBeVisible();
   await page.screenshot({path:`test-results/v03-${id}-fall-320.png`});
   await page.clock.runFor(450);await expect(page.locator('#rescue-scene .recovery-effect')).toBeVisible();
-  await page.clock.runFor(350);await expect(page.locator('#result-art [data-pose="rescued"]')).toBeVisible();
+  await page.clock.runFor(350);await expect(page.locator('#result-art .parcel-art')).toBeVisible();
   await page.screenshot({path:`test-results/v03-${id}-rescue-320.png`});
   await page.locator('#retry').click();await expect(page.locator('#world-effects')).toBeEmpty();await expect(page.locator('#rescue-scene')).toBeHidden();
   await page.locator('#settings-open').click();await page.locator('#reducedMotion').check();await page.getByRole('button',{name:'설정 완료'}).click();

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "title",
+    "file": "art/title.png",
+    "source": "exec-a759d42b-e88a-4102-97df-39488448ce51.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "invitation",
+    "file": "art/invitation.png",
+    "source": "exec-08f0ab7f-e9b0-43b9-9abf-7dfdbc21710d.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "stamp",
+    "file": "art/stamp.png",
+    "source": "exec-2f5e88c9-4d24-4605-a32f-e6a8f227342b.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "potato",
+    "file": "art/potato.png",
+    "source": "exec-94786ac1-9909-4d29-8740-5bf6ec400628.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "pigeon",
+    "file": "art/pigeon.png",
+    "source": "exec-c349630b-451f-46cd-aed2-d9a3a3a715ab.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "duck",
+    "file": "art/duck.png",
+    "source": "exec-3e18a8a5-fa96-4766-a742-6d7ea485b82c.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "rabbit",
+    "file": "art/rabbit.png",
+    "source": "exec-ccffc69e-9a44-4194-a87c-0348b95ac9eb.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  },
+  {
+    "id": "gameplay",
+    "file": "art/gameplay.png",
+    "source": "exec-2b1d1457-6ab4-40dc-86e6-390c9781b900.png",
+    "status": "draft",
+    "notes": "외곽 보정 및 실제 크기 검수 필요. title/gameplay는 합성 구도 시안."
+  }
+]

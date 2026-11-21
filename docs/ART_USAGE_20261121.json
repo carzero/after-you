@@ -1,0 +1,1010 @@
+[
+  {
+    "file": "assets/characters/potato/idle_v01.png",
+    "sha256": "514c7ee6c950ef0bcd8a3c2529792a7b58c8f7005cdcc4a6aabf424938c8c8f4",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/jump_v01.png",
+    "sha256": "0b9af30ac125856791239d97df975dacf82d83ba64faaf1d536e1587ec338f58",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/land_v01.png",
+    "sha256": "dda5ba4ddd77d08205f8047ab415302cd745b75e904f1bedaaad002644226d09",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/hover_v01.png",
+    "sha256": "b5149c99ac6d6379d6865ed871e926f9e11e76b90f7389dbac27cf437dbd0f75",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/fall_v01.png",
+    "sha256": "2ff4df9dc1cefb3880a9a167f5d6941dc52bf07d9ff98fd4ddf9dbe5c36cf369",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/rescued_v01.png",
+    "sha256": "92b798be104b01063de5ddf3055e269ed335e7a9dcfdf999bc059d4fc51077d2",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/finished_v01.png",
+    "sha256": "076cadc2007c639b48911455f622b4318edc6fb7edf76d32e5dbb3260018c739",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/idle_v01.png",
+    "sha256": "6fed113cd2130055256ad450e1bf11414842fdaead2286fd4c44c6587e4bfe27",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/jump_v01.png",
+    "sha256": "8a8d140c914eb3e98ce957df28f02dfe618e3ff4533a834a42b391436a03f66d",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/land_v01.png",
+    "sha256": "676d6f87dcf6f2eb3e5cfcbebfb1be4ced724f82bd4261d732c1c10cc6fa558e",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/hover_v01.png",
+    "sha256": "953bbcba3c3a59e0df28a31d0dee1f7c789e8b1c295c8efc7164bf8413d91f98",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/fall_v01.png",
+    "sha256": "45c1a66311be3fae2babdc2b54ad4d866d931b26f77d92290e943d6089bbbba5",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/rescued_v01.png",
+    "sha256": "30b656ee1803ba69d9a0c9d0ac05c23370854df079bfd4bd17806ccad0aa7ca9",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/finished_v01.png",
+    "sha256": "1a1239d6900547b17607ac9c7e7d892d5d5a4806870020276bfc6f9661aec22f",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/environment/sky_v01.png",
+    "sha256": "42641866441af53403cd3dd11af014a964c98dad31f393a7b4ec0d6fa03ad773",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/environment/office_v01.png",
+    "sha256": "5649b1f69e7f842aa2dcb5b1f69866ae4faddbd244a8a3fbe78de3a50f4f06fc",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/environment/tile_v01.png",
+    "sha256": "dd303c2f0b8a4b560ee15fc5836824b600e4023da9be5d5aaa64368461a9489f",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/environment/tile_cracked_v01.png",
+    "sha256": "c8c208b04df03608e8de6e44d0a2344876027435b4a8a7c631e3996c68bc536c",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/cushion_v01.png",
+    "sha256": "b12c581dc99714ae16fc546afa65161feec3d39e933d45ee0ebe6d3cf5c2454f",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/worker_v01.png",
+    "sha256": "bae0e7bb39b5947635e03af7653a5b4265c8ca141d0aec2618e4b420303cfe60",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/box_v01.png",
+    "sha256": "6c0af7602fdcba1ddcf41509341245e70a4f668d0dc23348d02f9286bf6cc662",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/box_revision_v01.png",
+    "sha256": "cc9c1a221d5deed9c596f38265de49a0577793bc0d8c23ed61e57427e75eca01",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/box_front_v01.png",
+    "sha256": "77ad8cf10e0a1a36f611db560c4bfbcd831ac228fbfd152bfe9028474cba0240",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/rescue/cushion_front_v01.png",
+    "sha256": "a6e4a8e2f436aa0852c9ea827df5639bbedf5c852e8670ac7648c27f15f48b3d",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/concept/mobile_v01.png",
+    "sha256": "1a21cb0e1eae75ba43372ef90a9b79ea568e03bf3309706a581c36d9f52418c5",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/concept/lineup_v01.png",
+    "sha256": "7d2484057afd336e5b0007956742aa1aeedf90e2ae9981d601c02acac048ec13",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/idle_v01.png",
+    "sha256": "5b1fae786b2b0be6f11701ee716dc2bd269caa8b94cce3c4c836b059ffb85eff",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/jump_v01.png",
+    "sha256": "b05006a9aa7bb822b31a14df91dbde6bfccc8e1cd0249acf4ae8ca7b9566d0bd",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/land_v01.png",
+    "sha256": "9ce82e29de01d603e6fb2fe730605727f07cd08163cdcf4caa2b2f9fbb684967",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/hover_v01.png",
+    "sha256": "29017255e3a75ee5b20d2a8dadd2e4a2a0fcb7245f2a7a0b22fd023d20da0fdd",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/fall_v01.png",
+    "sha256": "3f6d91061ffa7370ea8c40ea1774b75b3154e223fdda1ffd08a016fd48364036",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/rescued_v01.png",
+    "sha256": "aa6d770679cf9087e043dfa9cffd28b9cbdc6a483b258870046738e74d1c54da",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/finished_v01.png",
+    "sha256": "1578e63085b64b31c1fd81ea56d8d7b3be87c1224565802b6712c2534736f57d",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/idle_v01.png",
+    "sha256": "ef99e37155706bc566356f9742b23db699a582a73b2634e82ecb6490d3a9ee12",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/jump_v01.png",
+    "sha256": "366aada923a7ed5d496c1475956a4ddc14579b9c51c8d910a93e92ce8e90e228",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/land_v01.png",
+    "sha256": "6e0152f32af91ee670036a4bb840011eca5b363bcdbf0537c0be203070457c3e",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/hover_v01.png",
+    "sha256": "b541a8fa33eeb59e269fb2012ee245091f0d217c5db90bc0220ddc11c1e0e3fa",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/fall_v01.png",
+    "sha256": "f6940da98be436b4bbb9b4587984d0f0aa199a93b626adc2f28c75c000414e9f",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/rescued_v01.png",
+    "sha256": "488c236253b44f1cb38da92862e7d089492827f3348396210ce091569e9d6ded",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/finished_v01.png",
+    "sha256": "70b4325481c761cf998ebbbbd4b46b4fb17fe5b0a9303594154a56e6733c3fc3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/vfx/takeoff_v01.png",
+    "sha256": "b966c50bbb1f4d635aca55b1730426be37963e656b8f4e7658748a1438116828",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/vfx/landing_v01.png",
+    "sha256": "def79bf2b6337d335fd700b309d4dc9e8ff6312a8dacedd2b7b7b705ab9b05cf",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/vfx/rescue_v01.png",
+    "sha256": "7cc6ac336e7c4752aa8436d650705ecdb60fbe8dcb1f4c13e84366ca568c71cb",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/backgrounds/ch02/backdrop_v001.png",
+    "sha256": "835616ab425bbc82a6eca73a7b8f575d6ffef2c4082b2e85144d6dd3b55f0511",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/backgrounds/ch03/backdrop_v001.png",
+    "sha256": "051cccaf4716b3446a9dc1f494550ef47da9698209958565e58429deacfcb9d9",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/backgrounds/ch04/backdrop_v001.png",
+    "sha256": "4a36f8cbb2c2a97e34f929424a0360f9a9b1fdddb54f5c85ca779c04f9d25d42",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/backgrounds/ch05/backdrop_v001.png",
+    "sha256": "569fdcf3ea88b3034c14668eb8a64a8a7cce8a50a30b43118aeaebe0dc97d7ae",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/story/endings/potato_v001.png",
+    "sha256": "000ebb319c0fc7ea8d18fcdc92c6d1506ed19112a918cf42271d71a860955f1c",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/story/endings/pigeon_v001.png",
+    "sha256": "d8b615818262813a5c0426ce51e6bb9c94d1bb3dc43fbc79dd81dd4490c2407d",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/story/endings/duck_v002.png",
+    "sha256": "fa99dbd3cf6da0df0b5043a74834bf5e4294970d57d7c6c3f0ae84cec79d11d8",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/story/endings/rabbit_v001.png",
+    "sha256": "9c546743745c30b297ff06837e8493b584178c0298fe18967ce0980c11a8ed5f",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/props/no_flying_v001.png",
+    "sha256": "064da824b71cc79fe491f28555840720ba572fae2451b648eaeec43457099453",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/title.png",
+    "sha256": "e6226c20fffd0e02fe9d1531b89baf67355896f60b0f006d2a56a327e4a5e359",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/invitation.png",
+    "sha256": "9ea2e632a17f2868358b2c59f773cfd8bf7cd33c0187e9c8d2d3df9a549f0328",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/stamp.png",
+    "sha256": "9373ac8dc09ce40b7070c807e676effa41d4c9d7b272c7ec90fb112ec5ccd418",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/potato.png",
+    "sha256": "804fb6c9e41a256dffac32bd57218d768bd67575f02377be22ab63155828c473",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/pigeon.png",
+    "sha256": "4f76de9a32c291c70d4e60ee7d04195dd6e232762893690e69888d5857b61215",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/duck.png",
+    "sha256": "f44d39e6496c4ab9733cfb812f74e427ddacccc4e4ee6fb06e04fa350fcb87a8",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/rabbit.png",
+    "sha256": "daa5b06adb955b16ba62c2c076ca68f7789e75a19b698028845686f3c7ace619",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "ui-kit/art/gameplay.png",
+    "sha256": "449564ab7dd3e29a0d5521502db19dd53c275b1c0fa6e3b97ec3cd0845d667a3",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/jump_v02.png",
+    "sha256": "2f6912f0332e408d033cf4307524cc638c01312fc924a5ee986398b9191801ae",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/fall_v02.png",
+    "sha256": "ced200bae2b488ac9fcea337c3c0e01062fe9cd922333aad609735d501cfde15",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/branding/app_icon.png",
+    "sha256": "f87204df7f4b3e5994f3a96bc4db713dfb08599816a025b2e983a91525a6b5ae",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/staff/guide.png",
+    "sha256": "1238bf5b2e8a003423eacce0edf4b18f8be34db815f6d65873e47932c3b0e389",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/staff/rescuer.png",
+    "sha256": "8c10e9267fa91c288511775adc6394d5f2ec96b04291f9b489c724dadcb4fc81",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/after_you.png",
+    "sha256": "9698ed09da65e90be2f909dbc471da95a02dc627b957d15edf5116cf53b82995",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/after_you.png",
+    "sha256": "e0217bd0bd4bae9ee705790698672f50943b41e421df4241a34ef4edcc8bf67d",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/after_you.png",
+    "sha256": "61a3de500c0e1ab686adc1ef2b22b52ab22d9c8b6fa18c831ebc0ae40b9698d7",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/after_you.png",
+    "sha256": "b7e25d7755ec64b630293ee7da31ca1cd300c81cd60278097761a031b9eb4a82",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/relief.png",
+    "sha256": "6d67e8cc7841511a7b97a50f171b8de3f96df982d13f81edc896beb57e392b73",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/relief.png",
+    "sha256": "cfe514ba80cc185bdaf09610e584560057cf84ce73e5dee8ea9fd220fbe66187",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/relief.png",
+    "sha256": "34d444ac7a1a08b62c58394dfd40028e855568f72f019f61d4647a4a828b0ef7",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/relief.png",
+    "sha256": "37b08fe8662a86b3a82ed64e58da38a9bc3f64a1999378337e45352b8972c8d1",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/inspect.png",
+    "sha256": "4e8244bffb064b52f6dad152bea7cf30b63fe75af9867b30933f9394b0ffef47",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/inspect.png",
+    "sha256": "0a5a3cf02a74664d6af69b397c19df187f3846e0be18814fdbc2f96e3d9878ed",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/inspect.png",
+    "sha256": "98eb11ab42513c8a56843b86d44084eaf007724d32d245e6d2fca0dd07e1477b",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/inspect.png",
+    "sha256": "97fb7e1213f5089a0ebc4e67e6d05c333e2b28c32bbda42272dc0fdc0320a751",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/turnaround_front.png",
+    "sha256": "be3dd09c1b4f892e7fe7578e3c5f3cbe749b242184d39046dbbf56305ce986b5",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/turnaround_front.png",
+    "sha256": "0a89c19ddc2cd708049ca4d5ae41c5fa84c69b57b4582097c03ef7e23bd956e6",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/turnaround_front.png",
+    "sha256": "391e3ddf8292d45c0ac9046c62fb6a91cd1fd4e14187f08807bec821f81d7da0",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/turnaround_front.png",
+    "sha256": "99817b1476147a1817a16f3d196ec2276689ebe085696690a6fa335801e8aa21",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/turnaround_side.png",
+    "sha256": "007922db91a15e85239908b147b4320c1e1767bbdfc0d9074360342454a37474",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/turnaround_side.png",
+    "sha256": "6fd7337a0cbf41078261d31969a8348cf423a7c8c48f9b9ca891c371e2ca533b",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/turnaround_side.png",
+    "sha256": "6afa8c935141879a2c3cd2e3af3f7352e72ab85aa83fd901eb20dc098083508e",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/turnaround_side.png",
+    "sha256": "1be004236c772992c470ad58fb8d673e62e21e94911598dfd79013b40adc5558",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/turnaround_back.png",
+    "sha256": "02fc1554d4752f9eff76b6a642245adb71af7ae2a7bf98496c9054d81e9296ff",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/turnaround_back.png",
+    "sha256": "193af58832586010cbacaa16f249618b175ef0df938acfa0f6ea91a2c2b02008",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/turnaround_back.png",
+    "sha256": "1da6073b2ac5dec070c9217f3a27806fb3b540d65eef065557fc83db9818f6d1",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/turnaround_back.png",
+    "sha256": "dacdad2c46a301b4d755f7222181a6dcc7536d802e8c4f33acb366cfd0b91ced",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/potato/return_parcel.png",
+    "sha256": "9c728b2779c5d7cfbc1a7bbefbe62602e9a0e7d1d669fac7061a391147c4600d",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/pigeon/return_parcel.png",
+    "sha256": "25dd3a11eb79a70e389a1d6d2e2af0600588571c03dd6526e55880eb9d07e0de",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/duck/return_parcel.png",
+    "sha256": "ad4c3ba5403cb0adccd538866f15f63791a6bcfc8971e4b4a6b9538f60f746c2",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/characters/rabbit/return_parcel.png",
+    "sha256": "462a4869d7f4d4c488b395d2ad5bd98e5cc0b516095a17c74b60940cb2879f4c",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/sky.png",
+    "sha256": "42641866441af53403cd3dd11af014a964c98dad31f393a7b4ec0d6fa03ad773",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/landmark.png",
+    "sha256": "5649b1f69e7f842aa2dcb5b1f69866ae4faddbd244a8a3fbe78de3a50f4f06fc",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/tile.png",
+    "sha256": "20bf4c46012b98cfc3968f70773a13093fdb65f28bba9f97264e398d3bef99ee",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/crack.png",
+    "sha256": "f270f341bd8464fc37b398a779c39aa230170866c28ee164b73dd3de3a669de3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/collapse.png",
+    "sha256": "5fd070f8b87135568e529fa511fa580eaf4c3ebd3f70d38e4ba16ac576ab48ee",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/start.png",
+    "sha256": "0f48d55701cd9fe3f6d97a6934d9455dbffd986e5da4f4c319017a31e19bed95",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/finish.png",
+    "sha256": "3ac3ddf5cad33332b21ffcf20933453ada14a949c172047c67cdbf0bd969a5af",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/back_cloud_1.png",
+    "sha256": "2dcf22aa3430d3dad4b0243eaf06ed67b76ebebe908cf386e4927bcfff765c57",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/back_cloud_2.png",
+    "sha256": "a1ab634632d6b99f5502c2c92ca9b310ed827bdfb0afd71f41b6d6057af46146",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/back_cloud_3.png",
+    "sha256": "383b1b73a6d25864d42dfa5077c86d9d69c3163b6ab4282c70c13880f8b8d2c1",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/front_left.png",
+    "sha256": "db6cd4e3e85669c6e90453c8d56a439ee6fea6debb1f41830c2c480ffcac2c25",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/front_right.png",
+    "sha256": "2f9040825e8b58c93b393a52924838538fa9c2682bf3635b98eeafdaa4e69a44",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch01/entry.png",
+    "sha256": "ab8263ec4184dee4ce35dc723a769b505b691cf917179ac921045dc0a772f770",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/sky.png",
+    "sha256": "b43076a0e9d6eae93e5433367ac0955793397704408cac311ecdff12e3d841fb",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/landmark.png",
+    "sha256": "a739a737762cba88d3dbaccc78b74d5c05de52257efdfa0d75a0c8bd603e8ee1",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/windsock.png",
+    "sha256": "d9ae5ebbcd1435ac5a05f5c15a57e89651639f755b5fdcc30e1c83da0c97ebd3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/mail_balloon.png",
+    "sha256": "e94a0be9285de82ac6ca219c3a8952afd8c878076a653bbfbe953b77567480f0",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/mailbox.png",
+    "sha256": "fa90b126951390cbcc55fc805720138b654fbb8399924493f9d4c445562d4c43",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/back_cloud_1.png",
+    "sha256": "59042e33a9c0c8e7214a80c89ab206f13daa5ca509093aa1c3af2151dfd3e2f8",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/back_cloud_2.png",
+    "sha256": "d34eb51d44fec1234903da110d96ecac9f7397129572da4299e1db925b15eaca",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/back_cloud_3.png",
+    "sha256": "8c7b8d33ac4b9761c338644113d4c3612163069d729af7d066d693df1008aea2",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/front_left.png",
+    "sha256": "3baa8b844ccd94e0b4b716ff6711e34b6f807a4206bb7b1b8bc8907fb63f4de4",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/front_right.png",
+    "sha256": "8d86418df390c2ce4cd18ff0454c8605d1655a37ea4b48d7a706a119a40b4e74",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/start.png",
+    "sha256": "dec67bfa5a0fdefb7bd2c76d800d08ac08d6f5fa7aa3dba50635f0df872edca3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/finish.png",
+    "sha256": "fb1a489c2c00ad343b778e00aeef5a822101600ff4ad09ff57a3bf588dd29aad",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/tile.png",
+    "sha256": "b8d8fd16d10bf7b323d4083a0a679d8af3cba4cdd0a0d97ed8eae0043fe59dcb",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/crack.png",
+    "sha256": "8ec7b2c1b3a1338f90930887f43b4918859eaee2f055344dd63240b97cd48475",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/collapse.png",
+    "sha256": "51be752092ec1773a89dac889b1ca7b4d2c104d35b060090c0b02a8a2f8045f3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch02/entry.png",
+    "sha256": "8697a4c4be7add2a2f4e7cf1b809db098bb53bf0232dcbb72ddd00dd46b9e6dc",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/sky.png",
+    "sha256": "ab59dfabaa216dfa50bcff207b41d9b2004d01ccec98930f515df84d786e8c53",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/landmark.png",
+    "sha256": "d05f869e06d84174c7ddeed8a424444ec601f4d9c95e003a4104dcf47d951683",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/lantern.png",
+    "sha256": "eef7a8537e97be9f8af562bbe91d35c0d006afca21c6332704c96abf8ecda4b2",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/barricade.png",
+    "sha256": "d4dd176b87599e667db8a11b91f37e2fbf2c9fa310b2de73aa9934717c4edfec",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/crates.png",
+    "sha256": "acea2aa7d995269908242d3c6e47161c34a69391e0dbcc9e78e9e39ce860c584",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/back_cloud_1.png",
+    "sha256": "be81bc0238eebd643f040cefd67bb318d0627084d3f6421ae9bf78ba7fb65f92",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/back_cloud_2.png",
+    "sha256": "cd5a892c5b8b57c8e0e921af864353ddb1caf5b5df0ca49ff213b72936590e72",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/back_cloud_3.png",
+    "sha256": "b6a3ca24352f0109c2ef35ad4fce4cf76ce3ce43d2bb14c9488d88ba8ebed73e",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/front_left.png",
+    "sha256": "4b72d3d6fed7da5b7e32fe9db914c30aa94eaac292bba71cde349807d542f804",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/front_right.png",
+    "sha256": "9de2d26ce8bae9a85e7860b05d27b3c1a10cb34182982d24cf38f8707c5974a3",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/start.png",
+    "sha256": "10e20d2d3fe8edf2a1be4c6b9c97c5a3fe3492f6541ed5cd29f09a532e4bdb73",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/finish.png",
+    "sha256": "4cef73b6204302a7cb97d22d2c157d6ef8b6830adf35bc386068ae825c5e3053",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/tile.png",
+    "sha256": "31c4f94c8bacddf428911aa0cd1da03bfb3818d31d31276a507e295ca2f45161",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/crack.png",
+    "sha256": "761f622804c15db9b809de686219986208f7351410829ede5b679ac0624479a9",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/collapse.png",
+    "sha256": "2ce021073e7de3865062e4fbda4271a17b88ce7c8031b9facb325b6c58bf3cbd",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch03/entry.png",
+    "sha256": "545d33f772270c4d0feeaaff87da60cb7ef837bc619876699aadb74c0c81b626",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/sky.png",
+    "sha256": "e1fa830b06183e3d04cf8ba29e196777558abc80cb6fb37abe74adfcaf461b0c",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/landmark.png",
+    "sha256": "897cef80442cae6783a4810988962c438e6ed50278256719664f663eb9129432",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/ticket_machine.png",
+    "sha256": "1f71dda2308b84d2dace75cd6519dba2955b2d008729f4fce6a219775dfc1213",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/bench.png",
+    "sha256": "ba97aa9de6d2bf9786ee3f15e28dbc84cf3e21e02de6707350ce726ef3b1cd9e",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/star.png",
+    "sha256": "6065214b4e4021bf757888385b39cc38cc5acc53142210ddc455a1774e9387b7",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/start.png",
+    "sha256": "5461bdc2eb3849096465d9058d1b35b8bda5e42ccf5bcfff861470bc2b757560",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/finish.png",
+    "sha256": "5b26452550cdb9d9c65a3364a17b370749322626f9ef19ffc966103a92a9170b",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/tile.png",
+    "sha256": "dd2fbde3bb783fa0565de19ecf847c8ae501ebd6eee36c9fe4c3d8a8341dab54",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/crack.png",
+    "sha256": "31614e40bb5c38eaf1387b899f2d6bd0d19711961cb5abbee1e6cd0037977e40",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/collapse.png",
+    "sha256": "0c75dbe1eec94fcd95f5a124068fca54d5feed7927e21162426a83d69c08e3cb",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch04/entry.png",
+    "sha256": "1df0f3e9bc37db3eba13ed167bf45ec19e8d75c330783ac0af57b50646618c46",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/sky.png",
+    "sha256": "ccdb88dbb0179d64db9ba6ccc025fe6aee76ce98309fb448a2ee3a007551e200",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/landmark.png",
+    "sha256": "d0308a796b1fcee4cb22a097be835adfdd4b8d8bd92bb2c73cb65d8a7eed79da",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/paper_stack.png",
+    "sha256": "0d7017115fa03307cad948295d259006204a6ab3f792e0a200fb49ffd846639f",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/stamp.png",
+    "sha256": "71a825b06747f66f44424991134c06122cb8750b0745b6c05cb41e1aa678d610",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/bell.png",
+    "sha256": "e83b688704e36d471eb1d3cc7636a469ccae714faf437cbfab6928343046f475",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/start.png",
+    "sha256": "32a7d80b95877236745c78cfaf23095b0ea4c7cfe7311228e8e3692ac1151f94",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/finish.png",
+    "sha256": "0bae0ffb7aeacaa431597cc51f62bc81308c5b13224c0caae6b57f961f4183cf",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/tile.png",
+    "sha256": "2ddbc3baacbf881e79a6e2ab6a15e35bfc7c144ebb0865d70e595857d77994f5",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/crack.png",
+    "sha256": "05287e48ff08d0f6fe078da47874d437808ff9b61be09f1d0301f7844b24af6a",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/collapse.png",
+    "sha256": "e1dd53d015dcabfd502bd9d4239c16f9c62ba60bbeefd8323328a9c5e893fbc7",
+    "used_at_runtime": true,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "assets/chapters/ch05/entry.png",
+    "sha256": "9a9d2020004c8022e48ad6bea90cc8ec1e128fe7cf5326921774d14bde865eed",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-0afd721f-fdab-4a91-9cd0-0af2408e0029.png",
+    "sha256": "81997e06a08f22964d0dd4de017d2a2669836846bf025e058f4a439bfb880b27",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-0c4726ec-4af3-4a05-a509-7b6b622a1d44.png",
+    "sha256": "e4a8471935dbaac043250e2ec3cb6fbf6122998d7f75dfe1975fbd6a156042c3",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-30c2a190-6d19-45e7-8051-e0d2903477b6.png",
+    "sha256": "66cfd6ddfe8b5ed72657178a4f51298199d7974ba2a0c0a55077a28bdb61c49d",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-456f8b46-26de-4661-b7de-ffdc3df45572.png",
+    "sha256": "d3a607443ec5488a45135732fdcc77658a877930afc39ab598bf9f81d51d3770",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-8a6f533e-779b-49ad-aed6-44daee95abc9.png",
+    "sha256": "362f24e2f184c1b839ef5f5e175c54c9b808a430c5f47c66f64354c3d37d2fc5",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-8e47b4fc-5e7a-44d8-9047-72caa5b745f6.png",
+    "sha256": "9c4d5d55b464cce98e6684a25246d28d29dbd29361600a8c72855b7b4064efa5",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-c04e1f4f-980b-4b24-8f69-367081eb7c2c.png",
+    "sha256": "b31052d632fa7d393ad4f0ee924894e969fa5e261d8d0438d4e7f13d53cf794f",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  },
+  {
+    "file": "archive/unassigned_or_superseded/exec-daf7f970-04ab-4987-80c3-ca6eec046ead.png",
+    "sha256": "c002f9a71125357a5c306ad43591343a43326f1ce75c81e3f37e6ed81e6c5043",
+    "used_at_runtime": false,
+    "source_status": "draft_not_runtime_ready"
+  }
+]
