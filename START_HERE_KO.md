@@ -56,3 +56,7 @@ playtest/AFTER_YOU_Playtest_v0.6.html은 Chrome/Edge로 여는 오프라인 연�
 기본 출력 /workspace/shared/downloads. 두 명령에 출력 폴더를 인수로 전달 가능. Python은 인계 ZIP 묶기만 사용하며 게임 실행에는 필요 없음. .git/node_modules/캐시/개인 순위/환경 자격증명은 인계 ZIP에 포함하지 않는다.
 
 GitHub 다운로드 목록: https://github.com/carzero/after-you/tree/handoff/v0.4/downloads
+
+## 2026-11-23 다운로드 HTML 호환성 수정
+
+단독 HTML은 모듈 대신 자체 포함 일반 스크립트로 내보냅니다. JavaScript를 실행하지 않는 미리보기에서도 브라우저 열기 안내를 표시합니다. `node scripts/test-standalone.mjs`는 서버·네트워크·저장소 없는 opaque origin에서 시작과 이동, JavaScript 비활성 안내를 검증합니다. 관리형 브라우저의 파일 URL 정책 때문에 실제 file:// 탐색은 검증하지 못했습니다.
