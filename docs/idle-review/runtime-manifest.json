@@ -1,0 +1,154 @@
+[
+  {
+    "character": "potato",
+    "state": "idle",
+    "path": "characters/potato/idle.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      39,
+      19,
+      1234,
+      1232
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "b2969fbb794f0873c3f94e121072f0ebb96e4b82c0d93eb4f2395cf3e644c2a8",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/potato/idle.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "potato",
+    "state": "blink",
+    "path": "characters/potato/blink.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      25,
+      1236,
+      1212
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "0fe27628d8ddafe7c8c28c31e3c3180a17e34aa0ec16885e231fd3ff856c1820",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/potato/blink.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "pigeon",
+    "state": "idle",
+    "path": "characters/pigeon/idle.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      37,
+      1230,
+      1214
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "1d82e22c7453c397915a74673f1d8e2c996a939873975fea1529d57d38a70258",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/pigeon/idle.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "pigeon",
+    "state": "blink",
+    "path": "characters/pigeon/blink.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      112,
+      25,
+      1200,
+      1190
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "e554e3c7671b9d50a8426c97dd506046d2852e54cd7bdcaef931fbdceb9fea4b",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/pigeon/blink.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "duck",
+    "state": "idle",
+    "path": "characters/duck/idle.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      43,
+      1232,
+      1182
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "d2889577b0be8ec9d21d20fdea578749ebbe2e8d2a816a157a2b6b8bd4f97424",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/duck/idle.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "duck",
+    "state": "blink",
+    "path": "characters/duck/blink.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      17,
+      1240,
+      1222
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "adeefd64f7ce0436a839f44bd3066f3e5264337b85210730ad16e567c1458cd4",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/duck/blink.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "rabbit",
+    "state": "idle",
+    "path": "characters/rabbit/idle.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      19,
+      1238,
+      1254
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "5a92dc67fc2ac5220eec1854e812ca7267a3b56619ac2e2671a797e392ef10bf",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/rabbit/idle.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  },
+  {
+    "character": "rabbit",
+    "state": "blink",
+    "path": "characters/rabbit/blink.png",
+    "width": 1254,
+    "height": 1254,
+    "alpha_bbox": [
+      0,
+      31,
+      1240,
+      1254
+    ],
+    "anchor": null,
+    "status": "draft_not_runtime_ready",
+    "sha256": "aa43fa6714197815369139bc14363343519fbcef0af29f981c65364cc6450773",
+    "runtimeStatus": "integrated_draft_user_approved",
+    "runtime": "assets/runtime/idle-20261124/rabbit/blink.webp",
+    "footAnchor": "src/idle-motion.js; manual visual draft"
+  }
+]

@@ -8,7 +8,9 @@ for(const id of ['duck','rabbit'])test(`${id}: aspect-correct art, VFX, rescue a
   await page.clock.runFor(2700);
   const player=page.locator('.actor.player');await expect(player.locator('svg')).toHaveAttribute('data-art-character',id);
   const ratio=await player.locator('image').evaluate(el=>+el.getAttribute('width')/+el.getAttribute('height'));
-  expect(ratio).toBeCloseTo(id==='duck'?1178/1335:1199/1312,5);
+  // The approved idle pack uses square 1254px originals for both characters.
+  expect(ratio).toBeCloseTo(1,5);
+  await expect(player.locator('image')).toHaveAttribute('href',new RegExp(`idle-20261124/${id}/idle.*webp`));
   await page.screenshot({path:`test-results/v03-${id}-idle-320.png`});
   await page.locator('#left').click();await expect(page.locator('#world-effects .takeoff')).toHaveCount(1);
   await page.clock.runFor(440);await expect(player.locator('[data-pose="land"]')).toBeVisible();

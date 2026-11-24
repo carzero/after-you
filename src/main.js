@@ -100,6 +100,7 @@ for (const key of Object.keys(save.settings)) {
 function applySettings() {
   reducedMotion = save.settings.reducedMotion || motionPreference.matches;
   document.body.classList.toggle('reduced-motion', reducedMotion);
+  if (game) render();
 }
 motionPreference.addEventListener('change', applySettings);
 applySettings();
@@ -246,7 +247,7 @@ function render() {
       else if (t > 600) { y -= (t - 600) * .28; angle = reducedMotion ? 0 : (t - 600) * .06; opacity = Math.max(.2, 1 - (t - 700) / 550); }
     }
     const x = actor.row < 0 && actor.state !== 'jump' ? 18 + i * 19 : (actor.side === 0 ? 32 : 64) + (i - 1.5) * 2.8;
-    return `<div class="actor ${actor.player ? 'player' : 'npc'} ${actor.state}" data-actor="${actor.id}" style="left:${x}%;bottom:${y}px;opacity:${opacity};transform:translateX(-50%) rotate(${angle}deg);z-index:${50 - Math.round(row * 2)}">${actor.player ? '<span class="you">나</span>' : ''}${characterArt(actor.id, g.phase === 'hint' ? 'idle' : actingPose(actor,g.clock,landed.get(actor.id),g.observed))}<small>${actor.player ? names[actor.id] : actor.state === 'fall' ? '어…?' : ['','먼저 가세요','왕이 먼저?','준비 운동 중'][i]}</small></div>`;
+    return `<div class="actor ${actor.player ? 'player' : 'npc'} ${actor.state}" data-actor="${actor.id}" style="left:${x}%;bottom:${y}px;opacity:${opacity};transform:translateX(-50%) rotate(${angle}deg);z-index:${50 - Math.round(row * 2)}">${actor.player ? '<span class="you">나</span>' : ''}${characterArt(actor.id, g.phase === 'hint' ? 'idle' : actingPose(actor,g.clock,landed.get(actor.id),g.observed), actor.state === 'idle' && ['hint','playing'].includes(g.phase) ? {clock:g.clock,index:i,reducedMotion} : undefined)}<small>${actor.player ? names[actor.id] : actor.state === 'fall' ? '어…?' : ['','먼저 가세요','왕이 먼저?','준비 운동 중'][i]}</small></div>`;
   }).join('');
   const recoveryActive = player.state === 'fall' && FALL_MS - (player.until - g.clock) >= 1050 && !g.result;
   $('rescue-scene').hidden = !recoveryActive;

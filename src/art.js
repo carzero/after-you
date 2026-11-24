@@ -1,11 +1,18 @@
+import { idleMotion, idleRegistration } from './idle-motion.js';
 import { characterLayout, characterRegistration } from './art-layout.js';
 import { catalog } from './art-catalog.js';
 const artUrls=import.meta.glob('../assets/runtime/art-20261121/**/*.webp',{eager:true,query:'?url',import:'default'});
+const idleUrls=import.meta.glob('../assets/runtime/idle-20261124/**/*.webp',{eager:true,query:'?url',import:'default'});
 const iconSources=import.meta.glob('../assets/runtime/art-20261121/icons/*.svg',{eager:true,query:'?raw',import:'default'});
 export const names={potato:'직장인 감자',pigeon:'넥타이 비둘기',duck:'왕관 오리',rabbit:'근육 토끼'};
 export function artUrl(file){const url=artUrls[`../assets/runtime/art-20261121/${file}.webp`];if(!url)throw Error(`Unknown art: ${file}`);return url;}
 export function icon(id){return iconSources[`../assets/runtime/art-20261121/icons/${id}.svg`].replace(/\srole="img"|\saria-label="[^"]*"|<title>.*?<\/title>/g,'').replace('<svg ','<svg class="ui-icon" aria-hidden="true" focusable="false" ').replaceAll('#514237','currentColor');}
-export function characterArt(id,pose='idle'){
+export function characterArt(id,pose='idle',motion){
+ if(pose==='idle' && motion){
+  const frame=idleMotion(motion.clock,motion.index,motion.reducedMotion),{foot,scale}=idleRegistration[id];
+  const url=idleUrls[`../assets/runtime/idle-20261124/${id}/${frame.pose}.webp`];
+  return `<svg class="character-art" data-art-character="${id}" data-pose="${frame.pose}" data-idle-motion="true" viewBox="0 0 128 154" aria-hidden="true"><g transform="translate(0 154) scale(1 ${frame.scaleY}) translate(0 -154)"><image href="${url}" x="${64-foot[0]*scale}" y="${154-foot[1]*scale}" width="${1254*scale}" height="${1254*scale}"/></g></svg>`;
+ }
  const registration=characterRegistration[id];if(!registration)throw Error(`Unknown character: ${id}`);
  pose=characterLayout[id][pose]?pose:'idle';const layout=characterLayout[id][pose],scale=registration.scale;
  const file=catalog.characters[id][pose],[width,height]=catalog.sizes[file];
@@ -20,7 +27,7 @@ export function filesForTheme(theme='ch01'){
  const ui=['title','invitation','stamp','potato','pigeon','duck','rabbit'].map(id=>`ui/${id}`);
  return [...new Set([...characters,...catalog.common,...ui,...Object.values(catalog.chapters[theme])])];
 }
-export async function preloadArt(theme='ch01'){await Promise.all(filesForTheme(theme).map(file=>load(artUrl(file))));}
+export async function preloadArt(theme='ch01'){await Promise.all([...filesForTheme(theme).map(artUrl),...Object.values(idleUrls)].map(load));}
 export function chapterFile(theme,role){return catalog.chapters[theme][role];}
 export function sceneArtwork(theme){
  const layers=catalog.chapters[theme];const reserved=['sky','landmark','start','finish','tile','crack','collapse'];

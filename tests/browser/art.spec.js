@@ -11,7 +11,7 @@ test('draft art is loaded, poses freeze with pause, rescue layers reset on retry
   await page.clock.runFor(2700);await expect(page.locator('#left')).toBeEnabled();
   const player=page.locator('.actor.player');
   await expect(player.locator('[data-pose="idle"]')).toBeVisible();
-  await expect(player.locator('image')).toHaveAttribute('href',/idle_v01.*webp/);
+  await expect(player.locator('image')).toHaveAttribute('href',/idle-20261124\/potato\/idle.*webp/);
   await page.screenshot({path:'test-results/art-idle-375.png'});
   await page.locator('#left').click();await expect(player.locator('[data-pose="jump"]')).toBeVisible();
   await page.clock.runFor(440);await expect(player.locator('[data-pose="land"]')).toBeVisible();

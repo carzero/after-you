@@ -1,3 +1,13 @@
+# 최신 게임 v0.7 · 2026-11-24
+
+대기 중 눈 깜빡임과 미세 호흡을 적용했습니다.
+
+- [게임 HTML 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.7.html)
+- [실행 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.7.zip)
+- [온라인 서버 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Server_v0.7.zip)
+
+이하 이전 버전 자료를 보존합니다.
+
 # 최신 다운로드 · 게임 v0.6 / 원화 통합 2026-11-21
 
 파일을 열어 **Download raw file**을 누르거나 직접 링크를 사용하세요.

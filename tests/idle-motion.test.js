@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {idleMotion} from '../src/idle-motion.js';
+test('idle blink lasts 100ms and actors have separate phases',()=>{assert.equal(idleMotion(3099,0).pose,'idle');assert.equal(idleMotion(3100,0).pose,'blink');assert.equal(idleMotion(3199,0).pose,'blink');assert.equal(idleMotion(3200,0).pose,'idle');assert.equal(idleMotion(3100,1).pose,'idle')});
+test('breathing stays within 0.8% and reduced motion freezes both effects',()=>{assert.equal(idleMotion(1400,0).scaleY,1.008);assert.equal(idleMotion(2800,0).scaleY,1);assert.deepEqual(idleMotion(3150,0,true),{pose:'idle',scaleY:1})});

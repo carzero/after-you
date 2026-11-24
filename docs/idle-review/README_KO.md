@@ -1,6 +1,6 @@
 # 대기 모션 검토 작업 v0.2 · 2026-11-24
 
-업로드된 AFTER_YOU_Idle_Review_v01.zip을 기반으로 만든 별도 검토 도구입니다. 실제 게임과 기존 배포 파일은 바꾸지 않았습니다.
+업로드된 AFTER_YOU_Idle_Review_v01.zip을 기반으로 만든 별도 검토 도구입니다. v0.2 검토판 제작 시점에는 실제 게임에 적용하지 않았으며, 이후 승인된 v0.7 적용 내용은 아래에 기록했습니다.
 
 ## 완료한 작업
 
@@ -32,3 +32,13 @@ node tools/idle-review/browser-check.mjs
 ```
 
 모션 단위 검증 3개 통과. 관리형 Chromium에서 서버 없는 opaque origin/오프라인 실행, PNG 로딩, 포즈 전환, 기준점 편집·다운로드, 일시정지, 움직임 줄이기, 상태 우선순위, 390px 모바일 레이아웃 검증 통과. 실제 휴대폰이나 file:// 탐색 검증은 하지 않았습니다.
+
+## 게임 적용 v0.7 · 2026-11-24
+
+사용자 확인 후 기본 대기/닫힌 눈 8장만 512px WebP로 변환해 `assets/runtime/idle-20261124`에 추가했습니다. 신규 들숨 PNG는 게임에서 사용하지 않습니다. 게임의 대기 포즈에 깜빡임(100ms)과 호흡(2.8초·최대0.8%)을 동시에 적용합니다. 발 기준점은 `src/idle-motion.js`에서 관리합니다. 캐릭터별 시점을 다르게 하고 게임 시계를 따릅니다. 이동·착지·양보·검사·안도·추락·구조·결과 포즈가 우선합니다. 설정 변경 즉시 움직임 줄이기가 적용됩니다.
+
+재가공: `node scripts/prepare-idle.mjs /path/to/AFTER_YOU_Idle_Review_v01`. 런타임과 다운로드판에는 PNG 원본 없이 변환된 WebP를 포함합니다. 이번 대기 원본의 해시·출처는 runtime-manifest.json에 기록했습니다. 원본은 처음 업로드한 Idle Review ZIP 또는 원본을 포함하는 검토 HTML에서 보존됩니다. 기존 아트 원본 ZIP들과는 별개입니다.
+
+최신 소스 재포장: `npm run export:playtest -- downloads` 다음 `python3 scripts/package-runtime.py`. 기존 원화 ZIP을 추가로 쓸 경우 v0.6 폴더로 풀리므로 그 안의 assets/source 폴더를 새 소스의 assets/source에 합치세요.
+
+게임 적용 검증: 단위·서버 21개, 브라우저 14개 통과(기존 idle 원화 경로·비율 검증을 새 승인 원화 기준으로 갱신 후 해당 3개 재검증 포함). 단독 HTML의 오프라인 opaque-origin 시작·이동 및 JavaScript 비활성 안내도 통과. 소스 ZIP CRC·내용 해시 및 압축 해제 후 단위 테스트 확인. 실제 기기 file:// 탐색은 미검증입니다.

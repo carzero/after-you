@@ -60,3 +60,7 @@ GitHub 다운로드 목록: https://github.com/carzero/after-you/tree/handoff/v0
 ## 2026-11-23 다운로드 HTML 호환성 수정
 
 단독 HTML은 모듈 대신 자체 포함 일반 스크립트로 내보냅니다. JavaScript를 실행하지 않는 미리보기에서도 브라우저 열기 안내를 표시합니다. `node scripts/test-standalone.mjs`는 서버·네트워크·저장소 없는 opaque origin에서 시작과 이동, JavaScript 비활성 안내를 검증합니다. 관리형 브라우저의 파일 URL 정책 때문에 실제 file:// 탐색은 검증하지 못했습니다.
+
+## 2026-11-24 게임 v0.7
+
+대기 중 눈 깜빡임과 미세 호흡 적용. 이동/연기/추락/결과 동작이 우선하고 설정·일시정지·탭 숨김 중에는 게임 시계와 함께 멈춥니다. 움직임 줄이기는 정지 대기를 표시합니다. 들숨 후보 원화는 사용하지 않습니다. `docs/idle-review/README_KO.md`와 `runtime-manifest.json` 참고. 최신 실행 파일: AFTER_YOU_Playtest_v0.7.html. 소스 ZIP의 실행용 아트는 모두 포함되어 있어 원화 ZIP이 없어도 실행할 수 있습니다.
