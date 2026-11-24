@@ -1,0 +1,127 @@
+{
+  "status": "review_only_not_game_integrated",
+  "originalPixelsPreserved": true,
+  "anchors": "manual_visual_draft_not_final",
+  "assets": [
+    {
+      "path": "characters/potato/idle.png",
+      "sha256": "b2969fbb794f0873c3f94e121072f0ebb96e4b82c0d93eb4f2395cf3e644c2a8",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        675,
+        1100
+      ]
+    },
+    {
+      "path": "characters/potato/blink.png",
+      "sha256": "0fe27628d8ddafe7c8c28c31e3c3180a17e34aa0ec16885e231fd3ff856c1820",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        675,
+        1100
+      ]
+    },
+    {
+      "path": "characters/potato/inhale.png",
+      "sha256": "5082991bbe5227b8eb8ec915ea17a100d9a53c92ff7a9444bd20e980652e599c",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        675,
+        1100
+      ]
+    },
+    {
+      "path": "characters/pigeon/idle.png",
+      "sha256": "1d82e22c7453c397915a74673f1d8e2c996a939873975fea1529d57d38a70258",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        625,
+        1140
+      ]
+    },
+    {
+      "path": "characters/pigeon/blink.png",
+      "sha256": "e554e3c7671b9d50a8426c97dd506046d2852e54cd7bdcaef931fbdceb9fea4b",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        625,
+        1140
+      ]
+    },
+    {
+      "path": "characters/pigeon/inhale.png",
+      "sha256": "faf6285669f24f07d7bb2cac1634cc25bfeb7ec6ffaf605c071b177e8df06192",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        625,
+        1140
+      ]
+    },
+    {
+      "path": "characters/duck/idle.png",
+      "sha256": "d2889577b0be8ec9d21d20fdea578749ebbe2e8d2a816a157a2b6b8bd4f97424",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        630,
+        1110
+      ]
+    },
+    {
+      "path": "characters/duck/blink.png",
+      "sha256": "adeefd64f7ce0436a839f44bd3066f3e5264337b85210730ad16e567c1458cd4",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        630,
+        1110
+      ]
+    },
+    {
+      "path": "characters/duck/inhale.png",
+      "sha256": "365a177c7a63598184a684a222ca39b67f91a3c63a157e664e4b11a7303fd7c8",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        630,
+        1110
+      ]
+    },
+    {
+      "path": "characters/rabbit/idle.png",
+      "sha256": "5a92dc67fc2ac5220eec1854e812ca7267a3b56619ac2e2671a797e392ef10bf",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        640,
+        1170
+      ]
+    },
+    {
+      "path": "characters/rabbit/blink.png",
+      "sha256": "aa43fa6714197815369139bc14363343519fbcef0af29f981c65364cc6450773",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        640,
+        1170
+      ]
+    },
+    {
+      "path": "characters/rabbit/inhale.png",
+      "sha256": "e32e0ecb93bcb5b29f594ce1f2c620f0dba9d645b39feeb9c7778283cde54b0a",
+      "width": 1254,
+      "height": 1254,
+      "anchor": [
+        640,
+        1170
+      ]
+    }
+  ]
+}

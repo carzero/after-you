@@ -24,3 +24,11 @@
 파일/해시 목록: ORIGINAL_ART_PARTS_20261121.json. 이전 버전 다운로드도 이 폴더에 보존합니다. 원화는 초안이며 실제 음원은 임시 합성음입니다. 개인 순위·자격증명·캐시는 포함하지 않습니다.
 
 2026-11-23 실행 호환성 수정: [수정된 HTML 다운로드](AFTER_YOU_Playtest_v0.6_fixed.html). 저장 후 실제 브라우저에서 열어 주세요. 메신저·파일 앱의 미리보기에서는 실행되지 않을 수 있습니다.
+
+## 대기 모션 검토판 v0.2 · 2026-11-24
+
+- [검토 도구 ZIP](AFTER_YOU_Idle_Review_v02.zip)
+- [단일 검토 HTML](AFTER_YOU_Idle_Review_v02.html)
+- [미리보기](AFTER_YOU_Idle_Review_v02_preview.png)
+
+발 기준점 조절·100ms 깜빡임·기본 이미지 호흡 비교를 지원합니다. 게임 미적용 검토판이며 원본 PNG 픽셀은 보존했습니다. 자세한 결과는 docs/idle-review/README_KO.md를 확인하세요.

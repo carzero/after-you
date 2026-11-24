@@ -1,0 +1,4 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {idleFrame} from './motion.mjs';
+test('blink closes for 100ms; independent character phases',()=>{assert.equal(idleFrame(3099,0).pose,'idle');assert.equal(idleFrame(3100,0).pose,'blink');assert.equal(idleFrame(3199,0).pose,'blink');assert.equal(idleFrame(3200,0).pose,'idle');assert.equal(idleFrame(3100,1).pose,'idle')});
+test('reduced motion and priority force static idle',()=>{for(const opts of[{reduced:true},{active:false}]){assert.deepEqual(idleFrame(3150,0,opts),{pose:'idle',scaleY:1});assert.deepEqual(idleFrame(1400,0,{...opts,mode:'breathe'}),{pose:'idle',scaleY:1})}});
+test('breathing holds same pose and returns to initial scale',()=>{assert.deepEqual(idleFrame(0,0,{mode:'breathe'}),{pose:'idle',scaleY:1});assert.equal(idleFrame(1400,0,{mode:'breathe'}).scaleY,1.008);assert.equal(idleFrame(2800,0,{mode:'breathe'}).scaleY,1)});

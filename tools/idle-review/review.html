@@ -1,0 +1,39 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AFTER YOU · 대기 모션 작업판</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:20px;background:#eee9dc;color:#233a32;font:16px system-ui}main{max-width:1100px;margin:auto}p{line-height:1.6}button,select,input{font:inherit;min-height:44px;margin:4px;padding:6px}button{cursor:pointer}.note{background:#fff0c7;padding:14px;border-radius:10px}#cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}article{background:white;border-radius:14px;padding:12px}.stage{height:270px;background:#242424;position:relative;overflow:hidden}.stage img{position:absolute;width:250px;height:250px;max-width:none;pointer-events:none;transform-origin:var(--ox) var(--oy)}.stage:after{content:'';position:absolute;left:0;right:0;top:235px;border-top:1px solid #f69f7e;pointer-events:none}.target{position:absolute;left:50%;top:235px;color:#ff694b;transform:translate(-50%,-50%);z-index:2;font-size:24px}.small .stage img{width:80px;height:80px}.small .stage{height:130px}.small .stage:after,.small .target{top:105px}.stage.white{background:white}.stage.mint{background:#badbce}input[type=number]{width:85px}output{display:block;margin:12px 0}label{display:inline-block}small{display:block;line-height:1.6}body{overflow-wrap:anywhere}</style>
+<main><h1>대기 모션 작업판</h1><p class="note">검토용 · 게임에는 미적용. 기본/닫힌 눈/들숨 원본을 그대로 포함했습니다. 기준점은 수동 초안이며 최종 승인값이 아닙니다. 주황 선과 +는 발 위치 비교용입니다.</p>
+<button id="play">재생</button><label>재생 방식 <select id="mode"><option value="blink">눈 깜빡임 · 100ms</option><option value="breathe">기본 이미지 호흡 · 2.8초 / 0.8%</option></select></label><label>수동 포즈 <select id="pose"><option value="idle">기본 대기</option><option value="blink">닫힌 눈</option><option value="inhale">들숨 후보</option></select></label><button id="size">실제 크기 80px / 확대</button><label>배경 <select id="bg"><option value="">검정</option><option value="white">흰색</option><option value="mint">민트</option></select></label><label><input id="reduce" type="checkbox">움직임 줄이기</label><label>상태 우선순위 확인 <select id="activity"><option value="idle">대기</option><option value="jump">이동 중</option><option value="fall">추락 중</option><option value="rescue">구조 중</option></select></label><button id="export">기준점 JSON 저장</button><output id="status" aria-live="polite"></output><section id="cards"></section><p>기준점은 원본 1254×1254 좌표입니다. 포즈를 고른 뒤 숫자로 조절하거나 이미지의 발 사이를 클릭하세요. 모든 포즈에 같은 배율을 쓰며 기준점만 이동합니다. 전신 크로스페이드는 사용하지 않습니다.</p><p>호흡은 신규 들숨 그림을 섞는 대신 기본 이미지를 발 기준으로 최대 0.8% 늘리는 비교안입니다. 이동·추락·구조 선택 시 이 도구의 대기 모션만 정지합니다. 실제 게임 동작 재현은 아닙니다.</p><noscript>Chrome·Edge·Safari에서 열고 JavaScript를 허용해 주세요.</noscript></main>
+<script>
+const DATA=__DATA__;
+__MOTION__
+const $=s=>document.querySelector(s), names={potato:'직장인 감자',pigeon:'넥타이 비둘기',duck:'왕관 오리',rabbit:'근육 토끼'};
+const anchors=structuredClone(DATA.anchors);let running=false,clock=0,last=null;
+$('#reduce').checked=matchMedia('(prefers-reduced-motion: reduce)').matches;
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{$('#reduce').checked=e.matches;render()});
+for(const c of Object.keys(names)){
+ const article=document.createElement('article');article.dataset.character=c;article.innerHTML=`<h2>${names[c]}</h2><div class="stage"><img alt="${names[c]} 포즈"><span class="target">+</span></div><label>발 X <input class="x" type="number" min="0" max="1254"></label><label>발 Y <input class="y" type="number" min="0" max="1254"></label><small class="pose-label"></small>`;
+ $('#cards').append(article);
+ for(const [axis,i]of[['x',0],['y',1]])article.querySelector('.'+axis).onchange=e=>{const v=Number(e.target.value);if(Number.isFinite(v))anchors[c][$('#pose').value][i]=Math.max(0,Math.min(1254,v));render()};
+ article.querySelector('.stage').onclick=e=>{if(running)return;const r=article.querySelector('img').getBoundingClientRect();anchors[c][$('#pose').value]=[Math.round(Math.max(0,Math.min(1254,(e.clientX-r.left)/r.width*1254))),Math.round(Math.max(0,Math.min(1254,(e.clientY-r.top)/r.height*1254)))];render()};
+}
+function render(){
+ const reduced=$('#reduce').checked,active=$('#activity').value==='idle';
+ for(const [i,c]of Object.keys(names).entries()){
+ const article=document.querySelector(`[data-character="${c}"]`),im=article.querySelector('img');
+ const frame=running?idleFrame(clock,i,{reduced,active,mode:$('#mode').value}):{pose:reduced||!active?'idle':$('#pose').value,scaleY:1};
+ const src=DATA.images[c][frame.pose];if(im.getAttribute('src')!==src)im.src=src;
+ const [x,y]=anchors[c][frame.pose],size=document.body.classList.contains('small')?80:250,ground=size===80?105:235;
+ im.style.left=`calc(50% - ${x/1254*size}px)`;im.style.top=`${ground-y/1254*size}px`;im.style.setProperty('--ox',`${x/1254*100}%`);im.style.setProperty('--oy',`${y/1254*100}%`);im.style.transform=`scaleY(${frame.scaleY})`;
+ const edit=anchors[c][$('#pose').value];for(const [j,axis]of['x','y'].entries())article.querySelector('.'+axis).value=edit[j];
+ article.querySelector('.pose-label').textContent=`표시: ${frame.pose} · ${running?'재생 중 기준점 편집은 정지 후 권장':'기준점 조절 가능'}`;
+ }
+ $('#status').textContent=`${running?'재생':'정지'} · ${Math.floor(clock)}ms${reduced?' · 움직임 줄이기: 기본 포즈 고정':''}${!active?' · 다른 동작 우선: 대기 모션 중지':''}`;
+}
+$('#play').onclick=()=>{running=!running;last=null;$('#play').textContent=running?'일시정지':'재생';render()};
+$('#pose').onchange=()=>{running=false;$('#play').textContent='재생';render()};
+for(const id of['mode','activity','reduce'])$('#'+id).onchange=render;
+$('#size').onclick=()=>{document.body.classList.toggle('small');render()};
+$('#bg').onchange=e=>document.querySelectorAll('.stage').forEach(el=>el.className='stage '+e.target.value);
+document.addEventListener('visibilitychange',()=>{last=null});
+$('#export').onclick=()=>{const blob=new Blob([JSON.stringify({status:'manual_draft_review_only',sourceSize:[1254,1254],anchors},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='AFTER_YOU_idle_anchors_draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+function tick(now){if(last!==null&&running&&!document.hidden)clock+=Math.min(now-last,100);last=now;if(running)render();requestAnimationFrame(tick)}render();requestAnimationFrame(tick);
+</script></html>
