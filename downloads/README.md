@@ -1,3 +1,15 @@
+# 최신 게임 v0.8 · 포즈 통합 2026-11-24
+
+기본 28포즈 보정과 등록 좌표, 비둘기·오리·토끼 국소 호흡 적용.
+
+- [게임 실행 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.8.zip)
+- [최신 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.8.zip)
+- [온라인 서버 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Server_v0.8.zip)
+
+게임 ZIP의 압축을 풀고 AFTER_YOU.html을 Chrome·Edge·Safari에서 여세요. GitHub HTML 원본을 바로 열면 소스 코드가 보일 수 있습니다.
+
+이하 이전 버전 자료를 보존합니다.
+
 # 최신 게임 v0.7 · 2026-11-24
 
 대기 중 눈 깜빡임과 미세 호흡을 적용했습니다.

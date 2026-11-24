@@ -1,13 +1,30 @@
+import registered from './pose-catalog.json';
+import { placePose } from './pose-placement.js';
 import { idleMotion, idleRegistration } from './idle-motion.js';
 import { characterLayout, characterRegistration } from './art-layout.js';
 import { catalog } from './art-catalog.js';
 const artUrls=import.meta.glob('../assets/runtime/art-20261121/**/*.webp',{eager:true,query:'?url',import:'default'});
 const idleUrls=import.meta.glob('../assets/runtime/idle-20261124/**/*.webp',{eager:true,query:'?url',import:'default'});
+const registeredUrls=import.meta.glob('../assets/runtime/poses-20261124/**/*.webp',{eager:true,query:'?url',import:'default'});
 const iconSources=import.meta.glob('../assets/runtime/art-20261121/icons/*.svg',{eager:true,query:'?raw',import:'default'});
 export const names={potato:'직장인 감자',pigeon:'넥타이 비둘기',duck:'왕관 오리',rabbit:'근육 토끼'};
 export function artUrl(file){const url=artUrls[`../assets/runtime/art-20261121/${file}.webp`];if(!url)throw Error(`Unknown art: ${file}`);return url;}
 export function icon(id){return iconSources[`../assets/runtime/art-20261121/icons/${id}.svg`].replace(/\srole="img"|\saria-label="[^"]*"|<title>.*?<\/title>/g,'').replace('<svg ','<svg class="ui-icon" aria-hidden="true" focusable="false" ').replaceAll('#514237','currentColor');}
 export function characterArt(id,pose='idle',motion){
+ const asset=registered.assets.find(e=>e.character===id&&e.state===pose);
+ if(asset && !(id==='potato'&&pose==='idle'&&motion)){
+  const idle=registered.assets.find(e=>e.character===id&&e.state==='idle');
+  let file=pose,frame,layoutAsset=asset;
+  if(pose==='idle'&&motion){
+   frame=idleMotion(motion.clock,motion.index,motion.reducedMotion);
+   const phase=motion.clock+motion.index*701;
+   const sequence=[0,1,2,3,4,5,6,5,4,3,2,1];
+   file=frame.pose==='blink'?'blink_closed':motion.reducedMotion?'idle':'breath_0'+sequence[Math.floor(phase/233)%sequence.length];
+   layoutAsset={...asset,groundContact:registered.motion[id].anchor_px};
+  }
+  const p=placePose(layoutAsset,idle,{x:64,y:154},idleRegistration[id].scale);
+  return `<svg class="character-art" data-art-character="${id}" data-pose="${frame?.pose??pose}" data-registered-pose="true" ${frame?'data-idle-motion="true"':''} data-frame="${file}" viewBox="0 0 128 154" aria-hidden="true"><g transform="translate(0 154) scale(1 1) translate(0 -154)"><image href="${registeredUrls[`../assets/runtime/poses-20261124/${id}/${file}.webp`]}" x="${p.left}" y="${p.top}" width="${p.width}" height="${p.height}"/></g></svg>`;
+ }
  if(pose==='idle' && motion){
   const frame=idleMotion(motion.clock,motion.index,motion.reducedMotion),{foot,scale}=idleRegistration[id];
   const url=idleUrls[`../assets/runtime/idle-20261124/${id}/${frame.pose}.webp`];
@@ -27,7 +44,7 @@ export function filesForTheme(theme='ch01'){
  const ui=['title','invitation','stamp','potato','pigeon','duck','rabbit'].map(id=>`ui/${id}`);
  return [...new Set([...characters,...catalog.common,...ui,...Object.values(catalog.chapters[theme])])];
 }
-export async function preloadArt(theme='ch01'){await Promise.all([...filesForTheme(theme).map(artUrl),...Object.values(idleUrls)].map(load));}
+export async function preloadArt(theme='ch01'){await Promise.all([...filesForTheme(theme).map(artUrl),...Object.values(idleUrls),...Object.values(registeredUrls)].map(load));}
 export function chapterFile(theme,role){return catalog.chapters[theme][role];}
 export function sceneArtwork(theme){
  const layers=catalog.chapters[theme];const reserved=['sky','landmark','start','finish','tile','crack','collapse'];

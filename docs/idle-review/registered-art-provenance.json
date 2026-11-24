@@ -1,0 +1,213 @@
+{
+  "status": "integrated_draft_user_approved",
+  "assets": [
+    {
+      "file": "potato/idle",
+      "sha256": "e16b7441d8e6a01b81069d276e5f6283f4baafe65ee215365c87970d69fb387a"
+    },
+    {
+      "file": "potato/jump",
+      "sha256": "dd5a4e931ac8c2d3446ed8ae3b1f30385116cff7393fe57a0c1bda20bc9a0919"
+    },
+    {
+      "file": "potato/land",
+      "sha256": "9ea5f3c6b1c783578a1c26f7131d492884336ee9d42c5109742b4de25569df99"
+    },
+    {
+      "file": "potato/hover",
+      "sha256": "517c9cddc02c2db8425f5d4275d4d8227dd86d1735d6e70a58588bc50f018b54"
+    },
+    {
+      "file": "potato/fall",
+      "sha256": "6ec5713d3baf7d5ced733c28163b1af2aaba3ff52c7b35c04c742e54f078851f"
+    },
+    {
+      "file": "potato/rescued",
+      "sha256": "122527566968801e1795dc13343f2ef76786a6a613cd147b90fe1a0bfed5e881"
+    },
+    {
+      "file": "potato/finished",
+      "sha256": "490269ca20b87a24b0bcfc85d5af500dc649f3b0f8c6e48154396e233c471f15"
+    },
+    {
+      "file": "pigeon/idle",
+      "sha256": "2264580b18e3f59e8b9604208c67c805fc3c91d31278d6a94621d6a818eb9ea8"
+    },
+    {
+      "file": "pigeon/jump",
+      "sha256": "cb6b6a6304a7ac9f7aa4e4efd08941bf35192ff0d0c19762a9f19a551ae779e8"
+    },
+    {
+      "file": "pigeon/land",
+      "sha256": "1275c4fe77ca88b35d1e39019698051bc03e9ce47b078767d5452b0121e0dff5"
+    },
+    {
+      "file": "pigeon/hover",
+      "sha256": "ee4821318a01f0e5cfaded3f7ee9feceaea14e2f432eef663ee93bbf3a1c83fd"
+    },
+    {
+      "file": "pigeon/fall",
+      "sha256": "e6d5f62a21cd95785e8a13f35501ecd4c8cddbd721def35bbfc060e0f0b29369"
+    },
+    {
+      "file": "pigeon/rescued",
+      "sha256": "18da1c411a231ec10b232d1f554dfb614a0e17fe0a922d70645194a82ef64dfe"
+    },
+    {
+      "file": "pigeon/finished",
+      "sha256": "6a0402eb92d4f5009972b892e835930973cabfedcda0752ad487129d5f83819d"
+    },
+    {
+      "file": "duck/idle",
+      "sha256": "9e5aa86e695c6e474ce2c1f12959c976658c36bd23f9c1ba604def9ed5cd12b5"
+    },
+    {
+      "file": "duck/jump",
+      "sha256": "aeae94e594649260a0d3b204b148367c80d42f9bf2371508892a80d7dee46d2a"
+    },
+    {
+      "file": "duck/land",
+      "sha256": "ffce3b62c7f69a8677f887931cc4f4ddfe702d42d43bafffe57e73aad9ef7de1"
+    },
+    {
+      "file": "duck/hover",
+      "sha256": "64b95da7d80de910558342f0eb79cb12a511c14c648468ab7b261877d5467905"
+    },
+    {
+      "file": "duck/fall",
+      "sha256": "db0dd1edabb4e4372a2676804dfeb49f1b6afe97ea409b73ef13607afa944c6b"
+    },
+    {
+      "file": "duck/rescued",
+      "sha256": "05fc56d4247f90339178f3839bfdeb4e7cbc50077cf02c63120b06520b8cca86"
+    },
+    {
+      "file": "duck/finished",
+      "sha256": "786571dbcfdc2407972560510dde36390d34125b779832cf092efe294b9990ca"
+    },
+    {
+      "file": "rabbit/idle",
+      "sha256": "5920da4a1b0fca03dbfa09b31f4d0186d0f89b682bc269429ad7a616ac511034"
+    },
+    {
+      "file": "rabbit/jump",
+      "sha256": "79e593f0bfedac1852509f02f488a2be59d6a046f4d6458a74b3f42bfaf8a26c"
+    },
+    {
+      "file": "rabbit/land",
+      "sha256": "ee6e7fbe4c8cb5dc8eb1e91d5acddeb3582756963e5d8f6b329d2c1560040639"
+    },
+    {
+      "file": "rabbit/hover",
+      "sha256": "070abb59371e88b7e68a949220ddd95d1c615f81b78235013fea21b28ec29b7f"
+    },
+    {
+      "file": "rabbit/fall",
+      "sha256": "c00a058e0e5e423bd4b69c8b456e40e4da53c21258c7eed6f57234d80f8f3fc4"
+    },
+    {
+      "file": "rabbit/rescued",
+      "sha256": "91d1dae4cffb179551c522a5b674c26f65c8a1c95f3b57b68a4f1680d460207f"
+    },
+    {
+      "file": "rabbit/finished",
+      "sha256": "82d98f2544b0d03861d44c0c91d58a6f01f909459df9649d5a2a877a26ce33e1"
+    },
+    {
+      "file": "pigeon/blink_closed",
+      "sha256": "107e126bf5d1044befedd5f3df296515428715e6463698de31a04a6ef981fe6e"
+    },
+    {
+      "file": "pigeon/breath_00",
+      "sha256": "2264580b18e3f59e8b9604208c67c805fc3c91d31278d6a94621d6a818eb9ea8"
+    },
+    {
+      "file": "pigeon/breath_01",
+      "sha256": "db352d85115ad9daa16c49ec8ab36a8cd9bb797bb2fbd3e69a4d0f25d418592b"
+    },
+    {
+      "file": "pigeon/breath_02",
+      "sha256": "614076bd9454133b3dc944510fc5c8ffa3cd78e19ceba727621fc29f417b20e4"
+    },
+    {
+      "file": "pigeon/breath_03",
+      "sha256": "4daa5d4bc460b48f15008e51def946d2f7ad65a250ca7059349cdf42ac305d56"
+    },
+    {
+      "file": "pigeon/breath_04",
+      "sha256": "98044c9f4e80affe14cc7b534673cd0dda57539a427165d533d4030d2e535ae5"
+    },
+    {
+      "file": "pigeon/breath_05",
+      "sha256": "772cd5aebca8c2c0eae533d7243a939813330b8c1483ab958312c43a00ce72aa"
+    },
+    {
+      "file": "pigeon/breath_06",
+      "sha256": "2a8f3f9284d9fb30a9d42010500ea74d1b85e24cf289e7c051f63fa2e9d8fd21"
+    },
+    {
+      "file": "duck/blink_closed",
+      "sha256": "df8f91c06a82abd4e6faa1a125749fab04b3e313890a3dfbf90a4783c54e6085"
+    },
+    {
+      "file": "duck/breath_00",
+      "sha256": "9e5aa86e695c6e474ce2c1f12959c976658c36bd23f9c1ba604def9ed5cd12b5"
+    },
+    {
+      "file": "duck/breath_01",
+      "sha256": "6387846eb86d61ad7dbaf5ce9cfcc779ce2b5774de19c21072b1ef4710172565"
+    },
+    {
+      "file": "duck/breath_02",
+      "sha256": "4308cfc2eb531a8368f11bfd19e5358d032140f1cfd53209e5ed34fa7319b400"
+    },
+    {
+      "file": "duck/breath_03",
+      "sha256": "055121512972b0204c9bab7ae89a0379e53d2e96142e6066e400956c998a9b2d"
+    },
+    {
+      "file": "duck/breath_04",
+      "sha256": "30c7c8f2a8ab5eeb890731b8dc05af88cbc115ee04028542a1f63eeb3dfcc2d8"
+    },
+    {
+      "file": "duck/breath_05",
+      "sha256": "33287b6cfa7f1f127bf2895dadd3fe953168531dfaa7eaf5faae5671ad0efa37"
+    },
+    {
+      "file": "duck/breath_06",
+      "sha256": "e35af85f405b0535f01f13d89fd8429626bb14a864467e8169cff477b41d162e"
+    },
+    {
+      "file": "rabbit/blink_closed",
+      "sha256": "232a54b37e0c03131bbecd7f51d56a0a65b7d288c1fad75ff1ba88d7f38a63f3"
+    },
+    {
+      "file": "rabbit/breath_00",
+      "sha256": "5920da4a1b0fca03dbfa09b31f4d0186d0f89b682bc269429ad7a616ac511034"
+    },
+    {
+      "file": "rabbit/breath_01",
+      "sha256": "ab6418b9e6447638bed75f90e1c81ea2c40c248a1f37eec985bfb7291980e180"
+    },
+    {
+      "file": "rabbit/breath_02",
+      "sha256": "d86657ac0d8685c21cef618ee07f3f733bc2b9d256563a95e637b97eca54e75e"
+    },
+    {
+      "file": "rabbit/breath_03",
+      "sha256": "6d24a268b1926f3ff107969babfccbcb3eb05e014222ca338ee2005688592d11"
+    },
+    {
+      "file": "rabbit/breath_04",
+      "sha256": "468f23d1d619788c6b497e0808714aaf8d3a6c4d7e61116effb92ee3a7a4f5fb"
+    },
+    {
+      "file": "rabbit/breath_05",
+      "sha256": "ca8fa0bff80cb275a397363bdedb48412c4db0e1dc3b94df2487ac8edb3cf2c3"
+    },
+    {
+      "file": "rabbit/breath_06",
+      "sha256": "e07e5fe373add39e1b710f6e1177e498ed49ff928d111daa20db029b2f6f4a63"
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+{
+  "assets": [
+    {
+      "character": "potato",
+      "state": "idle",
+      "path": "assets/potato/idle.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        871.53
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": [
+        670.89,
+        1103.52
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "e16b7441d8e6a01b81069d276e5f6283f4baafe65ee215365c87970d69fb387a"
+    },
+    {
+      "character": "potato",
+      "state": "jump",
+      "path": "assets/potato/jump.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        840.18
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "dd5a4e931ac8c2d3446ed8ae3b1f30385116cff7393fe57a0c1bda20bc9a0919"
+    },
+    {
+      "character": "potato",
+      "state": "land",
+      "path": "assets/potato/land.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        884.07
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": [
+        658.35,
+        1084.71
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "9ea5f3c6b1c783578a1c26f7131d492884336ee9d42c5109742b4de25569df99"
+    },
+    {
+      "character": "potato",
+      "state": "hover",
+      "path": "assets/potato/hover.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        652.08,
+        884.07
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "517c9cddc02c2db8425f5d4275d4d8227dd86d1735d6e70a58588bc50f018b54"
+    },
+    {
+      "character": "potato",
+      "state": "fall",
+      "path": "assets/potato/fall.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        664.62,
+        877.8
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "6ec5713d3baf7d5ced733c28163b1af2aaba3ff52c7b35c04c742e54f078851f"
+    },
+    {
+      "character": "potato",
+      "state": "rescued",
+      "path": "assets/potato/rescued.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        871.53
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "122527566968801e1795dc13343f2ef76786a6a613cd147b90fe1a0bfed5e881"
+    },
+    {
+      "character": "potato",
+      "state": "finished",
+      "path": "assets/potato/finished.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        652.08,
+        871.53
+      ],
+      "torsoWidth": 589.38,
+      "groundContact": [
+        670.89,
+        1103.52
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "490269ca20b87a24b0bcfc85d5af500dc649f3b0f8c6e48154396e233c471f15"
+    },
+    {
+      "character": "pigeon",
+      "state": "idle",
+      "path": "assets/pigeon/idle.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        1022.01
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": [
+        620.73,
+        1128.6
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "2264580b18e3f59e8b9604208c67c805fc3c91d31278d6a94621d6a818eb9ea8"
+    },
+    {
+      "character": "pigeon",
+      "state": "jump",
+      "path": "assets/pigeon/jump.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        959.31
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "cb6b6a6304a7ac9f7aa4e4efd08941bf35192ff0d0c19762a9f19a551ae779e8"
+    },
+    {
+      "character": "pigeon",
+      "state": "land",
+      "path": "assets/pigeon/land.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        1040.82
+      ],
+      "torsoWidth": 658.35,
+      "groundContact": [
+        620.73,
+        1090.98
+      ],
+      "scale": 0.971429,
+      "status": "visual_estimate_review_required",
+      "sha256": "1275c4fe77ca88b35d1e39019698051bc03e9ce47b078767d5452b0121e0dff5"
+    },
+    {
+      "character": "pigeon",
+      "state": "hover",
+      "path": "assets/pigeon/hover.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        1022.01
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "ee4821318a01f0e5cfaded3f7ee9feceaea14e2f432eef663ee93bbf3a1c83fd"
+    },
+    {
+      "character": "pigeon",
+      "state": "fall",
+      "path": "assets/pigeon/fall.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        620.73,
+        1003.2
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "e6d5f62a21cd95785e8a13f35501ecd4c8cddbd721def35bbfc060e0f0b29369"
+    },
+    {
+      "character": "pigeon",
+      "state": "rescued",
+      "path": "assets/pigeon/rescued.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        1022.01
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "18da1c411a231ec10b232d1f554dfb614a0e17fe0a922d70645194a82ef64dfe"
+    },
+    {
+      "character": "pigeon",
+      "state": "finished",
+      "path": "assets/pigeon/finished.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        1028.28
+      ],
+      "torsoWidth": 639.54,
+      "groundContact": [
+        633.27,
+        1128.6
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "6a0402eb92d4f5009972b892e835930973cabfedcda0752ad487129d5f83819d"
+    },
+    {
+      "character": "duck",
+      "state": "idle",
+      "path": "assets/duck/idle.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        639.54,
+        971.85
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": [
+        645.81,
+        1103.52
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "9e5aa86e695c6e474ce2c1f12959c976658c36bd23f9c1ba604def9ed5cd12b5"
+    },
+    {
+      "character": "duck",
+      "state": "jump",
+      "path": "assets/duck/jump.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        664.62,
+        946.77
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "aeae94e594649260a0d3b204b148367c80d42f9bf2371508892a80d7dee46d2a"
+    },
+    {
+      "character": "duck",
+      "state": "land",
+      "path": "assets/duck/land.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        639.54,
+        984.39
+      ],
+      "torsoWidth": 570.57,
+      "groundContact": [
+        652.08,
+        1097.25
+      ],
+      "scale": 0.967033,
+      "status": "visual_estimate_review_required",
+      "sha256": "ffce3b62c7f69a8677f887931cc4f4ddfe702d42d43bafffe57e73aad9ef7de1"
+    },
+    {
+      "character": "duck",
+      "state": "hover",
+      "path": "assets/duck/hover.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        639.54,
+        978.12
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "64b95da7d80de910558342f0eb79cb12a511c14c648468ab7b261877d5467905"
+    },
+    {
+      "character": "duck",
+      "state": "fall",
+      "path": "assets/duck/fall.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        990.66
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "db0dd1edabb4e4372a2676804dfeb49f1b6afe97ea409b73ef13607afa944c6b"
+    },
+    {
+      "character": "duck",
+      "state": "rescued",
+      "path": "assets/duck/rescued.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        645.81,
+        996.93
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "05fc56d4247f90339178f3839bfdeb4e7cbc50077cf02c63120b06520b8cca86"
+    },
+    {
+      "character": "duck",
+      "state": "finished",
+      "path": "assets/duck/finished.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        639.54,
+        978.12
+      ],
+      "torsoWidth": 551.76,
+      "groundContact": [
+        652.08,
+        1103.52
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "786571dbcfdc2407972560510dde36390d34125b779832cf092efe294b9990ca"
+    },
+    {
+      "character": "rabbit",
+      "state": "idle",
+      "path": "assets/rabbit/idle.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        965.58
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": [
+        639.54,
+        1166.22
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "5920da4a1b0fca03dbfa09b31f4d0186d0f89b682bc269429ad7a616ac511034"
+    },
+    {
+      "character": "rabbit",
+      "state": "jump",
+      "path": "assets/rabbit/jump.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        627,
+        915.42
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "79e593f0bfedac1852509f02f488a2be59d6a046f4d6458a74b3f42bfaf8a26c"
+    },
+    {
+      "character": "rabbit",
+      "state": "land",
+      "path": "assets/rabbit/land.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        1015.74
+      ],
+      "torsoWidth": 526.68,
+      "groundContact": [
+        639.54,
+        1128.6
+      ],
+      "scale": 0.97619,
+      "status": "visual_estimate_review_required",
+      "sha256": "ee6e7fbe4c8cb5dc8eb1e91d5acddeb3582756963e5d8f6b329d2c1560040639"
+    },
+    {
+      "character": "rabbit",
+      "state": "hover",
+      "path": "assets/rabbit/hover.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        959.31
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "070abb59371e88b7e68a949220ddd95d1c615f81b78235013fea21b28ec29b7f"
+    },
+    {
+      "character": "rabbit",
+      "state": "fall",
+      "path": "assets/rabbit/fall.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        971.85
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "c00a058e0e5e423bd4b69c8b456e40e4da53c21258c7eed6f57234d80f8f3fc4"
+    },
+    {
+      "character": "rabbit",
+      "state": "rescued",
+      "path": "assets/rabbit/rescued.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        639.54,
+        1028.28
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": null,
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "91d1dae4cffb179551c522a5b674c26f65c8a1c95f3b57b68a4f1680d460207f"
+    },
+    {
+      "character": "rabbit",
+      "state": "finished",
+      "path": "assets/rabbit/finished.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bodyReference": [
+        633.27,
+        965.58
+      ],
+      "torsoWidth": 514.14,
+      "groundContact": [
+        645.81,
+        1166.22
+      ],
+      "scale": 1,
+      "status": "visual_estimate_review_required",
+      "sha256": "82d98f2544b0d03861d44c0c91d58a6f01f909459df9649d5a2a877a26ce33e1"
+    }
+  ],
+  "motion": {
+    "pigeon": {
+      "canvas": [
+        1254,
+        1254
+      ],
+      "anchor_px": [
+        618,
+        1144
+      ],
+      "foot_contacts_px": [
+        [
+          482,
+          1144
+        ],
+        [
+          755,
+          1142
+        ]
+      ],
+      "foot_rois": [
+        [
+          360,
+          580
+        ],
+        [
+          620,
+          870
+        ]
+      ],
+      "foot_y_roi": [
+        1030,
+        1190
+      ],
+      "cleanup": [
+        {
+          "state": "idle",
+          "removed_nonzero_alpha_pixels": 5044,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "blink",
+          "removed_nonzero_alpha_pixels": 5988,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "inhale",
+          "removed_nonzero_alpha_pixels": 8413,
+          "main_interior_preserved": true
+        }
+      ],
+      "status": "review_candidate_not_game_verified",
+      "blink_eyes_rois": [
+        [
+          440,
+          235,
+          650,
+          445
+        ],
+        [
+          630,
+          195,
+          815,
+          380
+        ]
+      ],
+      "breath_method": "local deformation of original idle, 7 levels; alpha fixed",
+      "sequence": [
+        "breath_00.png",
+        "breath_01.png",
+        "breath_02.png",
+        "breath_03.png",
+        "breath_04.png",
+        "breath_05.png",
+        "breath_06.png",
+        "breath_05.png",
+        "breath_04.png",
+        "breath_03.png",
+        "breath_02.png",
+        "breath_01.png"
+      ],
+      "step_ms_proposal": 233,
+      "closed_eye_ms_proposal": 100
+    },
+    "duck": {
+      "canvas": [
+        1254,
+        1254
+      ],
+      "anchor_px": [
+        648,
+        1115
+      ],
+      "foot_contacts_px": [
+        [
+          552,
+          1115
+        ],
+        [
+          744,
+          1104
+        ]
+      ],
+      "foot_rois": [
+        [
+          420,
+          650
+        ],
+        [
+          670,
+          850
+        ]
+      ],
+      "foot_y_roi": [
+        1020,
+        1170
+      ],
+      "cleanup": [
+        {
+          "state": "idle",
+          "removed_nonzero_alpha_pixels": 6712,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "blink",
+          "removed_nonzero_alpha_pixels": 8388,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "inhale",
+          "removed_nonzero_alpha_pixels": 8541,
+          "main_interior_preserved": true
+        }
+      ],
+      "status": "review_candidate_not_game_verified",
+      "blink_eyes_rois": [
+        [
+          592,
+          335,
+          760,
+          500
+        ],
+        [
+          735,
+          315,
+          858,
+          460
+        ]
+      ],
+      "breath_method": "local deformation of original idle, 7 levels; alpha fixed",
+      "sequence": [
+        "breath_00.png",
+        "breath_01.png",
+        "breath_02.png",
+        "breath_03.png",
+        "breath_04.png",
+        "breath_05.png",
+        "breath_06.png",
+        "breath_05.png",
+        "breath_04.png",
+        "breath_03.png",
+        "breath_02.png",
+        "breath_01.png"
+      ],
+      "step_ms_proposal": 233,
+      "closed_eye_ms_proposal": 100
+    },
+    "rabbit": {
+      "canvas": [
+        1254,
+        1254
+      ],
+      "anchor_px": [
+        640,
+        1174
+      ],
+      "foot_contacts_px": [
+        [
+          487,
+          1174
+        ],
+        [
+          793,
+          1168
+        ]
+      ],
+      "foot_rois": [
+        [
+          370,
+          600
+        ],
+        [
+          680,
+          900
+        ]
+      ],
+      "foot_y_roi": [
+        1070,
+        1220
+      ],
+      "cleanup": [
+        {
+          "state": "idle",
+          "removed_nonzero_alpha_pixels": 11979,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "blink",
+          "removed_nonzero_alpha_pixels": 8323,
+          "main_interior_preserved": true
+        },
+        {
+          "state": "inhale",
+          "removed_nonzero_alpha_pixels": 12947,
+          "main_interior_preserved": true
+        }
+      ],
+      "status": "review_candidate_not_game_verified",
+      "blink_eyes_rois": [
+        [
+          575,
+          365,
+          685,
+          455
+        ],
+        [
+          675,
+          350,
+          763,
+          440
+        ]
+      ],
+      "breath_method": "local deformation of original idle, 7 levels; alpha fixed",
+      "sequence": [
+        "breath_00.png",
+        "breath_01.png",
+        "breath_02.png",
+        "breath_03.png",
+        "breath_04.png",
+        "breath_05.png",
+        "breath_06.png",
+        "breath_05.png",
+        "breath_04.png",
+        "breath_03.png",
+        "breath_02.png",
+        "breath_01.png"
+      ],
+      "step_ms_proposal": 233,
+      "closed_eye_ms_proposal": 100
+    }
+  }
+}

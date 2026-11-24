@@ -10,14 +10,14 @@ for(const id of ['duck','rabbit'])test(`${id}: aspect-correct art, VFX, rescue a
   const ratio=await player.locator('image').evaluate(el=>+el.getAttribute('width')/+el.getAttribute('height'));
   // The approved idle pack uses square 1254px originals for both characters.
   expect(ratio).toBeCloseTo(1,5);
-  await expect(player.locator('image')).toHaveAttribute('href',new RegExp(`idle-20261124/${id}/idle.*webp`));
+  await expect(player.locator('image')).toHaveAttribute('href',new RegExp(`poses-20261124/${id}/(?:idle|breath_0[0-6]|blink_closed).*webp`));
   await page.screenshot({path:`test-results/v03-${id}-idle-320.png`});
   await page.locator('#left').click();await expect(page.locator('#world-effects .takeoff')).toHaveCount(1);
   await page.clock.runFor(440);await expect(player.locator('[data-pose="land"]')).toBeVisible();
   await expect(page.locator('#world-effects .landing')).toHaveCount(1);await expect(page.locator('#left')).toBeEnabled();
   if(id==='duck'){
     const landRatio=await player.locator('image').evaluate(el=>+el.getAttribute('width')/+el.getAttribute('height'));
-    expect(landRatio).toBeCloseTo(1312/1199,5);
+    expect(landRatio).toBeCloseTo(1,5);
   }
   const effectBefore=await page.locator('#world-effects').innerHTML();await page.locator('#pause').click();await page.clock.runFor(1000);expect(await page.locator('#world-effects').innerHTML()).toBe(effectBefore);
   await page.locator('#resume').click();await page.clock.runFor(180);await expect(page.locator('#world-effects .landing')).toHaveCount(0);
