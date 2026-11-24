@@ -18,6 +18,13 @@ try {
   html=html.replace(/<script[^>]+src="[^"]+"[^>]*><\/script>/,()=>'<script>document.addEventListener("DOMContentLoaded",function(){'+js.replaceAll('</script','<\\/script')+'});</script>');
   html=html.replace(/<link[^>]+href="[^"]+\.css"[^>]*>/,()=>'<style>'+css+'</style>');
   await fs.writeFile(path.join(out,`AFTER_YOU_Playtest_${version}.html`),html);
+  const practiceDir=path.join(temp,'AFTER_YOU_Playtest_'+version);
+  await fs.mkdir(practiceDir,{recursive:true});
+  await fs.writeFile(path.join(practiceDir,'AFTER_YOU.html'),html);
+  await fs.writeFile(path.join(practiceDir,'READ_ME_KO.txt'),'1. ZIP 파일을 다운로드합니다.\n2. 압축을 모두 풉니다.\n3. AFTER_YOU.html을 Chrome, Edge 또는 Safari에서 엽니다.\n\nGitHub의 HTML 원본 링크는 게임 대신 소스 코드를 표시할 수 있습니다.\n파일 미리보기에서는 게임이 실행되지 않을 수 있으니 실제 브라우저에서 열어 주세요.\n이 파일은 오프라인 연습판입니다. 온라인 순위는 서버 배포판에서 지원합니다.\n');
+  const practiceZip=path.join(out,`AFTER_YOU_Playtest_${version}.zip`);
+  await fs.rm(practiceZip,{force:true});
+  execFileSync('zip',['-qr',practiceZip,path.basename(practiceDir)],{cwd:temp});
   // Normal static build for the online server; the exported practice HTML never submits records.
   await build({root});
   const name=`AFTER_YOU_Server_${version}`,pack=path.join(temp,name);

@@ -2,6 +2,8 @@
 
 대기 중 눈 깜빡임과 미세 호흡을 적용했습니다.
 
+**[게임 실행 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.7.zip)** → 압축을 풀고 `AFTER_YOU.html`을 브라우저에서 여세요. GitHub HTML 원본 링크를 바로 열면 코드가 텍스트로 보일 수 있습니다.
+
 - [게임 HTML 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.7.html)
 - [실행 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.7.zip)
 - [온라인 서버 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Server_v0.7.zip)
