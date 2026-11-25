@@ -1,0 +1,26 @@
+{
+  "id": "https://love-fate-premium.kaelsiem.workers.dev/",
+  "name": "LOVE FATE",
+  "short_name": "LOVE FATE",
+  "lang": "ko-KR",
+  "description": "카드의 이야기와 상대 성향을 함께 읽는 연애 타로",
+  "start_url": "https://love-fate-premium.kaelsiem.workers.dev/?source=msstore",
+  "scope": "https://love-fate-premium.kaelsiem.workers.dev/",
+  "display": "standalone",
+  "theme_color": "#180d23",
+  "background_color": "#120b1d",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/carzero/after-you/love-fate-store-assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/carzero/after-you/love-fate-store-assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
