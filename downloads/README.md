@@ -1,3 +1,9 @@
+# 실제 게임 v0.9.3 · 타이틀 A안 적용
+
+[Cloudflare 업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.9.3.zip) · [오프라인 실행 ZIP](AFTER_YOU_Playtest_v0.9.3.zip) · [최신 소스 ZIP](AFTER_YOU_Source_v0.9.3.zip)
+
+배포 ZIP을 압축 해제하고 기존 인증된 PC에서 UPDATE.cmd를 실행하세요.
+
 # 타이틀 시안 v02
 
 [타이틀 시안 ZIP](AFTER_YOU_Title_Concepts_v02.zip) · [비교 이미지](AFTER_YOU_Title_Concepts_v02.png)

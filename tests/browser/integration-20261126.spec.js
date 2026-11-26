@@ -34,7 +34,7 @@ test('descent, unsafe outcome, actor mask, result and retry retain the game time
 });
 test('new title and dedicated edge clouds keep the center clear at 320px',async({page})=>{
  await page.setViewportSize({width:320,height:568});await page.route('**/api/**',r=>r.fulfill({status:404,contentType:'application/json',body:'{}'}));await page.goto('/');
- await expect(page.locator('.title-art')).toHaveAttribute('src',/integration-20261126\/ui\/title/);await expect(page.locator('.lobby-logo')).toHaveAttribute('src',/integration-20261126\/ui\/logo/);
+ await expect(page.locator('#lobby-title')).toHaveText('먼저가세요.');await expect(page.locator('.title-bubble.first')).toHaveText('먼저 가시죠.');await expect(page.locator('.title-potato')).toHaveAttribute('src',/characters\/potato\/after_you/);
  const startBox=await page.locator('#start').boundingBox();expect(startBox.y+startBox.height).toBeLessThanOrEqual(568);
  await page.screenshot({path:'test-results/integrated-title-320.png'});await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();
  for(const theme of ['ch04','ch05']){await page.locator('#settings-open').click();await page.locator('#theme-select').selectOption(theme);await expect(page.locator('#theme-select')).toBeEnabled();await page.getByRole('button',{name:'설정 완료'}).click();await expect(page.locator('.back_cloud_3')).toHaveCount(0);await expect(page.locator('.front_left')).toHaveAttribute('src',new RegExp(`clouds/${theme}/front_left`));

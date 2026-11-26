@@ -5,9 +5,9 @@ test('mobile game: hint, guarded movement, pause, fall, retry and settings persi
   const errors = []; page.on('pageerror',e=>errors.push(e.message));
   await page.addInitScript(() => { Math.random = () => 0; });
   await page.goto('/');
-  await expect(page.getByRole('heading', {name:'소원 하나, 용기 한 걸음.'})).toBeVisible();
+  await expect(page.locator('#lobby-title')).toBeVisible();
   await expect(page.locator('[data-stage="1"]')).toBeDisabled();
-  await page.getByRole('button', {name:'초대장 들고 출발하기'}).click();
+  await page.getByRole('button', {name:'제가 먼저 갈게요 ↗'}).click();
   await expect(page.locator('.tile.hint')).toHaveCount(4);
   await expect(page.locator('#hint-map span')).toHaveCount(8);
   await expect(page.locator('#left')).toBeDisabled();
