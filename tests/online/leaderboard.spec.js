@@ -6,7 +6,7 @@ test('independent browsers submit server-validated records and see the same shar
     const failures=[];for(const page of[a,b])page.on('pageerror',e=>failures.push(e.message));
     async function win(page,name,interrupt=false){
       if(interrupt){let first=true;await page.route('**/checkpoint',async route=>{if(first){first=false;await route.fetch();await route.abort('failed');}else await route.continue();});}
-      await page.goto('http://127.0.0.1:8791');await expect(page.locator('#online-mode')).toBeEnabled();await expect(page.locator('#online-mode')).toBeChecked();
+      await page.goto(process.env.AFTER_YOU_TEST_URL||'http://127.0.0.1:8791');await expect(page.locator('#online-mode')).toBeEnabled();await expect(page.locator('#online-mode')).toBeChecked();
       await page.locator('#nickname').fill(name);await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();
       const route=await page.locator('#hint-map span').allTextContents();expect(route.length).toBe(8);
       await expect(page.locator('#left')).toBeEnabled({timeout:5000});

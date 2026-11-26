@@ -41,3 +41,5 @@ v0.4 온라인판: `npm run build` 후 `npm run serve`로 같은 주소의 게�
 설정 → 배경 테마에서 5개 배경을 선택할 수 있습니다. 기본값은 다섯 스테이지마다 배경만 바뀝니다. 최신 적용 범위와 미사용 원화는 [11월 21일 통합 기록](docs/ART_INTEGRATION_20261121.md)을 참고하세요.
 
 최신 통합: 2026-11-26 배경·전용 구름 v03·타이틀/결과·착지 직전 포즈·구조 가림·실제 BGM/효과음을 적용했습니다. `docs/INTEGRATION_20261126.md`를 확인하세요. 실행 ZIP과 최신 소스는 downloads/README.md의 v0.9 링크를 사용하세요.
+
+Cloudflare 배포는 `docs/CLOUDFLARE.md`를 참고하세요. 게임과 순위 서버를 Workers + SQLite Durable Object로 배포하도록 준비되어 있습니다. 배포 준비 코드가 있다는 것과 공개 배포 완료는 별개입니다.

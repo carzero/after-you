@@ -14,11 +14,16 @@
     "serve": "node server/index.mjs",
     "dev:online": "vite --host 0.0.0.0",
     "test:online": "npm run build && playwright test -c playwright.online.config.js",
-    "export:playtest": "node scripts/export-playtest.mjs"
+    "export:playtest": "node scripts/export-playtest.mjs",
+    "dev:cloudflare": "wrangler dev --port 8792",
+    "deploy:cloudflare": "npm run build && wrangler deploy",
+    "check:cloudflare": "npm run build && wrangler deploy --dry-run --outdir /tmp/after-you-worker-dry-run",
+    "test:cloudflare": "npm run build && playwright test -c playwright.cloudflare.config.js"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",
     "sharp": "0.34.5",
-    "vite": "7.3.1"
+    "vite": "7.3.1",
+    "wrangler": "4.168.0"
   }
 }

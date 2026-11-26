@@ -72,3 +72,7 @@ GitHub 다운로드 목록: https://github.com/carzero/after-you/tree/handoff/v0
 ## 최신 게임 v0.9 · 2026-11-26
 
 `docs/INTEGRATION_20261126.md`가 최신 인계 기준입니다. 5개 배경 레이어와 4/5챕터 전용 구름 v03, 새 타이틀·결과·해금 표시, descent 4장, 구조 가림 및 실제 음원 33종을 통합했습니다. 무한 진행과 서버 순위 규칙은 유지합니다. 실행은 AFTER_YOU_Playtest_v0.9.zip의 압축을 풀고 AFTER_YOU.html을 여세요. 전체 소스는 AFTER_YOU_Source_v0.9.zip이며 실행용 WebP/MP3가 포함되어 있어 원본 아트·음원 ZIP 없이 빌드할 수 있습니다. 기록·자격증명·캐시는 포함하지 않습니다. 이전 문서의 다운로드 버전은 당시 기록입니다.
+
+## Cloudflare 배포 준비 · 2026-11-26
+
+`docs/CLOUDFLARE.md`, `wrangler.jsonc`, `cloudflare/worker.js`가 추가됐습니다. 게임은 v0.9이며 Cloudflare용 영구 순위 API를 준비했습니다. `server/validate-run.mjs`를 Node와 Worker가 공유합니다. 실제 배포 여부는 배포 URL/Cloudflare CLI 성공 결과로 확인해야 하며 준비 시점에는 인증·API 네트워크 접근이 미설정입니다.

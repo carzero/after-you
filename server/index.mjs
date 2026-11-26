@@ -3,8 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { randomBytes, randomUUID } from 'node:crypto';
-import { Game } from '../src/game.js';
-import { heightReached, restartStage, seededRandom } from '../src/progression.js';
+import { validateCheckpoint } from './validate-run.mjs';
 const fail = (status,message) => Object.assign(new Error(message),{status});
 export function createApp({dataDir = process.env.DATA_DIR || path.resolve('.data'), clock = Date.now, seed = () => randomBytes(4).readUInt32LE(), dist = path.resolve('dist')} = {}) {
   fs.mkdirSync(dataDir,{recursive:true});
@@ -50,21 +49,10 @@ export function createApp({dataDir = process.env.DATA_DIR || path.resolve('.data
         if(typeof input.token!=='string')throw fail(400,'스테이지 토큰이 필요합니다.');
         if(input.token===run.previousToken)return json(200,run.response); // lost-response retries are idempotent
         if(input.token!==run.token)throw fail(409,'이미 처리된 스테이지입니다.');
-        if(!Array.isArray(input.moves)||input.moves.length>30||!Number.isFinite(input.end)||input.end<0||input.end>65000)throw fail(400,'잘못된 이동 기록입니다.');
-        if(run.virtual+input.end>now-run.created+250)throw fail(422,'실제 시간보다 빠른 기록은 등록할 수 없습니다.');
-        const g=new Game({stage:run.stage,random:seededRandom(run.seed)});let at=0;
-        for(const move of input.moves){
-          if(!move||!Number.isFinite(move.at)||move.at<at||move.at>input.end||![0,1].includes(move.side))throw fail(422,'이동 순서가 올바르지 않습니다.');
-          g.advance(move.at-at);at=move.at;if(!g.move(move.side))throw fail(422,'중복되거나 너무 빠른 이동입니다.');
-        }
-        g.advance(input.end-at);
-        if(input.skipped===true)g.skipRescue();
-        if(!g.result)throw fail(422,'아직 끝나지 않은 스테이지입니다.');
-        const nextPeak=Math.max(run.peak,heightReached(g));
-        record({...run,peak:nextPeak});
-        run.peak=nextPeak;run.virtual+=input.end;run.last=now;
-        const outcome=g.result,from=run.stage,oldToken=run.token;
-        run.stage=restartStage(run.stage,outcome);
+        const verified=validateCheckpoint(run,input,now);
+        record({...run,peak:verified.peak});
+        const {outcome,from}=verified,oldToken=run.token;
+        Object.assign(run,verified);
         const response={outcome,from,...newStage(run)};
         run.previousToken=oldToken;run.response=response;
         return json(200,response);
@@ -74,7 +62,7 @@ export function createApp({dataDir = process.env.DATA_DIR || path.resolve('.data
       const target=path.resolve(dist,'.'+(decoded==='/'?'/index.html':decoded));
       if(!target.startsWith(dist+path.sep))throw fail(403,'접근할 수 없습니다.');
       if(!fs.existsSync(target)||!fs.statSync(target).isFile())throw fail(404,'파일을 찾을 수 없습니다.');
-      const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.png':'image/png'};
+      const types={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.webp':'image/webp','.png':'image/png','.mp3':'audio/mpeg','.ogg':'audio/ogg','.wav':'audio/wav'};
       res.writeHead(200,{'Content-Type':types[path.extname(target)]||'application/octet-stream','X-Content-Type-Options':'nosniff','Cache-Control':target.endsWith('.html')?'no-cache':'public, max-age=3600'});
       if(req.method==='HEAD')res.end();else fs.createReadStream(target).pipe(res);
     }catch(e){json(e.status||500,{error:e.status?e.message:'서버 처리에 실패했습니다.'});}

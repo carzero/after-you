@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-26",
+  "worker_name": "after-you",
+  "unit_api_cases_passed": 32,
+  "workerd_browser_case_passed": 1,
+  "node_browser_case_passed": 1,
+  "dry_run": "passed; ASSETS and SQLite RankingStore bindings verified",
+  "production_deployed": false,
+  "production_url": null,
+  "blocked_by": [
+    "CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID not configured",
+    "api.cloudflare.com CONNECT blocked by environment proxy (403)"
+  ]
+}

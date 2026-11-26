@@ -6,3 +6,11 @@ test-results/
 .data/
 
 test-results-online/
+
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+
+test-results-cloudflare/
