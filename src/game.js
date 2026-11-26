@@ -54,7 +54,7 @@ export class Game {
   awardItem(actor) {
     if(actor.row!==5 || this.stage<=this.rewardCeiling) return;
     this.rewardCeiling=this.stage;
-    if(!actor.player || this.actors.some(a=>!a.player && (a.row>=5 || (a.row===4&&a.state==='jump'&&a.until<=this.clock)))) return;
+    if(!actor.player || this.actors.some(a=>!a.player && ((a.row>=5&&!['fall','rescued'].includes(a.state)) || (a.row===4&&a.state==='jump'&&a.until<=this.clock&&a.side===this.#route[5])))) return;
     if(this.inventory.length>=3){this.emit('item_full',actor);return;}
     const kind=this.random()<.25?'memory':'glasses';this.inventory.push(kind);this.emit('item_awarded',actor,{kind});
   }

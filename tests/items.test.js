@@ -36,3 +36,7 @@ test('tied sixth landing earns nothing and an item cannot extend the deadline',(
  const tie=new Game({random:()=>0});climb(tie,5);assert(tie.move(0));Object.assign(tie.actors[1],{row:4,side:0,state:'jump',until:tie.player.until});tie.advance(420);assert.deepEqual(tie.inventory,[]);
  const g=new Game({random:()=>0,items:{inventory:['memory']}});g.advance(g.config.hint);g.remaining=500;assert(g.useItem(0));g.advance(1000);assert.equal(g.result,'timeout');assert.equal(g.hintRoute(),null);assert(!g.useItem(0));
 });
+test('NPC falling on the sixth wrong tile does not steal a safe landing reward',()=>{
+ const g=new Game({random:()=>0});climb(g,5);Object.assign(g.actors[1],{row:5,side:1,state:'fall',until:g.clock+1400});assert(g.move(0));g.advance(420);assert.equal(g.inventory.length,1);
+ const same=new Game({random:()=>0});climb(same,5);assert(same.move(0));Object.assign(same.actors[1],{row:4,side:1,state:'jump',until:same.player.until});same.advance(420);assert.equal(same.inventory.length,1);
+});
