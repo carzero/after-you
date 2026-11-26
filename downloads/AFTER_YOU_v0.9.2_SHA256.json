@@ -1,0 +1,22 @@
+{
+  "AFTER_YOU_Server_v0.9.2.zip": {
+    "bytes": 8848519,
+    "sha256": "05654564690a233546ccba37fce77314308a49c6fc57bfa81ae0e9aa0ba334d4"
+  },
+  "AFTER_YOU_Source_v0.9.2.zip": {
+    "bytes": 26993636,
+    "sha256": "560afeae5b151ac808bcd85b73c23e548f39b06fa92274b2a6e8ebb0d3ced156"
+  },
+  "AFTER_YOU_Playtest_v0.9.2.zip": {
+    "bytes": 8936565,
+    "sha256": "0ce7eda3695ddfac8fb3decfb8194963000c346653b0081e1609f98a440b6300"
+  },
+  "AFTER_YOU_Cloudflare_CMD_v0.9.2.zip": {
+    "bytes": 17997307,
+    "sha256": "1604dadf40a57f20c9f53d80582b051726da85bceb3670fa82f287538b065c0e"
+  },
+  "AFTER_YOU_Playtest_v0.9.2.html": {
+    "bytes": 12031439,
+    "sha256": "2f7d9978553d52016f7befb1a8e5afe1282051b33168acff4049803281cd1c2a"
+  }
+}
