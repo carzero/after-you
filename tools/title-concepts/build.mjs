@@ -1,0 +1,5 @@
+import fs from 'node:fs/promises';import path from 'node:path';
+const root=path.resolve(new URL('../..',import.meta.url).pathname),files={sky:'integration-20261126/layers/ch01/sky.webp',start:'integration-20261126/layers/ch01/start.webp',tile:'integration-20261126/layers/ch01/tile.webp',potato:'poses-20261124/potato/idle.webp',potato_hover:'poses-20261124/potato/hover.webp',potato_after:'art-20261121/characters/potato/after_you.webp',pigeon_after:'art-20261121/characters/pigeon/after_you.webp'};
+for(const id of ['potato','pigeon','duck','rabbit'])files['portrait_'+id]=`art-20261121/ui/${id}.webp`;
+const images={};for(const[k,f]of Object.entries(files))images[k]='data:image/webp;base64,'+(await fs.readFile(root+'/assets/runtime/'+f)).toString('base64');
+const html=(await fs.readFile(new URL('index.html',import.meta.url),'utf8')).replace('__ART__',()=>JSON.stringify(images));await fs.mkdir(root+'/downloads',{recursive:true});await fs.writeFile(root+'/downloads/AFTER_YOU_Title_Concepts_v02.html',html);console.log('Title-only concepts built.');

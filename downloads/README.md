@@ -1,3 +1,9 @@
+# 타이틀 시안 v02
+
+[타이틀 시안 ZIP](AFTER_YOU_Title_Concepts_v02.zip) · [비교 이미지](AFTER_YOU_Title_Concepts_v02.png)
+
+실제 게임에는 미적용입니다.
+
 # 몰입형 UI 시안 3종 · 게임에는 미적용
 
 [UI 시안 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_UI_Concepts_v01.zip)
