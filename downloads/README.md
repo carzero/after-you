@@ -1,3 +1,9 @@
+# v0.9.4 · 타이틀 밀도 개선
+
+[배포 업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.9.4.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.9.4.zip) · [소스 ZIP](AFTER_YOU_Source_v0.9.4.zip)
+
+기존 인증된 PC에서 압축 해제 후 UPDATE.cmd 실행.
+
 # 실제 게임 v0.9.3 · 타이틀 A안 적용
 
 [Cloudflare 업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.9.3.zip) · [오프라인 실행 ZIP](AFTER_YOU_Playtest_v0.9.3.zip) · [최신 소스 ZIP](AFTER_YOU_Source_v0.9.3.zip)
