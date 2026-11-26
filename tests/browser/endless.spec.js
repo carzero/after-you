@@ -12,6 +12,6 @@ test('clear stage one then fall on stage two: return to one with shorter hint on
   await page.clock.runFor(2700);await page.locator('#left').click();await page.clock.runFor(440);
   await expect(page.locator('.hud small').first()).toContainText('최고 8층');
   await page.locator('#pause').click();await page.locator('#pause-home').click();await page.locator('#leaderboard-open').click();
-  await expect(page.locator('#ranking-status')).toContainText('다운로드판은 연습용');
+  await expect(page.locator('#ranking-status')).toContainText('다운로드판에서는 연습 모드');
   await page.screenshot({path:'test-results/endless-offline-scoreboard.png'});
 });
