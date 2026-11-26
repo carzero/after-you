@@ -1,3 +1,9 @@
+# 몰입형 UI 시안 3종 · 게임에는 미적용
+
+[UI 시안 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_UI_Concepts_v01.zip)
+
+압축을 풀고 UI_REVIEW.html을 열면 A/B/C의 타이틀·플레이·결과 화면을 비교할 수 있습니다.
+
 # 최신 v0.9.2 · 구름 구조 장면 개선
 
 추락을 천천히 보여주고 구름 안착 후 1.6초를 더 유지합니다. 서버 판정과 점수·저장소는 동일합니다.
