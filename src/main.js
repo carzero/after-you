@@ -1,3 +1,4 @@
+import { RescuePresentation, rescueGameDelta } from './rescue-presentation.js';
 import { patchMarkup } from './dom-patch.js';
 import './style.css';
 import { Game, STAGES, PEOPLE, JUMP_MS, FALL_MS } from './game.js';
@@ -13,6 +14,7 @@ import { rescueFrame } from './rescue-transition.js';
 let storage;
 try { storage = window.localStorage; } catch { storage = null; }
 const save = loadSave(storage), audio = new AudioBus(save.settings,{urls:audioUrls,tracks:audioTracks});
+const rescuePresentation=new RescuePresentation();
 const landed = new Map(), jumped = new Map(), cracked = new Map();
 let activeTheme = themeForStage(0, save.theme), themeLoading = false, starting = false, artNotice = '';
 preloadArt(activeTheme).catch(() => {});
@@ -69,7 +71,7 @@ async function start(continuing = false) {
     await preloadArt(nextTheme); await audio.prepare(nextTheme); activeTheme = nextTheme; artNotice = '';
     const random = onlineRun ? seededRandom(onlineNext.seed) : Math.random;
     roundMoves = []; checkpointBusy = false;
-    landed.clear(); jumped.clear(); cracked.clear(); game = new Game({stage, character:selected, random});
+    rescuePresentation.reset(); landed.clear(); jumped.clear(); cracked.clear(); game = new Game({stage, character:selected, random});
     displayedPhase=null;warnedTimer=false;lastReaction=-Infinity; resultHandled = false; userPaused = false; lastTime = undefined;
     for (const id of ['lobby','result','paused']) $(id).hidden = true;
     $('stage-label').textContent = `${String(stage+1).padStart(2,'0')} · ${stageConfig(stage).title}`;
@@ -84,18 +86,18 @@ async function start(continuing = false) {
 $('start').onclick = () => start();
 function continueClimb() { stage = returnStage; start(true); }
 $('retry').onclick = $('next').onclick = continueClimb;
-function home() { audio.stop(); game = null; onlineRun = null; onlineNext = null; $('skip-rescue').hidden = true; $('result').hidden = $('paused').hidden = true; $('lobby').hidden = false; $('pause').disabled = true; $('left').disabled = $('right').disabled = true; pickers(); $('start').focus(); audio.unlock().then(()=>{if(!game&&!document.hidden&&!$('settings').open&&!$('leaderboard').open)audio.music(0,'title');}); }
+function home() { rescuePresentation.reset(); audio.stop(); game = null; onlineRun = null; onlineNext = null; $('skip-rescue').hidden = true; $('result').hidden = $('paused').hidden = true; $('lobby').hidden = false; $('pause').disabled = true; $('left').disabled = $('right').disabled = true; pickers(); $('start').focus(); audio.unlock().then(()=>{if(!game&&!document.hidden&&!$('settings').open&&!$('leaderboard').open)audio.music(0,'title');}); }
 $('replay-stage').onclick=()=>start(false);
 $('unlock-show').onclick=()=>{ $('unlock-panel').hidden=!$('unlock-panel').hidden; $('unlock-panel').innerHTML=PEOPLE.map(id=>`<div>${portrait(id)}<span>${names[id]}</span>${icon('unlock')}</div>`).join(''); if(!$('unlock-panel').hidden)audio.event('unlock'); };
 $('home').onclick = $('pause-home').onclick = home;
-$('pause').onclick = () => { if (game && !game.result) { userPaused = true; $('paused').hidden = false; syncPause(); } };
+$('pause').onclick = () => { if (game && (!game.result||rescuePresentation.holding)) { userPaused = true; $('paused').hidden = false; syncPause(); } };
 $('resume').onclick = () => { userPaused = false; $('paused').hidden = true; lastTime = undefined; audio.unlock(); syncPause(); };
 function move(side) { if (game?.move(side)) { artNotice = ''; roundMoves.push({at:game.clock,side}); render(); } }
 $('left').onclick = () => move(0); $('right').onclick = () => move(1);
-$('skip-rescue').onclick = () => { if (sessionFalls >= 2 && game?.skipRescue()) render(); };
+$('skip-rescue').onclick = () => { if(sessionFalls>=2&&!game?.paused&&(rescuePresentation.skip()||game?.skipRescue()))render(); };
 document.addEventListener('keydown', e => { if (e.repeat || $('settings').open || $('leaderboard').open || /INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return; if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); move(e.key === 'ArrowLeft' ? 0 : 1); } });
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden && game && !game.result) { userPaused = true; $('paused').hidden = false; }
+  if (document.hidden && game && (!game.result||rescuePresentation.holding)) { userPaused = true; $('paused').hidden = false; }
   lastTime = undefined; syncPause();
 });
 $('settings-open').onclick = () => { $('settings').showModal(); syncPause(); };
@@ -215,6 +217,8 @@ function render() {
   const g = game, player = g.player, hint = g.hintRoute();
   updateScene();
   const events = g.drainEvents();
+  if(rescuePresentation.observe(events)){audio.stop();audio.event('cloud_catch');}
+  const holdingRescue=rescuePresentation.holding;
   if(displayedPhase==='hint'&&g.phase==='playing')audio.event('hint_end');
   displayedPhase=g.phase;
   if(g.phase==='playing'&&!g.paused&&player.state==='idle'&&g.clock-lastReaction>=8000&&![...audio.nodes].some(n=>!n.music)){lastReaction=g.clock;audio.event('reaction_'+selected);}
@@ -227,9 +231,9 @@ function render() {
       if (event.player) sessionFalls += 1;
     }
   }
-  $('skip-rescue').hidden = sessionFalls < 2 || g.phase !== 'rescuing' || g.paused;
+  $('skip-rescue').hidden = sessionFalls < 2 || (g.phase !== 'rescuing'&&!holdingRescue) || g.paused;
   const height = $('scene').clientHeight, spacing = Math.min(76, Math.max(28, (height - 110) / 4));
-  const camera = Math.max(-1, player.row - (player.state === 'fall' ? 1 : 0));
+  const camera = Math.max(-1, player.row - (player.state === 'fall'||holdingRescue ? 1 : 0));
   const bottom = 70;
   const tileY = row => bottom + (row - camera) * spacing;
   const startPlatform = document.querySelector('.scene-start'), finishPlatform = document.querySelector('.scene-finish');
@@ -267,13 +271,13 @@ function render() {
     const x = actor.row < 0 && actor.state !== 'jump' ? 18 + i * 19 : (actor.side === 0 ? 32 : 64) + (i - 1.5) * 2.8;
     return `<div class="actor ${actor.player ? 'player' : 'npc'} ${actor.state}" data-actor="${actor.id}" style="left:${x}%;bottom:${y}px;opacity:1;transform:translateX(-50%) rotate(${angle}deg);z-index:${50 - Math.round(row * 2)}"><div class="actor-visual" style="opacity:${opacity};visibility:${rescue&&!rescue.actorVisible?'hidden':'visible'}">${actor.player ? '<span class="you">나</span>' : ''}${characterArt(actor.id, g.phase === 'hint' ? 'idle' : actingPose(actor,g.clock,landed.get(actor.id),g.observed), actor.state === 'idle' && ['hint','playing'].includes(g.phase) ? {clock:g.clock,index:i,reducedMotion} : undefined)}<small>${actor.player ? names[actor.id] : actor.state === 'fall' ? '어…?' : ['','먼저 가세요','왕이 먼저?','준비 운동 중'][i]}</small></div>${rescue&&rescue.cloudOpacity>0?`<div class="actor-cloud" style="opacity:${rescue.cloudOpacity};transform:translateY(${rescue.cloudY}px)">${artImage('integration/rescue/cloud')}</div>`:''}</div>`;
   }).join(''));
-  const recoveryActive = player.state === 'fall' && FALL_MS - (player.until - g.clock) >= 1050 && !g.result;
+  const recoveryActive = holdingRescue || (player.state === 'fall' && FALL_MS - (player.until - g.clock) >= 1050 && !g.result);
   $('rescue-scene').hidden = !recoveryActive;
   if (recoveryActive) {
-    const transition=rescueFrame(FALL_MS-(player.until-g.clock),reducedMotion);
+    const transition=rescueFrame(holdingRescue?FALL_MS:FALL_MS-(player.until-g.clock),reducedMotion);
     $('rescue-scene').style.zIndex='55';
     const rescued=recoveryArt(player.id,false,reducedMotion).replace('class="recovery-person"',`class="recovery-person" style="visibility:${transition.actorVisible?'visible':'hidden'}"`);
-    patchMarkup($('rescue-scene'),rescued+`<div class="rescue-cover" style="opacity:${transition.cloudOpacity};transform:translateY(${transition.cloudY}px)">${artImage('integration/rescue/cloud')}</div>`);
+    patchMarkup($('rescue-scene'),rescued+`<div class="rescue-cover" style="opacity:${transition.cloudOpacity};transform:translateY(${transition.cloudY}px)">${artImage('integration/rescue/cloud')}</div>${transition.actorVisible?'<div class="rescue-caption">구름이 받아줬어요!</div>':''}`);
 
   }
   $('timer').textContent = String(Math.ceil(g.remaining / 1000)).padStart(2, '0');
@@ -281,18 +285,18 @@ function render() {
   peak = Math.max(peak, heightReached(g));
   document.querySelector('.hud small').textContent = `${themeName(activeTheme)} · 최고 ${peak}층`;
   $('progress').textContent = `${Math.max(0, Math.min(g.config.rows, player.row + 1))} / ${g.config.rows}`;
-  $('message').textContent = artNotice || (g.paused ? '잠시 쉬어가는 중이에요.' : g.phase === 'hint' ? `반짝이는 길을 기억하세요 · ${Math.max(1, Math.ceil((g.config.hint - g.clock) / 1000))}` : g.phase === 'rescuing' ? (player.until - g.clock > 800 ? '어? 분명 여기였는데…' : '구름 회수반 출동! 가방도 챙기세요.') : g.phase === 'result' ? '오늘도 양보해 주셔서 감사합니다.' : player.state === 'jump' ? '한 걸음, 조심조심.' : '왼쪽일까요, 오른쪽일까요?');
+  $('message').textContent = artNotice || (g.paused ? '잠시 쉬어가는 중이에요.' : holdingRescue ? '구름이 받아줬어요! 잠깐 숨을 고르는 중이에요.' : g.phase === 'hint' ? `반짝이는 길을 기억하세요 · ${Math.max(1, Math.ceil((g.config.hint - g.clock) / 1000))}` : g.phase === 'rescuing' ? (player.until - g.clock > 800 ? '어? 분명 여기였는데…' : '구름 회수반 출동! 가방도 챙기세요.') : g.phase === 'result' ? '오늘도 양보해 주셔서 감사합니다.' : player.state === 'jump' ? '한 걸음, 조심조심.' : '왼쪽일까요, 오른쪽일까요?');
   $('left').disabled = $('right').disabled = g.paused || g.phase !== 'playing' || player.state !== 'idle';
-  if (g.phase === 'result' && !resultHandled) audio.stop();
+  if (g.phase === 'result' && !resultHandled && !holdingRescue) audio.stop();
   for (const event of events) {
     if (event.type !== 'finish' && !(g.result && event.type==='rescue')) audio.event(event.type,{player:event.player});
     if (event.type === 'tile_crack' && event.player && save.settings.vibration) navigator.vibrate?.(60);
   }
-  if (g.phase === 'result') result();
+  if (g.phase === 'result'&&!holdingRescue) result();
 }
 function frame(time) {
   if (game) {
-    if (lastTime !== undefined) game.advance(time - lastTime);
+    if (lastTime !== undefined) {const delta=time-lastTime;rescuePresentation.advance(delta,game.paused);game.advance(rescueGameDelta(game,delta));}
     lastTime = time;
     if (!game.paused && ['hint','playing'].includes(game.phase)) audio.music(game.activeTime,activeTheme);
     render();

@@ -1,0 +1,12 @@
+{
+  "release": "0.9.2",
+  "unit_server_cases": 35,
+  "browser_cases": 23,
+  "cloudflare_two_browser_case": 1,
+  "fall_game_ms": 1400,
+  "fall_presentation_wall_ms": 2200,
+  "extra_catch_rest_ms": 1600,
+  "scores_and_server_protocol": "unchanged",
+  "pause_and_skip_regressions": "passed",
+  "production_deployment_verified": false
+}

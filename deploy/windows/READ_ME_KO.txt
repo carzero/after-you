@@ -1,8 +1,10 @@
+구조 장면 개선 v0.9.2: 추락을 천천히 보여주고 구름 안착 장면을 1.6초 더 유지합니다. 기존 배포 PC에서 UPDATE.cmd를 실행한 뒤 게임을 새로고침하세요.
+
 깜빡임 수정 업데이트 v0.9.1
 
 이미 배포했던 PC라면 압축을 푼 뒤 UPDATE.cmd를 실행하세요. 기존 Cloudflare 로그인을 사용해 다시 배포합니다. 완료 후 게임에서 Ctrl+F5를 눌러 주세요. 최초 배포나 로그인이 필요한 경우 DEPLOY.cmd를 사용합니다. 순위 저장소 이름과 마이그레이션을 변경하지 않았습니다.
 
-AFTER YOU v0.9.1 - Cloudflare CMD 배포 묶음
+AFTER YOU v0.9.2 - Cloudflare CMD 배포 묶음
 
 준비물: Windows, Node.js 24 이상, Cloudflare 계정, 인터넷 연결.
 Git은 없어도 됩니다. 이 ZIP에는 게임 코드, 실행용 아트/음원, Cloudflare 순위 서버와 배포 설정이 포함됩니다.

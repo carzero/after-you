@@ -34,6 +34,6 @@ test('corrected sprites and single composite parcel replace superseded artwork',
   await page.clock.install({time:new Date('2026-11-21T00:00:00Z')});await page.clock.pauseAt(new Date('2026-11-21T00:00:01Z'));await page.goto('/');
   await page.locator('button[data-character="duck"]').click();await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();await page.clock.runFor(2700);
   await page.locator('#right').click();await expect(page.locator('.actor.player image')).toHaveAttribute('href',/poses-20261124\/duck\/jump.webp/);
-  await page.clock.runFor(1850);await expect(page.locator('#result-art .parcel-art')).toHaveCount(1);await expect(page.locator('#result-art .recovery-person')).toHaveCount(0);
+  await page.clock.runFor(4400);await expect(page.locator('#result-art .parcel-art')).toHaveCount(1);await expect(page.locator('#result-art .recovery-person')).toHaveCount(0);
   await page.screenshot({path:'test-results/integration-parcel.png'});
 });

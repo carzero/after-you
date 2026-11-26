@@ -1,3 +1,15 @@
+# 최신 v0.9.2 · 구름 구조 장면 개선
+
+추락을 천천히 보여주고 구름 안착 후 1.6초를 더 유지합니다. 서버 판정과 점수·저장소는 동일합니다.
+
+- [Cloudflare CMD 업데이트 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Cloudflare_CMD_v0.9.2.zip)
+- [오프라인 게임 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.9.2.zip)
+- [최신 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.9.2.zip)
+
+기존 배포 PC에서 CMD ZIP을 풀고 UPDATE.cmd를 실행하세요. GitHub 자동 배포 연결 시 같은 브랜치의 변경으로 배포됩니다.
+
+이하 이전 버전을 보존합니다.
+
 # 최신 v0.9.1 · 플레이 중 깜빡임 수정
 
 - [Cloudflare CMD 업데이트 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Cloudflare_CMD_v0.9.1.zip)

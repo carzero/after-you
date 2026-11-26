@@ -8,7 +8,7 @@ async function ready(page) {
 }
 test('second fall can skip once without unlocks; pause, retry and input remain consistent',async({page})=>{
   await ready(page);await page.locator('#right').click();await page.clock.runFor(500);
-  await expect(page.locator('#skip-rescue')).toBeHidden();await page.clock.runFor(1400);
+  await expect(page.locator('#skip-rescue')).toBeHidden();await page.clock.runFor(4000);
   await expect(page.locator('#result')).toBeVisible();await page.locator('#retry').click();await page.clock.runFor(2700);
   await page.locator('#right').click();await page.clock.runFor(500);await expect(page.locator('#skip-rescue')).toBeVisible();
   await page.locator('#pause').click();await expect(page.locator('#skip-rescue')).toBeHidden();await page.clock.runFor(2000);

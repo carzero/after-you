@@ -24,11 +24,11 @@ test('descent, unsafe outcome, actor mask, result and retry retain the game time
  await ready(page);await page.clock.runFor(2700);const sprite=page.locator('.actor.player .character-art');
  await page.locator('#right').click();await page.clock.runFor(320);await expect(sprite).toHaveAttribute('data-pose','descent');
  await page.clock.runFor(140);await expect(sprite).toHaveAttribute('data-pose','hover');await expect(page.locator('.tile.cracking')).toHaveCount(1);
- await page.clock.runFor(980);await expect(page.locator('.actor.player .actor-visual')).toHaveCSS('visibility','hidden');
- await page.clock.runFor(100);await expect(page.locator('#rescue-scene')).toBeVisible();await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','hidden');
- await page.clock.runFor(130);await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','visible');await expect(page.locator('#rescue-scene .rescue-cover')).toHaveCount(1);
+ await page.clock.runFor(1400);await expect(page.locator('.actor.player .actor-visual')).toHaveCSS('visibility','hidden');
+ await page.clock.runFor(200);await expect(page.locator('#rescue-scene')).toBeVisible();await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','hidden');
+ await page.clock.runFor(260);await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','visible');await expect(page.locator('#rescue-scene .rescue-cover')).toHaveCount(1);
  await page.screenshot({path:'test-results/integrated-rescue.png'});
- await page.clock.runFor(300);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('STAGE 1 → STAGE 1');
+ await page.clock.runFor(2300);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('STAGE 1 → STAGE 1');
  const active=await page.evaluate(()=>window.__audioSources.filter(e=>e.active));expect(active.length).toBeLessThanOrEqual(1);
  await page.locator('#retry').click();await expect(page.locator('#result')).toBeHidden();await expect(page.locator('#rescue-scene')).toBeHidden();
 });
