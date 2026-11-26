@@ -1,0 +1,18 @@
+{
+  "AFTER_YOU_Playtest_v0.9.zip": {
+    "bytes": 8935540,
+    "sha256": "1c1e9d15c9e5e9f9f1fdedd455ccf49d1e679b5b67ac390da618fe7381134bef"
+  },
+  "AFTER_YOU_Playtest_v0.9.html": {
+    "bytes": 12029007,
+    "sha256": "047b0f4a1e5724b5df14d7b9449c8b309983360e7e9d07484c5b518d7184d3c4"
+  },
+  "AFTER_YOU_Source_v0.9.zip": {
+    "bytes": 26949449,
+    "sha256": "a3edcee612bae7cfd128aa6285f07936c5375a9e56d191bb79826913222b8722"
+  },
+  "AFTER_YOU_Server_v0.9.zip": {
+    "bytes": 8845936,
+    "sha256": "57d20721c4a722d70c8bcb0c55035cc73067c21297b36111d0cbe71442814ed3"
+  }
+}
