@@ -55,3 +55,13 @@ test('API rejects impossible timing, malformed input, forged token and cross-ori
   assert.equal((await f.request('runs',{name:'other'},{Origin:'https://elsewhere.example'})).status,403);
   assert.equal((await f.request('runs',{name:''})).status,400);assert.equal((await f.request('leaderboard')).data.entries.length,0);
 });
+test('API carries earned items, validates use and ignores client-provided inventory',async t=>{
+ const f=await fixture(t),run=(await f.request('runs',{name:'쪽지왕'})).data;
+ function play(snapshot,use){const g=new Game({stage:snapshot.stage,random:seededRandom(snapshot.seed),items:snapshot.items}),route=g.hintRoute(),moves=[];g.advance(g.config.hint);if(use){moves.push({at:g.clock,type:'item',index:0});assert(g.useItem(0));g.advance(1000);}for(let i=0;i<g.config.rows;i++){moves.push({at:g.clock,side:route[i]});g.move(route[i]);g.advance(420);}return{g,moves,end:g.clock};}
+ const first=play(run,false);f.advance(first.end);
+ const a=(await f.request(`runs/${run.runId}/checkpoint`,{token:run.token,moves:first.moves,end:first.end,items:{inventory:['memory','memory','memory']}})).data;
+ assert.deepEqual(a.items,first.g.itemState());assert.equal(a.items.inventory.length,1);
+ const second=play(a,true);f.advance(second.end);
+ const b=await f.request(`runs/${run.runId}/checkpoint`,{token:a.token,moves:second.moves,end:second.end});assert.equal(b.status,200);assert.deepEqual(b.data.items,second.g.itemState());
+ const duplicate=await f.request(`runs/${run.runId}/checkpoint`,{token:a.token,moves:second.moves,end:second.end});assert.deepEqual(duplicate.data,b.data);
+});

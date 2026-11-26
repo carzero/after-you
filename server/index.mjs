@@ -14,7 +14,7 @@ export function createApp({dataDir = process.env.DATA_DIR || path.resolve('.data
   const runs=new Map(), rate=new Map();
   function persist(list){const temp=file+'.tmp';fs.writeFileSync(temp,JSON.stringify(list));fs.renameSync(temp,file);}
   function snapshot(run) {
-    return {token:run.token,stage:run.stage,seed:run.seed,peak:run.peak};
+    return {token:run.token,stage:run.stage,seed:run.seed,peak:run.peak,items:run.items??{inventory:[],rewardCeiling:-1}};
   }
   function newStage(run) {run.seed=seed();run.token=randomUUID();run.response=null;return snapshot(run);}
   function record(run) {

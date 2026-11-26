@@ -1,3 +1,4 @@
+import { ITEMS, itemIcon } from './items.js';
 import { RescuePresentation, rescueGameDelta } from './rescue-presentation.js';
 import { patchMarkup } from './dom-patch.js';
 import './style.css';
@@ -21,6 +22,7 @@ preloadArt(activeTheme).catch(() => {});
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 let reducedMotion = save.settings.reducedMotion || motionPreference.matches;
 let sessionFalls = 0;
+let itemToast = null;
 let peak = 0, roundMoves = [], onlineRun = null, onlineNext = null, onlineReady = false;
 let returnStage = 0, checkpointBusy = false, displayedPhase=null, warnedTimer=false, lastReaction=-Infinity;
 let game = null, stage = 0, selected = 'potato', userPaused = false, lastTime, resultHandled = false, saveFailed = false;
@@ -33,11 +35,11 @@ document.querySelector('#app').innerHTML = `
     <div class="hud"><div><small>CHAPTER 01 · 구름 정거장</small><strong id="stage-label">첫 번째 양보</strong></div><button id="pause" class="icon-button" aria-label="일시정지" disabled>${icon('pause')}</button><div class="timer"><strong id="timer">35</strong><small>남은 시간</small></div></div>
     <div class="scene" id="scene"><div id="scene-art">${sceneArtwork(activeTheme)}</div><div id="board"></div><div id="hint-map" class="hint-map" aria-label="안전 경로 미리보기"></div><div class="flight-sign">${artImage('props/no_flying_v001')}<span>비행 금지</span></div><div id="world-effects" aria-hidden="true"></div><div id="actors"><div id="actor-list"></div><div id="rescue-scene" hidden></div></div><button id="skip-rescue" hidden>연출 건너뛰기 ↗</button><div class="start-island">CLOUD STATION <span>출발</span></div></div>
     <div class="status-line"><span class="status-dot"></span><p id="message" role="status" aria-live="polite">두 발판 중 하나는 안전합니다.</p><span id="progress">0 / 8</span></div>
-    <div class="controls"><button id="left" disabled>${icon('arrow_left')}왼쪽</button><button id="right" disabled>오른쪽${icon('arrow_right')}</button></div>
+    <section class="item-tray" aria-label="아이템 보관함"><div class="item-slots" id="item-slots"></div><p id="item-status" role="status">6번째 발판에 먼저 도착하면 아이템을 받아요.</p></section><div class="controls"><button id="left" disabled>${icon('arrow_left')}왼쪽</button><button id="right" disabled>오른쪽${icon('arrow_right')}</button></div>
   </section>
   <footer><span>01 — 구름 위의 작은 양보</span><span>← → 키로도 이동</span></footer>
 </main>
-<div class="veil" id="lobby"><section class="panel lobby-panel" aria-labelledby="lobby-title"><div class="title-duel"><div class="title-brand">CARZERO　STUDIO <button id="title-settings" class="icon-button" aria-label="타이틀 설정">${icon('settings')}</button></div><div class="title-copy"><div class="title-eyebrow">ONE BRIDGE. TOO MUCH POLITENESS.</div><h2 id="lobby-title">먼저<span>가세요.</span></h2><p class="title-tagline">소원은 간절합니다.<br>먼저 갈 생각은 없습니다.</p><div class="title-stamp">양보 중<b>출발자 없음</b></div></div><div class="title-stage" aria-hidden="true">${artImage(chapterFile('ch01','start'),'title-island')}${artImage('characters/potato/after_you','title-potato')}${artImage('characters/pigeon/after_you','title-pigeon')}<span class="title-bubble first">먼저 가시죠.</span><span class="title-bubble second">아뇨, 먼저요.</span><span class="title-pressure">눈 치 싸 움</span></div><p class="title-safety">떨어져도 괜찮아요. 구름이 받아줍니다.</p><a class="title-prepare" href="#lobby-options">참가자 · 도전 설정 ↓</a></div><div id="lobby-options"><div class="eyebrow">출발 준비</div><p class="climb-rule">추락하면 한 스테이지 아래에서 다시 출발!<br>높이 올라갈수록 힌트가 짧아져요.</p><div class="online-entry"><label>닉네임 <input id="nickname" maxlength="16" placeholder="구름손님" value="구름손님" autocomplete="nickname"></label><label class="mode-toggle"><input type="checkbox" id="online-mode" disabled> 온라인 순위 도전</label><small id="connection-status" role="status">온라인 도전 준비 중…</small></div><div id="stages" class="stage-picker"></div><div id="characters" class="character-picker"></div></div><div class="title-actions"><button id="start" class="primary">제가 먼저 갈게요 ↗</button><button id="leaderboard-open" class="text-button">${icon('record')}스코어보드 보기</button><p id="save-warning" class="save-warning"></p></div></section></div>
+<div class="veil" id="lobby"><section class="panel lobby-panel" aria-labelledby="lobby-title"><div class="title-duel"><div class="title-brand">CARZERO　STUDIO <button id="title-settings" class="icon-button" aria-label="타이틀 설정">${icon('settings')}</button></div><div class="title-copy"><div class="title-eyebrow">ONE BRIDGE. TOO MUCH POLITENESS.</div><h2 id="lobby-title">먼저<span>가세요.</span></h2><p class="title-tagline">소원은 간절합니다.<br>먼저 갈 생각은 없습니다.</p><div class="title-stamp">양보 중<b>출발자 없음</b></div></div><div class="title-stage" aria-hidden="true">${artImage(chapterFile('ch01','start'),'title-island')}${artImage('characters/potato/after_you','title-potato')}${artImage('characters/pigeon/after_you','title-pigeon')}<span class="title-bubble first">먼저 가시죠.</span><span class="title-bubble second">아뇨, 먼저요.</span><span class="title-pressure">눈 치 싸 움</span></div><p class="title-safety">떨어져도 괜찮아요. 구름이 받아줍니다.</p><a class="title-prepare" href="#lobby-options">참가자 · 도전 설정 ↓</a></div><div id="lobby-options"><div class="eyebrow">출발 준비</div><p class="climb-rule">추락하면 한 스테이지 아래에서 다시 출발!<br>높이 올라갈수록 힌트가 짧아져요.</p><p>6번째 발판에 친구들보다 먼저 도착하면 아이템을 받아요.<br>최대 3개 · 다음 구간에도 보관 · 새 도전에서는 초기화</p><div class="online-entry"><label>닉네임 <input id="nickname" maxlength="16" placeholder="구름손님" value="구름손님" autocomplete="nickname"></label><label class="mode-toggle"><input type="checkbox" id="online-mode" disabled> 온라인 순위 도전</label><small id="connection-status" role="status">온라인 도전 준비 중…</small></div><div id="stages" class="stage-picker"></div><div id="characters" class="character-picker"></div></div><div class="title-actions"><button id="start" class="primary">제가 먼저 갈게요 ↗</button><button id="leaderboard-open" class="text-button">${icon('record')}스코어보드 보기</button><p id="save-warning" class="save-warning"></p></div></section></div>
 <div class="veil" id="result" hidden><section class="panel" aria-labelledby="result-title"><div id="result-art" class="result-art"></div><div class="eyebrow" id="result-eyebrow"></div><h2 id="result-title"></h2><p id="result-text"></p><div class="stamp" id="stamp"></div><button id="retry" class="primary">한 번 더 건너기 ↗</button><button id="next" class="secondary" hidden>다음 스테이지</button><button id="replay-stage" class="text-button" hidden>이 스테이지 다시 도전</button><button id="unlock-show" class="text-button" hidden>참가자 해금 보기</button><div id="unlock-panel" hidden></div><p id="online-result" role="status"></p><button id="network-retry" class="secondary" hidden>기록 전송 다시 시도</button><button id="result-leaderboard" class="text-button">${icon('record')}스코어보드 보기</button><br><button id="home" class="text-button">${icon('home')}정거장으로 돌아가기</button></section></div>
 <div class="veil" id="paused" hidden><section class="panel"><div class="eyebrow">TAKE YOUR TIME</div>${artImage('staff/guide','pause-guide')}<h2>잠깐, 숨 고르기</h2><p>다리도 시간도 기다리고 있어요.</p><button id="resume" class="primary">${icon('play')}다시 건너기</button><button id="pause-home" class="text-button">${icon('home')}정거장으로 돌아가기</button></section></div>
 <dialog id="leaderboard"><div class="dialog-head"><h2>구름 위 스코어보드</h2><button id="leaderboard-close" class="icon-button" aria-label="스코어보드 닫기">${icon('close')}</button></div><p>최고 도달 높이로 겨뤄요.<br>추락 후 다시 오른 구간은 중복 가산되지 않아요.</p><p id="ranking-status" role="status"></p><ol id="rankings"></ol><button id="ranking-refresh" class="primary">순위 새로고침</button><small>온라인 도전 최고 기록 · 같은 닉네임을 쓰는 참가자가 있을 수 있어요.</small></dialog><dialog id="settings"><form method="dialog"><div class="dialog-head"><h2>구름 정거장 설정</h2><button class="icon-button" aria-label="설정 닫기">${icon('close')}</button></div><p>편안하게 건너갈 준비를 해요.</p><label><span class="label-title">${icon('music')}배경 음악</span> <input type="checkbox" id="music"></label><label><span class="label-title">${icon('sound')}효과음</span> <input type="checkbox" id="sound"></label><label><span class="label-title">${icon('vibration')}진동</span> <input type="checkbox" id="vibration"></label><label><span class="label-title">${icon('reduce_motion')}움직임 줄이기</span> <input type="checkbox" id="reducedMotion"></label><label><span class="label-title">${icon('wish')}배경 테마</span><select id="theme-select" aria-label="배경 테마"><option value="auto">높이에 따라 바꾸기</option>${THEMES.map(t=>`<option value="${t.id}">${t.name}</option>`).join('')}</select></label><p id="theme-status" role="status"></p><p id="audio-status" role="status"></p><small>음량은 기기에서 조절해 주세요.<br>진동은 지원하는 기기에서만 작동합니다.<br>기기의 움직임 줄이기 설정도 함께 따릅니다.</small><button class="primary">설정 완료</button></form></dialog>`;
@@ -71,7 +73,7 @@ async function start(continuing = false) {
     await preloadArt(nextTheme); await audio.prepare(nextTheme); activeTheme = nextTheme; artNotice = '';
     const random = onlineRun ? seededRandom(onlineNext.seed) : Math.random;
     roundMoves = []; checkpointBusy = false;
-    rescuePresentation.reset(); landed.clear(); jumped.clear(); cracked.clear(); game = new Game({stage, character:selected, random});
+    rescuePresentation.reset(); landed.clear(); jumped.clear(); cracked.clear(); game = new Game({stage, character:selected, random, items:onlineRun?onlineNext.items:continuing?game?.itemState():undefined}); itemToast=null;
     displayedPhase=null;warnedTimer=false;lastReaction=-Infinity; resultHandled = false; userPaused = false; lastTime = undefined;
     for (const id of ['lobby','result','paused']) $(id).hidden = true;
     $('stage-label').textContent = `${String(stage+1).padStart(2,'0')} · ${stageConfig(stage).title}`;
@@ -92,6 +94,7 @@ $('unlock-show').onclick=()=>{ $('unlock-panel').hidden=!$('unlock-panel').hidde
 $('home').onclick = $('pause-home').onclick = home;
 $('pause').onclick = () => { if (game && (!game.result||rescuePresentation.holding)) { userPaused = true; $('paused').hidden = false; syncPause(); } };
 $('resume').onclick = () => { userPaused = false; $('paused').hidden = true; lastTime = undefined; audio.unlock(); syncPause(); };
+$('item-slots').onclick=e=>{const button=e.target.closest('[data-item-slot]');if(button&&game?.useItem(+button.dataset.itemSlot)){roundMoves.push({at:game.clock,type:'item',index:+button.dataset.itemSlot});render();}};
 function move(side) { if (game?.move(side)) { artNotice = ''; roundMoves.push({at:game.clock,side}); render(); } }
 $('left').onclick = () => move(0); $('right').onclick = () => move(1);
 $('skip-rescue').onclick = () => { if(sessionFalls>=2&&!game?.paused&&(rescuePresentation.skip()||game?.skipRescue()))render(); };
@@ -219,6 +222,16 @@ function render() {
   const events = g.drainEvents();
   if(rescuePresentation.observe(events)){audio.stop();audio.event('cloud_catch');}
   const holdingRescue=rescuePresentation.holding;
+  for(const e of events){
+    if(e.type==='item_awarded')itemToast={text:`6번째 발판 선두 도착! ${ITEMS[e.kind].name} 획득`,until:g.clock+2400};
+    if(e.type==='item_full')itemToast={text:'보관함이 가득 찼어요. 아이템은 최대 3개예요.',until:g.clock+2400};
+  }
+  const itemDisabled=g.paused||g.phase!=='playing'||player.state!=='idle'||!!g.itemEffect;
+  patchMarkup($('item-slots'),Array.from({length:3},(_,index)=>{
+    const kind=g.inventory[index],item=ITEMS[kind];
+    return `<button data-item-slot="${index}" ${!kind||itemDisabled?'disabled':''} aria-label="${item?`${item.name} 사용 · ${item.description}`:'빈 아이템 칸'}">${item?itemIcon(kind):'<span class="empty-item">＋</span>'}<span>${item?.name??'빈 칸'}</span></button>`;
+  }).join(''));
+  $('item-status').textContent=g.itemEffect?`${ITEMS[g.itemEffect.kind].name} 사용 중 · 제한 시간은 계속 흘러요.`:itemToast&&g.clock<itemToast.until?itemToast.text:g.inventory.length?'아이템을 눌러 사용해요 · 다음 구간에도 가져가요.':'6번째 발판에 먼저 도착하면 아이템을 받아요.';
   if(displayedPhase==='hint'&&g.phase==='playing')audio.event('hint_end');
   displayedPhase=g.phase;
   if(g.phase==='playing'&&!g.paused&&player.state==='idle'&&g.clock-lastReaction>=8000&&![...audio.nodes].some(n=>!n.music)){lastReaction=g.clock;audio.event('reaction_'+selected);}
@@ -251,7 +264,7 @@ function render() {
   }
   patchMarkup($('board'),tiles);
   $('hint-map').hidden = !hint;
-  patchMarkup($('hint-map'), hint ? `<small>길을 기억하세요 · 전체 경로</small><div>${hint.map((side, row) => `<span><b>${row + 1}</b>${side === 0 ? '↖' : '↗'}</span>`).join('')}</div>` : '');
+  patchMarkup($('hint-map'), hint ? `<small>${g.itemEffect?ITEMS[g.itemEffect.kind].name+' · 안전한 길':'길을 기억하세요 · 전체 경로'}</small><div>${hint.map((side, row) => side===null?'':`<span><b>${row + 1}</b>${side === 0 ? '↖' : '↗'}</span>`).join('')}</div>` : '');
   patchMarkup($('world-effects'), g.actors.flatMap((actor, i) => {
     if (actor.state === 'rescued') return [];
     const x = actor.row < 0 ? 18 + i * 19 : (actor.side === 0 ? 32 : 64) + (i - 1.5) * 2.8;
@@ -286,7 +299,7 @@ function render() {
   document.querySelector('.hud small').textContent = `${themeName(activeTheme)} · 최고 ${peak}층`;
   $('progress').textContent = `${Math.max(0, Math.min(g.config.rows, player.row + 1))} / ${g.config.rows}`;
   $('message').textContent = artNotice || (g.paused ? '잠시 쉬어가는 중이에요.' : holdingRescue ? '구름이 받아줬어요! 잠깐 숨을 고르는 중이에요.' : g.phase === 'hint' ? `반짝이는 길을 기억하세요 · ${Math.max(1, Math.ceil((g.config.hint - g.clock) / 1000))}` : g.phase === 'rescuing' ? (player.until - g.clock > 800 ? '어? 분명 여기였는데…' : '구름 회수반 출동! 가방도 챙기세요.') : g.phase === 'result' ? '오늘도 양보해 주셔서 감사합니다.' : player.state === 'jump' ? '한 걸음, 조심조심.' : '왼쪽일까요, 오른쪽일까요?');
-  $('left').disabled = $('right').disabled = g.paused || g.phase !== 'playing' || player.state !== 'idle';
+  $('left').disabled = $('right').disabled = g.paused || g.phase !== 'playing' || player.state !== 'idle' || !!g.itemEffect;
   if (g.phase === 'result' && !resultHandled && !holdingRescue) audio.stop();
   for (const event of events) {
     if (event.type !== 'finish' && !(g.result && event.type==='rescue')) audio.event(event.type,{player:event.player});

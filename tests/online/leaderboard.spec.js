@@ -10,7 +10,9 @@ test('independent browsers submit server-validated records and see the same shar
       await page.locator('#nickname').fill(name);await page.locator('#start').click();await expect(page.locator('#lobby')).toBeHidden();
       const route=await page.locator('#hint-map span').allTextContents();expect(route.length).toBe(8);
       await expect(page.locator('#left')).toBeEnabled({timeout:5000});
-      for(const arrow of route){const button=page.locator(arrow.includes('↖')?'#left':'#right');await button.click();}
+      for(const [index,arrow] of route.entries()){const button=page.locator(arrow.includes('↖')?'#left':'#right');await button.click();
+        if(index===5){await expect(page.locator('[data-item-slot="0"]')).toBeEnabled();await page.locator('[data-item-slot="0"]').click();await expect(page.locator('#item-status')).toContainText('사용 중');await expect(page.locator('#left')).toBeEnabled({timeout:5000});}
+      }
       if(interrupt){await expect(page.locator('#network-retry')).toBeVisible();await expect(page.locator('#next')).toBeDisabled();await page.locator('#network-retry').click();}
       await expect(page.locator('#online-result')).toContainText('최고 8층 기록 확인');
       await expect(page.locator('#next')).toBeEnabled();

@@ -1,3 +1,7 @@
+# v0.10.0 · 아이템 추가
+
+[업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.10.0.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.10.0.zip) · [소스 ZIP](AFTER_YOU_Source_v0.10.0.zip)
+
 # v0.9.5 · 게임 내 개발 문구 정리
 
 [배포 업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.9.5.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.9.5.zip) · [소스 ZIP](AFTER_YOU_Source_v0.9.5.zip)

@@ -9,7 +9,7 @@ async function readBody(request){
  const bytes=new Uint8Array(size);let at=0;for(const chunk of chunks){bytes.set(chunk,at);at+=chunk.length;}
  try{const input=JSON.parse(new TextDecoder().decode(bytes));if(!input||typeof input!=='object'||Array.isArray(input))throw Error();return input;}catch{throw fail(400,'올바른 JSON이 필요합니다.');}
 }
-function nextStage(run){run.seed=crypto.getRandomValues(new Uint32Array(1))[0];run.token=crypto.randomUUID();return {token:run.token,stage:run.stage,seed:run.seed,peak:run.peak};}
+function nextStage(run){run.seed=crypto.getRandomValues(new Uint32Array(1))[0];run.token=crypto.randomUUID();return {token:run.token,stage:run.stage,seed:run.seed,peak:run.peak,items:run.items??{inventory:[],rewardCeiling:-1}};}
 export default {
  async fetch(request,env){
   const url=new URL(request.url);
