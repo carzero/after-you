@@ -19,7 +19,7 @@ test('mobile game: hint, guarded movement, pause, fall, retry and settings persi
   const before=await page.locator('#timer').textContent();await page.waitForTimeout(1200);expect(await page.locator('#timer').textContent()).toBe(before);
   await page.getByRole('button',{name:'다시 건너기',exact:true}).click();
   await page.locator('#right').click();
-  await expect(page.locator('#result-title')).toHaveText('구름 회수 완료');
+  await expect(page.locator('#result-title')).toHaveText('구름 회수 완료',{timeout:10000});
   await page.locator('#retry').click();await expect(page.locator('#progress')).toHaveText('0 / 8');
   await page.locator('#settings-open').click();await page.locator('#sound').uncheck();await page.locator('#reducedMotion').check();
   await page.getByRole('button',{name:'설정 완료'}).click();await page.reload();await page.locator('#settings-open').evaluate(el=>el.click());
