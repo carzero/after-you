@@ -1,0 +1,22 @@
+{
+  "AFTER_YOU_Cloudflare_CMD_v0.9.1.zip": {
+    "bytes": 17991661,
+    "sha256": "1849b549fb97eeb1613be6e8c51994ff4aab654e2dc7ed14f530df82f6134e3a"
+  },
+  "AFTER_YOU_Playtest_v0.9.1.zip": {
+    "bytes": 8936120,
+    "sha256": "2aade4cae5ade99f7932b0cbb07cfceeed395e3a177b74e94d0ad2e15173bfb0"
+  },
+  "AFTER_YOU_Source_v0.9.1.zip": {
+    "bytes": 26987719,
+    "sha256": "a0f708178a6cf5b0f315d3cdcf581cd6b4bb9f36f92250a8a2df8e79f6fdfa30"
+  },
+  "AFTER_YOU_Playtest_v0.9.1.html": {
+    "bytes": 12030180,
+    "sha256": "3910286c26947a3dcc943ea4f0b4ace2da52cfda7732d934d88191e3f112ea5a"
+  },
+  "AFTER_YOU_Server_v0.9.1.zip": {
+    "bytes": 8848151,
+    "sha256": "e945ac7579fb381c6f058eb445c3832f3d1f066d90391e9604bf56b7b81f24b7"
+  }
+}
