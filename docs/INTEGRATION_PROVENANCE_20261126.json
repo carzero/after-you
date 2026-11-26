@@ -1,0 +1,915 @@
+[
+  {
+    "runtime": "layers/ch01/back_cloud_1.webp",
+    "sha256": "2dcf22aa3430d3dad4b0243eaf06ed67b76ebebe908cf386e4927bcfff765c57",
+    "displayCrop": [
+      64,
+      120,
+      2108,
+      611
+    ]
+  },
+  {
+    "runtime": "layers/ch01/back_cloud_2.webp",
+    "sha256": "a1ab634632d6b99f5502c2c92ca9b310ed827bdfb0afd71f41b6d6057af46146",
+    "displayCrop": [
+      84,
+      181,
+      1690,
+      773
+    ]
+  },
+  {
+    "runtime": "layers/ch01/back_cloud_3.webp",
+    "sha256": "383b1b73a6d25864d42dfa5077c86d9d69c3163b6ab4282c70c13880f8b8d2c1",
+    "displayCrop": [
+      647,
+      234,
+      1509,
+      500
+    ]
+  },
+  {
+    "runtime": "layers/ch01/collapse.webp",
+    "sha256": "5fd070f8b87135568e529fa511fa580eaf4c3ebd3f70d38e4ba16ac576ab48ee",
+    "displayCrop": [
+      119,
+      263,
+      1135,
+      1047
+    ]
+  },
+  {
+    "runtime": "layers/ch01/crack.webp",
+    "sha256": "f270f341bd8464fc37b398a779c39aa230170866c28ee164b73dd3de3a669de3",
+    "displayCrop": [
+      127,
+      248,
+      1122,
+      1042
+    ]
+  },
+  {
+    "runtime": "layers/ch01/finish.webp",
+    "sha256": "3ac3ddf5cad33332b21ffcf20933453ada14a949c172047c67cdbf0bd969a5af",
+    "displayCrop": [
+      90,
+      41,
+      2079,
+      673
+    ]
+  },
+  {
+    "runtime": "layers/ch01/front_left.webp",
+    "sha256": "db6cd4e3e85669c6e90453c8d56a439ee6fea6debb1f41830c2c480ffcac2c25",
+    "displayCrop": [
+      99,
+      147,
+      1676,
+      765
+    ]
+  },
+  {
+    "runtime": "layers/ch01/front_right.webp",
+    "sha256": "2f9040825e8b58c93b393a52924838538fa9c2682bf3635b98eeafdaa4e69a44",
+    "displayCrop": [
+      195,
+      180,
+      1578,
+      716
+    ]
+  },
+  {
+    "runtime": "layers/ch01/landmark.webp",
+    "sha256": "5649b1f69e7f842aa2dcb5b1f69866ae4faddbd244a8a3fbe78de3a50f4f06fc",
+    "displayCrop": [
+      160,
+      10,
+      1612,
+      881
+    ]
+  },
+  {
+    "runtime": "layers/ch01/sky.webp",
+    "sha256": "42641866441af53403cd3dd11af014a964c98dad31f393a7b4ec0d6fa03ad773",
+    "displayCrop": [
+      0,
+      0,
+      1024,
+      1536
+    ]
+  },
+  {
+    "runtime": "layers/ch01/start.webp",
+    "sha256": "0f48d55701cd9fe3f6d97a6934d9455dbffd986e5da4f4c319017a31e19bed95",
+    "displayCrop": [
+      97,
+      126,
+      2072,
+      638
+    ]
+  },
+  {
+    "runtime": "layers/ch01/tile.webp",
+    "sha256": "20bf4c46012b98cfc3968f70773a13093fdb65f28bba9f97264e398d3bef99ee",
+    "displayCrop": [
+      128,
+      248,
+      1121,
+      1040
+    ]
+  },
+  {
+    "runtime": "layers/ch02/back_cloud_1.webp",
+    "sha256": "59042e33a9c0c8e7214a80c89ab206f13daa5ca509093aa1c3af2151dfd3e2f8",
+    "displayCrop": [
+      132,
+      137,
+      2040,
+      591
+    ]
+  },
+  {
+    "runtime": "layers/ch02/back_cloud_2.webp",
+    "sha256": "d34eb51d44fec1234903da110d96ecac9f7397129572da4299e1db925b15eaca",
+    "displayCrop": [
+      267,
+      208,
+      1506,
+      708
+    ]
+  },
+  {
+    "runtime": "layers/ch02/back_cloud_3.webp",
+    "sha256": "8c7b8d33ac4b9761c338644113d4c3612163069d729af7d066d693df1008aea2",
+    "displayCrop": [
+      176,
+      236,
+      1980,
+      526
+    ]
+  },
+  {
+    "runtime": "layers/ch02/collapse.webp",
+    "sha256": "51be752092ec1773a89dac889b1ca7b4d2c104d35b060090c0b02a8a2f8045f3",
+    "displayCrop": [
+      82,
+      227,
+      1137,
+      1087
+    ]
+  },
+  {
+    "runtime": "layers/ch02/crack.webp",
+    "sha256": "8ec7b2c1b3a1338f90930887f43b4918859eaee2f055344dd63240b97cd48475",
+    "displayCrop": [
+      125,
+      249,
+      1124,
+      1039
+    ]
+  },
+  {
+    "runtime": "layers/ch02/finish.webp",
+    "sha256": "fb1a489c2c00ad343b778e00aeef5a822101600ff4ad09ff57a3bf588dd29aad",
+    "displayCrop": [
+      119,
+      22,
+      1411,
+      993
+    ]
+  },
+  {
+    "runtime": "layers/ch02/front_left.webp",
+    "sha256": "3baa8b844ccd94e0b4b716ff6711e34b6f807a4206bb7b1b8bc8907fb63f4de4",
+    "displayCrop": [
+      13,
+      83,
+      797,
+      1687
+    ]
+  },
+  {
+    "runtime": "layers/ch02/front_right.webp",
+    "sha256": "8d86418df390c2ce4cd18ff0454c8605d1655a37ea4b48d7a706a119a40b4e74",
+    "displayCrop": [
+      128,
+      308,
+      862,
+      1326
+    ]
+  },
+  {
+    "runtime": "layers/ch02/landmark.webp",
+    "sha256": "a739a737762cba88d3dbaccc78b74d5c05de52257efdfa0d75a0c8bd603e8ee1",
+    "displayCrop": [
+      143,
+      54,
+      1179,
+      1136
+    ]
+  },
+  {
+    "runtime": "layers/ch02/mail_balloon.webp",
+    "sha256": "e94a0be9285de82ac6ca219c3a8952afd8c878076a653bbfbe953b77567480f0",
+    "displayCrop": [
+      235,
+      167,
+      868,
+      1272
+    ]
+  },
+  {
+    "runtime": "layers/ch02/mailbox.webp",
+    "sha256": "fa90b126951390cbcc55fc805720138b654fbb8399924493f9d4c445562d4c43",
+    "displayCrop": [
+      283,
+      132,
+      890,
+      1181
+    ]
+  },
+  {
+    "runtime": "layers/ch02/sky.webp",
+    "sha256": "b43076a0e9d6eae93e5433367ac0955793397704408cac311ecdff12e3d841fb",
+    "displayCrop": [
+      0,
+      0,
+      941,
+      1672
+    ]
+  },
+  {
+    "runtime": "layers/ch02/start.webp",
+    "sha256": "dec67bfa5a0fdefb7bd2c76d800d08ac08d6f5fa7aa3dba50635f0df872edca3",
+    "displayCrop": [
+      44,
+      115,
+      1702,
+      813
+    ]
+  },
+  {
+    "runtime": "layers/ch02/tile.webp",
+    "sha256": "b8d8fd16d10bf7b323d4083a0a679d8af3cba4cdd0a0d97ed8eae0043fe59dcb",
+    "displayCrop": [
+      126,
+      249,
+      1123,
+      1038
+    ]
+  },
+  {
+    "runtime": "layers/ch02/windsock.webp",
+    "sha256": "d9ae5ebbcd1435ac5a05f5c15a57e89651639f755b5fdcc30e1c83da0c97ebd3",
+    "displayCrop": [
+      248,
+      143,
+      1081,
+      1046
+    ]
+  },
+  {
+    "runtime": "layers/ch03/back_cloud_1.webp",
+    "sha256": "be81bc0238eebd643f040cefd67bb318d0627084d3f6421ae9bf78ba7fb65f92",
+    "displayCrop": [
+      60,
+      51,
+      2112,
+      682
+    ]
+  },
+  {
+    "runtime": "layers/ch03/back_cloud_2.webp",
+    "sha256": "cd5a892c5b8b57c8e0e921af864353ddb1caf5b5df0ca49ff213b72936590e72",
+    "displayCrop": [
+      196,
+      163,
+      1566,
+      753
+    ]
+  },
+  {
+    "runtime": "layers/ch03/back_cloud_3.webp",
+    "sha256": "b6a3ca24352f0109c2ef35ad4fce4cf76ce3ce43d2bb14c9488d88ba8ebed73e",
+    "displayCrop": [
+      156,
+      248,
+      2016,
+      486
+    ]
+  },
+  {
+    "runtime": "layers/ch03/barricade.webp",
+    "sha256": "d4dd176b87599e667db8a11b91f37e2fbf2c9fa310b2de73aa9934717c4edfec",
+    "displayCrop": [
+      243,
+      230,
+      1278,
+      901
+    ]
+  },
+  {
+    "runtime": "layers/ch03/collapse.webp",
+    "sha256": "2ce021073e7de3865062e4fbda4271a17b88ce7c8031b9facb325b6c58bf3cbd",
+    "displayCrop": [
+      49,
+      177,
+      1205,
+      1066
+    ]
+  },
+  {
+    "runtime": "layers/ch03/crack.webp",
+    "sha256": "761f622804c15db9b809de686219986208f7351410829ede5b679ac0624479a9",
+    "displayCrop": [
+      125,
+      247,
+      1126,
+      1037
+    ]
+  },
+  {
+    "runtime": "layers/ch03/crates.webp",
+    "sha256": "acea2aa7d995269908242d3c6e47161c34a69391e0dbcc9e78e9e39ce860c584",
+    "displayCrop": [
+      359,
+      57,
+      1155,
+      987
+    ]
+  },
+  {
+    "runtime": "layers/ch03/finish.webp",
+    "sha256": "4cef73b6204302a7cb97d22d2c157d6ef8b6830adf35bc386068ae825c5e3053",
+    "displayCrop": [
+      71,
+      16,
+      1703,
+      818
+    ]
+  },
+  {
+    "runtime": "layers/ch03/front_left.webp",
+    "sha256": "4b72d3d6fed7da5b7e32fe9db914c30aa94eaac292bba71cde349807d542f804",
+    "displayCrop": [
+      40,
+      107,
+      1029,
+      1354
+    ]
+  },
+  {
+    "runtime": "layers/ch03/front_right.webp",
+    "sha256": "9de2d26ce8bae9a85e7860b05d27b3c1a10cb34182982d24cf38f8707c5974a3",
+    "displayCrop": [
+      72,
+      185,
+      1140,
+      1147
+    ]
+  },
+  {
+    "runtime": "layers/ch03/landmark.webp",
+    "sha256": "d05f869e06d84174c7ddeed8a424444ec601f4d9c95e003a4104dcf47d951683",
+    "displayCrop": [
+      276,
+      140,
+      1260,
+      911
+    ]
+  },
+  {
+    "runtime": "layers/ch03/lantern.webp",
+    "sha256": "eef7a8537e97be9f8af562bbe91d35c0d006afca21c6332704c96abf8ecda4b2",
+    "displayCrop": [
+      201,
+      121,
+      922,
+      1190
+    ]
+  },
+  {
+    "runtime": "layers/ch03/sky.webp",
+    "sha256": "ab59dfabaa216dfa50bcff207b41d9b2004d01ccec98930f515df84d786e8c53",
+    "displayCrop": [
+      0,
+      0,
+      941,
+      1672
+    ]
+  },
+  {
+    "runtime": "layers/ch03/start.webp",
+    "sha256": "10e20d2d3fe8edf2a1be4c6b9c97c5a3fe3492f6541ed5cd29f09a532e4bdb73",
+    "displayCrop": [
+      74,
+      97,
+      1700,
+      785
+    ]
+  },
+  {
+    "runtime": "layers/ch03/tile.webp",
+    "sha256": "31c4f94c8bacddf428911aa0cd1da03bfb3818d31d31276a507e295ca2f45161",
+    "displayCrop": [
+      126,
+      247,
+      1124,
+      1037
+    ]
+  },
+  {
+    "runtime": "layers/ch04/bench.webp",
+    "sha256": "ba97aa9de6d2bf9786ee3f15e28dbc84cf3e21e02de6707350ce726ef3b1cd9e",
+    "displayCrop": [
+      196,
+      87,
+      1260,
+      946
+    ]
+  },
+  {
+    "runtime": "layers/ch04/collapse.webp",
+    "sha256": "0c75dbe1eec94fcd95f5a124068fca54d5feed7927e21162426a83d69c08e3cb",
+    "displayCrop": [
+      109,
+      210,
+      1137,
+      1027
+    ]
+  },
+  {
+    "runtime": "layers/ch04/crack.webp",
+    "sha256": "31614e40bb5c38eaf1387b899f2d6bd0d19711961cb5abbee1e6cd0037977e40",
+    "displayCrop": [
+      125,
+      248,
+      1126,
+      1043
+    ]
+  },
+  {
+    "runtime": "layers/ch04/finish.webp",
+    "sha256": "5b26452550cdb9d9c65a3364a17b370749322626f9ef19ffc966103a92a9170b",
+    "displayCrop": [
+      122,
+      96,
+      1126,
+      1041
+    ]
+  },
+  {
+    "runtime": "layers/ch04/landmark.webp",
+    "sha256": "897cef80442cae6783a4810988962c438e6ed50278256719664f663eb9129432",
+    "displayCrop": [
+      353,
+      52,
+      1171,
+      966
+    ]
+  },
+  {
+    "runtime": "layers/ch04/sky.webp",
+    "sha256": "e1fa830b06183e3d04cf8ba29e196777558abc80cb6fb37abe74adfcaf461b0c",
+    "displayCrop": [
+      0,
+      0,
+      941,
+      1672
+    ]
+  },
+  {
+    "runtime": "layers/ch04/star.webp",
+    "sha256": "6065214b4e4021bf757888385b39cc38cc5acc53142210ddc455a1774e9387b7",
+    "displayCrop": [
+      241,
+      0,
+      1250,
+      1024
+    ]
+  },
+  {
+    "runtime": "layers/ch04/start.webp",
+    "sha256": "5461bdc2eb3849096465d9058d1b35b8bda5e42ccf5bcfff861470bc2b757560",
+    "displayCrop": [
+      125,
+      250,
+      1124,
+      1039
+    ]
+  },
+  {
+    "runtime": "layers/ch04/ticket_machine.webp",
+    "sha256": "1f71dda2308b84d2dace75cd6519dba2955b2d008729f4fce6a219775dfc1213",
+    "displayCrop": [
+      275,
+      75,
+      895,
+      1241
+    ]
+  },
+  {
+    "runtime": "layers/ch04/tile.webp",
+    "sha256": "dd2fbde3bb783fa0565de19ecf847c8ae501ebd6eee36c9fe4c3d8a8341dab54",
+    "displayCrop": [
+      127,
+      250,
+      1125,
+      1041
+    ]
+  },
+  {
+    "runtime": "layers/ch05/bell.webp",
+    "sha256": "e83b688704e36d471eb1d3cc7636a469ccae714faf437cbfab6928343046f475",
+    "displayCrop": [
+      341,
+      89,
+      1167,
+      947
+    ]
+  },
+  {
+    "runtime": "layers/ch05/collapse.webp",
+    "sha256": "e1dd53d015dcabfd502bd9d4239c16f9c62ba60bbeefd8323328a9c5e893fbc7",
+    "displayCrop": [
+      137,
+      92,
+      1369,
+      936
+    ]
+  },
+  {
+    "runtime": "layers/ch05/crack.webp",
+    "sha256": "05287e48ff08d0f6fe078da47874d437808ff9b61be09f1d0301f7844b24af6a",
+    "displayCrop": [
+      121,
+      247,
+      1128,
+      1042
+    ]
+  },
+  {
+    "runtime": "layers/ch05/finish.webp",
+    "sha256": "0bae0ffb7aeacaa431597cc51f62bc81308c5b13224c0caae6b57f961f4183cf",
+    "displayCrop": [
+      97,
+      22,
+      1439,
+      955
+    ]
+  },
+  {
+    "runtime": "layers/ch05/landmark.webp",
+    "sha256": "d0308a796b1fcee4cb22a097be835adfdd4b8d8bd92bb2c73cb65d8a7eed79da",
+    "displayCrop": [
+      225,
+      12,
+      1303,
+      1009
+    ]
+  },
+  {
+    "runtime": "layers/ch05/paper_stack.webp",
+    "sha256": "0d7017115fa03307cad948295d259006204a6ab3f792e0a200fb49ffd846639f",
+    "displayCrop": [
+      213,
+      57,
+      920,
+      1330
+    ]
+  },
+  {
+    "runtime": "layers/ch05/sky.webp",
+    "sha256": "ccdb88dbb0179d64db9ba6ccc025fe6aee76ce98309fb448a2ee3a007551e200",
+    "displayCrop": [
+      0,
+      0,
+      941,
+      1672
+    ]
+  },
+  {
+    "runtime": "layers/ch05/stamp.webp",
+    "sha256": "71a825b06747f66f44424991134c06122cb8750b0745b6c05cb41e1aa678d610",
+    "displayCrop": [
+      160,
+      24,
+      1025,
+      1287
+    ]
+  },
+  {
+    "runtime": "layers/ch05/start.webp",
+    "sha256": "32a7d80b95877236745c78cfaf23095b0ea4c7cfe7311228e8e3692ac1151f94",
+    "displayCrop": [
+      65,
+      189,
+      1455,
+      861
+    ]
+  },
+  {
+    "runtime": "layers/ch05/tile.webp",
+    "sha256": "2ddbc3baacbf881e79a6e2ab6a15e35bfc7c144ebb0865d70e595857d77994f5",
+    "displayCrop": [
+      125,
+      248,
+      1124,
+      1041
+    ]
+  },
+  {
+    "runtime": "clouds/ch04/back.webp",
+    "sha256": "acef004006e23fe1664c13cb652c27c37c6a855fa2a10a30994f468d05ea5317",
+    "displayCrop": [
+      52,
+      106,
+      2114,
+      621
+    ]
+  },
+  {
+    "runtime": "clouds/ch04/front_left.webp",
+    "sha256": "9694c8396dd165b8912e19197395e3e32f2f761184a96c961e95b6e6cb9e6e21",
+    "displayCrop": [
+      15,
+      158,
+      741,
+      1753
+    ]
+  },
+  {
+    "runtime": "clouds/ch04/front_right.webp",
+    "sha256": "886bb61ad0d6419e46d05d294b816365fedcf5a643ec7b3670ad00e7b28f1b7c",
+    "displayCrop": [
+      48,
+      140,
+      795,
+      1736
+    ]
+  },
+  {
+    "runtime": "clouds/ch05/back.webp",
+    "sha256": "deb400c59eeda4dba09d9815d02ad2d688c2dbc47c820d3ee7950bdadd219510",
+    "displayCrop": [
+      110,
+      124,
+      2063,
+      617
+    ]
+  },
+  {
+    "runtime": "clouds/ch05/front_left.webp",
+    "sha256": "4fd3f80f11b82efc09866c3723bc7b2b75fe571728561a0230e837f54329af26",
+    "displayCrop": [
+      0,
+      195,
+      677,
+      1836
+    ]
+  },
+  {
+    "runtime": "clouds/ch05/front_right.webp",
+    "sha256": "e6dd899673ebe6800925c5e067e27689e3089897ee36e5f4ff28e436d81c85bb",
+    "displayCrop": [
+      248,
+      196,
+      991,
+      1069
+    ]
+  },
+  {
+    "runtime": "ui/title.webp",
+    "sha256": "0f5982409a92c24aece3373b294bd5a30b7e10cfdb709c339e23227e4c080cf1",
+    "displayCrop": null
+  },
+  {
+    "runtime": "ui/logo.webp",
+    "sha256": "43d5f17fbd782ab65fa7a11c25a77ef344c0d0641280d1f9b5360206b5b9f034",
+    "displayCrop": null
+  },
+  {
+    "runtime": "rescue/cloud.webp",
+    "sha256": "de12c41047a34aaefb19cad120dc2938aabbda4264bb8bd0ebbe06d8fb4e6f23",
+    "displayCrop": null
+  },
+  {
+    "runtime": "descent/potato.webp",
+    "sha256": "8239da902f426c3d5558412aac4095741e9238957be2200ffa54a1f5b5cf3453",
+    "displayCrop": null
+  },
+  {
+    "runtime": "descent/pigeon.webp",
+    "sha256": "208b347e283a0d6eb34b523f57db84b15d419b5b269257904c0463c673b49cc8",
+    "displayCrop": null
+  },
+  {
+    "runtime": "descent/duck.webp",
+    "sha256": "6d8e4684f5581fb241b9f3dc54f4597f6f11bb72e08ec1cf9ee190969b70f235",
+    "displayCrop": null
+  },
+  {
+    "runtime": "descent/rabbit.webp",
+    "sha256": "489e4425cff5e42b72dfeda9c3d1796be5a2b30d23d26a385133717d2a6dea9d",
+    "displayCrop": null
+  },
+  {
+    "runtime": "audio/bgm_ch01.mp3",
+    "sourceSha256": "6266f4e1d5fcec771e50e36cef18abe732b9776163d4a2638b12b23240497f63",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 34.28570833333333
+  },
+  {
+    "runtime": "audio/bgm_ch02.mp3",
+    "sourceSha256": "0e2b43c88d461b583b38f727389084f7a0cac822c84e31dcac4fceab2b0c0b12",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 24
+  },
+  {
+    "runtime": "audio/bgm_ch03.mp3",
+    "sourceSha256": "fba88ec767d67f1f2fd6ad9507d7c27285e9fdac62fbc59480883eba13d58f71",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 33.103458333333336
+  },
+  {
+    "runtime": "audio/bgm_ch04.mp3",
+    "sourceSha256": "57747cfa5359719abfe395eb12db3db027476ba3a5a6481c90960ee1644889cc",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 43.63635416666666
+  },
+  {
+    "runtime": "audio/bgm_ch05.mp3",
+    "sourceSha256": "90939cb4c5debd9cc2139e5cf3c5400ec748a194fae3ee9756e83dc6cc7d89f7",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 35.5555625
+  },
+  {
+    "runtime": "audio/bgm_ending.mp3",
+    "sourceSha256": "6c52f56524e6a764cfc21c4c2d5052970eca608738c7ab758534cad0f5e5a59d",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 40
+  },
+  {
+    "runtime": "audio/bgm_title.mp3",
+    "sourceSha256": "7d274212fc2e5fe2c1c4727297946dbcf29a716cfdd57db8bd2f6afeebd6002b",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 36.92308333333333
+  },
+  {
+    "runtime": "audio/chapter_clear.mp3",
+    "sourceSha256": "29bb85c20f5c6b5605318374a6c88773f906b00abf2eadbbc921518d634999e3",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 1.5
+  },
+  {
+    "runtime": "audio/cloud_catch.mp3",
+    "sourceSha256": "161fa4aace8e323a1674234790e09b54732dbe285ebc584d84791ba5882db11d",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.35
+  },
+  {
+    "runtime": "audio/envelope_open.mp3",
+    "sourceSha256": "e58aedfb814e02fa5da2ee07b0577d4d7747c9d469fdb04d0a8fb1caa6084039",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.5
+  },
+  {
+    "runtime": "audio/fall.mp3",
+    "sourceSha256": "f63c9cf4a7793754f3231c52f55cd836c05952b30b2339397c713711663dc513",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.45
+  },
+  {
+    "runtime": "audio/finish_fall.mp3",
+    "sourceSha256": "972b1f1d864a8ccce04b2492d5cf815e92295cf9168d18439d1f9664a827308f",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.65
+  },
+  {
+    "runtime": "audio/finish_success.mp3",
+    "sourceSha256": "e003b1acbde60e0d13a325a36a64f0fa666fcc26f77ac9505e208384196daeb2",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 1.1
+  },
+  {
+    "runtime": "audio/finish_timeout.mp3",
+    "sourceSha256": "43f4e3af159d3b69ce26bf7f8cd41d995294821bd8e811d4989cfb004116578f",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.72
+  },
+  {
+    "runtime": "audio/hint_end.mp3",
+    "sourceSha256": "e7fa175ee4e75fceaed919246a79ce863dfdbf5add6d2e868f66fbdc477a1f4d",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.25
+  },
+  {
+    "runtime": "audio/hint_show.mp3",
+    "sourceSha256": "d56542c6e0a9f78eef94aebba81371c095a70bad7f4e224dcf64366b401eef43",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.55
+  },
+  {
+    "runtime": "audio/jump.mp3",
+    "sourceSha256": "9055fd9bf17871ac4bd37db008c1ec7669ad8f2dd889cb64078ce3603c9a6855",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.28
+  },
+  {
+    "runtime": "audio/land_safe.mp3",
+    "sourceSha256": "956faefe4c74d283e503bcd76274d69b6a119f009238630942c6d651435e4d6a",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.26
+  },
+  {
+    "runtime": "audio/parcel_return.mp3",
+    "sourceSha256": "5e8d1146a1dadd764d8b9238e3d566410b6e2f4ebc0933b410ad6ca82f3e18df",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.48
+  },
+  {
+    "runtime": "audio/reaction_duck.mp3",
+    "sourceSha256": "09258c8ae84dda5df0b9140b945b91b2f09b219d0b690887ea454d7155fff7c8",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.48
+  },
+  {
+    "runtime": "audio/reaction_pigeon.mp3",
+    "sourceSha256": "61f0aea89805e008f9ab7a6b338d8745ab7090339e435037231fd7727735afd5",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.48
+  },
+  {
+    "runtime": "audio/reaction_potato.mp3",
+    "sourceSha256": "58fd6578685a9945bd40f0ba093314022a89537c15cf067722e531f547c8ee26",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.48
+  },
+  {
+    "runtime": "audio/reaction_rabbit.mp3",
+    "sourceSha256": "c70c0c79e17c45c43f7deea4e1bdbff815de36b482a40d96225d93be5dce292e",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.48
+  },
+  {
+    "runtime": "audio/rescue.mp3",
+    "sourceSha256": "d4137d3201546907197acb954efd8e0abcc0ce0096e969bd5e28b0b3d236d115",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.38
+  },
+  {
+    "runtime": "audio/stamp.mp3",
+    "sourceSha256": "40e2a2e6148fac0a575f7c7c6201cbedce1703776601b09572b04f945edf55ca",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.23
+  },
+  {
+    "runtime": "audio/tile_crack.mp3",
+    "sourceSha256": "3d8992fcaf35c6f810d55b9a4d571585fccde765ef7e44c113b881f906a5e361",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.15
+  },
+  {
+    "runtime": "audio/timer_warning.mp3",
+    "sourceSha256": "8a8a15c4b71abd6ad25aa53e4b4b83960927b4f36ab689471f3dc47342b948bd",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.35
+  },
+  {
+    "runtime": "audio/ui_back.mp3",
+    "sourceSha256": "39acd8888afc360b559bf9e57a816a51efcb1460e3a55e43f5b526478c4c9350",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.18
+  },
+  {
+    "runtime": "audio/ui_click.mp3",
+    "sourceSha256": "b54ad24ca392e31ca98c217e87e00e76f5e497430a32e9c5320d5d8e51b84b12",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.1
+  },
+  {
+    "runtime": "audio/ui_locked.mp3",
+    "sourceSha256": "e4b70cd66ed42b6259e4b18fb969f0239ea32f4c7b6becba56d3284a5895a2bf",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.18
+  },
+  {
+    "runtime": "audio/ui_toggle_off.mp3",
+    "sourceSha256": "17695228229fc76a924af51773031953c1d02ff27d197ea944682292d32f504b",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.18
+  },
+  {
+    "runtime": "audio/ui_toggle_on.mp3",
+    "sourceSha256": "78240bc8c1db56958507369cd3481fe415f4a5722b65176a82690221aa76751c",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 0.18
+  },
+  {
+    "runtime": "audio/unlock.mp3",
+    "sourceSha256": "86e91b84445a98779682db0dd6684dd090b9577b49f5a035429be1b77dd5d594",
+    "sourceFormat": "48000Hz stereo 16bit WAV",
+    "seconds": 1
+  }
+]

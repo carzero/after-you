@@ -1,0 +1,332 @@
+[
+  {
+    "id": "bgm_ch01",
+    "frames": 1645714,
+    "seconds": 34.28570833333333,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -24.119,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "6266f4e1d5fcec771e50e36cef18abe732b9776163d4a2638b12b23240497f63"
+  },
+  {
+    "id": "bgm_ch02",
+    "frames": 1152000,
+    "seconds": 24.0,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -21.47,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "0e2b43c88d461b583b38f727389084f7a0cac822c84e31dcac4fceab2b0c0b12"
+  },
+  {
+    "id": "bgm_ch03",
+    "frames": 1588966,
+    "seconds": 33.103458333333336,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -25.262,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "fba88ec767d67f1f2fd6ad9507d7c27285e9fdac62fbc59480883eba13d58f71"
+  },
+  {
+    "id": "bgm_ch04",
+    "frames": 2094545,
+    "seconds": 43.63635416666666,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -23.49,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "57747cfa5359719abfe395eb12db3db027476ba3a5a6481c90960ee1644889cc"
+  },
+  {
+    "id": "bgm_ch05",
+    "frames": 1706667,
+    "seconds": 35.5555625,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -23.08,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "90939cb4c5debd9cc2139e5cf3c5400ec748a194fae3ee9756e83dc6cc7d89f7"
+  },
+  {
+    "id": "bgm_ending",
+    "frames": 1920000,
+    "seconds": 40.0,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -23.343,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "6c52f56524e6a764cfc21c4c2d5052970eca608738c7ab758534cad0f5e5a59d"
+  },
+  {
+    "id": "bgm_title",
+    "frames": 1772308,
+    "seconds": 36.92308333333333,
+    "peak_dbfs": -7.535,
+    "rms_dbfs": -23.886,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "7d274212fc2e5fe2c1c4727297946dbcf29a716cfdd57db8bd2f6afeebd6002b"
+  },
+  {
+    "id": "chapter_clear",
+    "frames": 72000,
+    "seconds": 1.5,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -13.755,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "29bb85c20f5c6b5605318374a6c88773f906b00abf2eadbbc921518d634999e3"
+  },
+  {
+    "id": "cloud_catch",
+    "frames": 16800,
+    "seconds": 0.35,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -10.843,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "161fa4aace8e323a1674234790e09b54732dbe285ebc584d84791ba5882db11d"
+  },
+  {
+    "id": "envelope_open",
+    "frames": 24000,
+    "seconds": 0.5,
+    "peak_dbfs": -4.254,
+    "rms_dbfs": -26.187,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "e58aedfb814e02fa5da2ee07b0577d4d7747c9d469fdb04d0a8fb1caa6084039"
+  },
+  {
+    "id": "fall",
+    "frames": 21600,
+    "seconds": 0.45,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -10.313,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "f63c9cf4a7793754f3231c52f55cd836c05952b30b2339397c713711663dc513"
+  },
+  {
+    "id": "finish_fall",
+    "frames": 31200,
+    "seconds": 0.65,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.838,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "972b1f1d864a8ccce04b2492d5cf815e92295cf9168d18439d1f9664a827308f"
+  },
+  {
+    "id": "finish_success",
+    "frames": 52800,
+    "seconds": 1.1,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -16.778,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "e003b1acbde60e0d13a325a36a64f0fa666fcc26f77ac9505e208384196daeb2"
+  },
+  {
+    "id": "finish_timeout",
+    "frames": 34560,
+    "seconds": 0.72,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -15.439,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "43f4e3af159d3b69ce26bf7f8cd41d995294821bd8e811d4989cfb004116578f"
+  },
+  {
+    "id": "hint_end",
+    "frames": 12000,
+    "seconds": 0.25,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -16.817,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "e7fa175ee4e75fceaed919246a79ce863dfdbf5add6d2e868f66fbdc477a1f4d"
+  },
+  {
+    "id": "hint_show",
+    "frames": 26400,
+    "seconds": 0.55,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -17.411,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "d56542c6e0a9f78eef94aebba81371c095a70bad7f4e224dcf64366b401eef43"
+  },
+  {
+    "id": "jump",
+    "frames": 13440,
+    "seconds": 0.28,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.464,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "9055fd9bf17871ac4bd37db008c1ec7669ad8f2dd889cb64078ce3603c9a6855"
+  },
+  {
+    "id": "land_safe",
+    "frames": 12480,
+    "seconds": 0.26,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -18.395,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "956faefe4c74d283e503bcd76274d69b6a119f009238630942c6d651435e4d6a"
+  },
+  {
+    "id": "parcel_return",
+    "frames": 23040,
+    "seconds": 0.48,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -22.057,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "5e8d1146a1dadd764d8b9238e3d566410b6e2f4ebc0933b410ad6ca82f3e18df"
+  },
+  {
+    "id": "reaction_duck",
+    "frames": 23040,
+    "seconds": 0.48,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.692,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "09258c8ae84dda5df0b9140b945b91b2f09b219d0b690887ea454d7155fff7c8"
+  },
+  {
+    "id": "reaction_pigeon",
+    "frames": 23040,
+    "seconds": 0.48,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.691,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "61f0aea89805e008f9ab7a6b338d8745ab7090339e435037231fd7727735afd5"
+  },
+  {
+    "id": "reaction_potato",
+    "frames": 23040,
+    "seconds": 0.48,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.692,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "58fd6578685a9945bd40f0ba093314022a89537c15cf067722e531f547c8ee26"
+  },
+  {
+    "id": "reaction_rabbit",
+    "frames": 23040,
+    "seconds": 0.48,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -11.694,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "c70c0c79e17c45c43f7deea4e1bdbff815de36b482a40d96225d93be5dce292e"
+  },
+  {
+    "id": "rescue",
+    "frames": 18240,
+    "seconds": 0.38,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -18.296,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "d4137d3201546907197acb954efd8e0abcc0ce0096e969bd5e28b0b3d236d115"
+  },
+  {
+    "id": "stamp",
+    "frames": 11040,
+    "seconds": 0.23,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -19.268,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "40e2a2e6148fac0a575f7c7c6201cbedce1703776601b09572b04f945edf55ca"
+  },
+  {
+    "id": "tile_crack",
+    "frames": 7200,
+    "seconds": 0.15,
+    "peak_dbfs": -6.253,
+    "rms_dbfs": -24.018,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "3d8992fcaf35c6f810d55b9a4d571585fccde765ef7e44c113b881f906a5e361"
+  },
+  {
+    "id": "timer_warning",
+    "frames": 16800,
+    "seconds": 0.35,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -18.317,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "8a8a15c4b71abd6ad25aa53e4b4b83960927b4f36ab689471f3dc47342b948bd"
+  },
+  {
+    "id": "ui_back",
+    "frames": 8640,
+    "seconds": 0.18,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -19.572,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "39acd8888afc360b559bf9e57a816a51efcb1460e3a55e43f5b526478c4c9350"
+  },
+  {
+    "id": "ui_click",
+    "frames": 4800,
+    "seconds": 0.1,
+    "peak_dbfs": -3.779,
+    "rms_dbfs": -19.69,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "b54ad24ca392e31ca98c217e87e00e76f5e497430a32e9c5320d5d8e51b84b12"
+  },
+  {
+    "id": "ui_locked",
+    "frames": 8640,
+    "seconds": 0.18,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -19.227,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "e4b70cd66ed42b6259e4b18fb969f0239ea32f4c7b6becba56d3284a5895a2bf"
+  },
+  {
+    "id": "ui_toggle_off",
+    "frames": 8640,
+    "seconds": 0.18,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -10.727,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "17695228229fc76a924af51773031953c1d02ff27d197ea944682292d32f504b"
+  },
+  {
+    "id": "ui_toggle_on",
+    "frames": 8640,
+    "seconds": 0.18,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -10.726,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "78240bc8c1db56958507369cd3481fe415f4a5722b65176a82690221aa76751c"
+  },
+  {
+    "id": "unlock",
+    "frames": 48000,
+    "seconds": 1.0,
+    "peak_dbfs": -3.742,
+    "rms_dbfs": -18.073,
+    "clipped_samples": 0,
+    "endpoint_delta": 0.0,
+    "sha256": "86e91b84445a98779682db0dd6684dd090b9577b49f5a035429be1b77dd5d594"
+  }
+]

@@ -7,7 +7,7 @@ async function ready(page){
 }
 test('five layered themes preserve hidden tile art and settings restore at 320px',async({page})=>{
   await page.setViewportSize({width:320,height:568});const requested=[];page.on('request',r=>{if(r.resourceType()==='image'&&r.url().includes('.webp'))requested.push(r.url());});await ready(page);
-  expect(requested.some(url=>/chapters\/ch02\/sky/.test(url))).toBe(false);
+  expect(requested.some(url=>/layers\/ch02\/sky/.test(url))).toBe(false);
   await page.clock.runFor(2700);
   const before=await page.locator('#timer').textContent();
   for(const theme of ['ch01','ch02','ch03','ch04','ch05']){
@@ -22,11 +22,11 @@ test('five layered themes preserve hidden tile art and settings restore at 320px
   await page.reload();await page.locator('#settings-open').evaluate(el=>el.click());await expect(page.locator('#theme-select')).toHaveValue('ch05');
 });
 test('failed background load keeps the previous scene and allows continued play',async({page})=>{
-  await page.route('**/chapters/ch03/sky.webp*',r=>r.request().resourceType()==='image'?r.abort():r.continue());await ready(page);await page.clock.runFor(2700);
+  await page.route('**/layers/ch03/sky.webp*',r=>r.request().resourceType()==='image'?r.abort():r.continue());await ready(page);await page.clock.runFor(2700);
   await page.locator('#settings-open').click();await page.locator('#theme-select').selectOption('ch03');
   await expect(page.locator('#theme-status')).toContainText('이전 배경');await expect(page.locator('#scene')).toHaveAttribute('data-theme','ch01');
   await expect(page.locator('#theme-select')).toHaveValue('auto');await page.getByRole('button',{name:'설정 완료'}).click();await page.clock.runFor(20);
-  await page.locator('#left').click();await page.clock.runFor(440);await expect(page.locator('#progress')).toHaveText('1 / 8');
+  await page.locator('#left').click();await page.clock.runFor(480);await expect(page.locator('#progress')).toHaveText('1 / 8');
 });
 test('corrected sprites and single composite parcel replace superseded artwork',async({page})=>{
   await page.route('**/api/**',r=>r.fulfill({status:404,contentType:'application/json',body:'{}'}));

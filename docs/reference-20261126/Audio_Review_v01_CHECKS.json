@@ -1,0 +1,9 @@
+{
+  "wav_checked": 33,
+  "ogg_decode_passed": 33,
+  "source_wav_hashes_passed": 33,
+  "loop_endpoint_delta_max": 0.0,
+  "master_half_conservative_peak_bound": 0.9394741669934248,
+  "javascript_syntax": "passed",
+  "listening_browser_mobile": "not performed"
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "VM with mocked Audio/DOM/timers; not browser playback",
+  "results": [
+    {
+      "name": "four voice cap",
+      "status": "passed"
+    },
+    {
+      "name": "safe landing at 420ms",
+      "status": "passed"
+    },
+    {
+      "name": "stop cancels future landing",
+      "status": "passed"
+    },
+    {
+      "name": "failure result suppresses rescue and stops fall",
+      "status": "passed"
+    },
+    {
+      "name": "new sequence cancels old result",
+      "status": "passed"
+    },
+    {
+      "name": "hidden stops all sources and timers",
+      "status": "passed"
+    },
+    {
+      "name": "return does not auto resume",
+      "status": "passed"
+    },
+    {
+      "name": "NPC distinct gains",
+      "status": "passed"
+    },
+    {
+      "name": "music replacement leaves one music",
+      "status": "passed"
+    }
+  ]
+}

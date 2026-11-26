@@ -14,7 +14,7 @@ test('second fall can skip once without unlocks; pause, retry and input remain c
   await page.locator('#pause').click();await expect(page.locator('#skip-rescue')).toBeHidden();await page.clock.runFor(2000);
   await page.locator('#resume').click();await page.clock.runFor(20);await expect(page.locator('#skip-rescue')).toBeVisible();
   await page.screenshot({path:'test-results/replay-skip.png'});
-  await page.locator('#skip-rescue').click();await expect(page.locator('#result-title')).toHaveText('구름 회수반이 도착했어요.');
+  await page.locator('#skip-rescue').click();await expect(page.locator('#result-title')).toHaveText('구름 회수 완료');
   await expect(page.locator('#skip-rescue')).toBeHidden();await expect(page.locator('#next')).toBeHidden();
   await page.clock.runFor(3000);await expect(page.locator('#result')).toBeVisible();
   await page.locator('#retry').click();await expect(page.locator('#progress')).toHaveText('0 / 8');await expect(page.locator('#rescue-scene')).toBeHidden();

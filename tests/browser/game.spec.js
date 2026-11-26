@@ -19,7 +19,7 @@ test('mobile game: hint, guarded movement, pause, fall, retry and settings persi
   const before=await page.locator('#timer').textContent();await page.waitForTimeout(1200);expect(await page.locator('#timer').textContent()).toBe(before);
   await page.getByRole('button',{name:'다시 건너기',exact:true}).click();
   await page.locator('#right').click();
-  await expect(page.locator('#result-title')).toHaveText('구름 회수반이 도착했어요.');
+  await expect(page.locator('#result-title')).toHaveText('구름 회수 완료');
   await page.locator('#retry').click();await expect(page.locator('#progress')).toHaveText('0 / 8');
   await page.locator('#settings-open').click();await page.locator('#sound').uncheck();await page.locator('#reducedMotion').check();
   await page.getByRole('button',{name:'설정 완료'}).click();await page.reload();await page.locator('#settings-open').evaluate(el=>el.click());
@@ -32,14 +32,16 @@ test('clear all stages, unlock characters, reload and mobile layout without scro
   await page.setViewportSize({width:320,height:568});await page.addInitScript(()=>{Math.random=()=>0;});await page.goto('/');
   await page.locator('#start').click();await expect(page.locator('#left')).toBeEnabled({timeout:5000});
   for(let i=0;i<8;i++){await page.locator('#left').click(); if(i<7) await expect(page.locator('#left')).toBeEnabled();}
-  await expect(page.locator('#result-title')).toHaveText('한 걸음 더 가까워졌어요.');
+  await expect(page.locator('#result-title')).toHaveText('무사히 도착했어요');
   for (const count of [10,12]) {
     await page.locator('#next').click();
     await expect(page.locator('#left')).toBeEnabled({timeout:5000});
     for(let i=0;i<count;i++){await page.locator('#left').click();if(i<count-1)await expect(page.locator('#left')).toBeEnabled();}
     await expect(page.locator('#result')).toBeVisible();
   }
-  await expect(page.locator('#result-title')).toHaveText('한 걸음 더 가까워졌어요.');
+  await expect(page.locator('#result-title')).toHaveText('구름 정거장 완료!');
+  await page.locator('#unlock-show').click();await expect(page.locator('#unlock-panel>div')).toHaveCount(4);
+  await page.screenshot({path:'test-results/integrated-unlock-320.png'});
   await expect(page.locator('#next')).toBeVisible();
   await page.locator('#next').click();
   await expect(page.locator('#stage-label')).toContainText('04');

@@ -1,0 +1,16 @@
+{
+  "release": "v0.9",
+  "date": "2026-11-26",
+  "unit_api_passed": 28,
+  "browser_unique_cases_passed": 21,
+  "online_independent_browser_case_passed": 1,
+  "runtime_mp3_full_decode_passed": 33,
+  "audio_review_vm_policy_cases_passed": 9,
+  "standalone": "opaque-origin offline start/move and JavaScript-disabled guidance passed",
+  "browser_notes": "Final affected-case reruns included; resume test avoids discarded RAF boundary.",
+  "not_verified": [
+    "physical mobile devices",
+    "subjective listening and seamlessness on every browser",
+    "managed browser file:// navigation"
+  ]
+}

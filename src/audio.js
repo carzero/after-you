@@ -1,30 +1,49 @@
-// Quiet synthesized placeholders. Replace via the event contract in docs/AUDIO_CUES.md.
+// Buffers and sources only: simulation events decide timing, never wall-clock callbacks.
 export class AudioBus {
-  constructor(settings) { this.settings = settings; this.nodes = new Set(); }
-  unlock() {
-    this.context ??= new (window.AudioContext || window.webkitAudioContext)();
-    if (this.context.state === 'suspended') this.context.resume().catch(() => {});
+  constructor(settings,{urls={},tracks=[],contextFactory}={}) {
+    this.settings=settings;this.urls=urls;this.tracks=tracks;this.contextFactory=contextFactory;
+    this.nodes=new Set();this.buffers=new Map();this.loading=new Map();this.epoch=0;this.notice='';
   }
-  tone(hz, duration = .12, volume = .035, delay = 0) {
-    if (!this.context || this.context.state !== 'running') return;
-    const osc = this.context.createOscillator(), gain = this.context.createGain(), t = this.context.currentTime + delay;
-    osc.type = 'sine'; osc.frequency.setValueAtTime(hz, t);
-    gain.gain.setValueAtTime(volume, t); gain.gain.exponentialRampToValueAtTime(.0001, t + duration);
-    osc.connect(gain).connect(this.context.destination); this.nodes.add(osc);
-    osc.onended = () => { this.nodes.delete(osc); osc.disconnect(); gain.disconnect(); };
-    osc.start(); osc.stop(t + duration);
+  async unlock(){
+    try{
+      this.context??=this.contextFactory?this.contextFactory():new (window.AudioContext||window.webkitAudioContext)();
+      if(!this.master){this.master=this.context.createGain();this.master.gain.value=.5;this.master.connect(this.context.destination);}
+      if(this.context.state==='suspended')await this.context.resume();
+      this.ready??=Promise.all(Object.keys(this.urls).filter(id=>!id.startsWith('bgm_')||id==='bgm_title').map(id=>this.load(id))).catch(()=>{this.notice='일부 소리를 불러오지 못했어요. 소리 없이도 플레이할 수 있어요.';this.ready=null;});
+      await this.ready;
+    }catch{this.notice='이 브라우저에서는 소리를 사용할 수 없어요.';}
   }
-  event(type, delay = 0) {
-    if (!this.settings.sound) return;
-    const notes = { jump: 360, land_safe: 560, tile_crack: 120, fall: 85, rescue: 270, finish: 740 };
-    if (notes[type]) this.tone(notes[type], .12, .035, delay);
+  async load(id){
+    if(this.buffers.has(id))return;
+    if(!this.loading.has(id))this.loading.set(id,(async()=>{
+      const response=await fetch(this.urls[id],{signal:AbortSignal.timeout(8000)});if(!response.ok)throw Error('Audio load failed');
+      const buffer=await this.context.decodeAudioData(await response.arrayBuffer());this.buffers.set(id,buffer);
+    })().finally(()=>this.loading.delete(id)));
+    return this.loading.get(id);
   }
-  music(time) {
-    const beat = Math.floor(time / 800);
-    if (beat !== this.beat) {
-      this.beat = beat;
-      if (this.settings.music) this.tone([262, 330, 392, 330, 294, 349, 440, 349][beat % 8], .25, .012);
-    }
+  async prepare(theme){
+    if(!this.context)return;
+    try{const id='bgm_'+theme;await this.load(id);for(const key of this.buffers.keys())if(key.startsWith('bgm_')&&key!=='bgm_title'&&key!==id)this.buffers.delete(key);}
+    catch{this.notice='배경 음악을 불러오지 못했어요. 소리 설정에서 다시 확인해 주세요.';}
   }
-  stop() { for (const node of this.nodes) { try { node.stop(); } catch {} } this.nodes.clear(); this.beat = null; }
+  play(id,{music=false,npc=false}={}){
+    if(!this.context||this.context.state!=='running'||!(music?this.settings.music:this.settings.sound))return;
+    const buffer=this.buffers.get(id);if(!buffer)return;
+    if(music&&this.bgm?.id===id)return;
+    if(music&&this.bgm)this.stopNode(this.bgm);
+    const effects=[...this.nodes].filter(n=>!n.music);if(!music&&effects.length>=4){if(npc)return;this.stopNode(effects[0]);}
+    const source=this.context.createBufferSource(),gain=this.context.createGain();source.buffer=buffer;
+    gain.gain.value=music ? .45 : npc ? .2 : .65;source.connect(gain).connect(this.master);
+    const node={source,gain,music,id};this.nodes.add(node);
+    source.onended=()=>{this.nodes.delete(node);if(this.bgm===node)this.bgm=null;source.disconnect();gain.disconnect();};
+    if(music){source.loop=true;source.loopStart=0;source.loopEnd=Math.min(buffer.duration,this.tracks.find(t=>t.id===id)?.duration??buffer.duration);this.bgm=node;}
+    try{source.start();}catch{this.stopNode(node);}
+  }
+  event(type,{player=true,outcome}={}){
+    if(type==='finish'){this.stop();this.play(`finish_${outcome}`);return;}
+    this.play(type,{npc:!player});
+  }
+  music(_time,theme='ch01'){if(this.settings.music)this.play('bgm_'+theme,{music:true});else if(this.bgm)this.stopNode(this.bgm);}
+  stopNode(node){this.nodes.delete(node);if(this.bgm===node)this.bgm=null;try{node.source.stop();}catch{}node.source.disconnect();node.gain.disconnect();}
+  stop(){this.epoch++;for(const node of [...this.nodes])this.stopNode(node);}
 }

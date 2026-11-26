@@ -1,0 +1,173 @@
+{
+  "format": "MP3 stereo; gapless encoder metadata; source WAV retained separately",
+  "decoded_files": 33,
+  "master": 0.5,
+  "conservative_peak_sum": 0.9000210970640182,
+  "assets": [
+    {
+      "id": "bgm_ch01",
+      "decoded_peak": 0.39751818776130676,
+      "sha256": "844ca93cef15a85f28a234bf23fab29ab2df3690f5ce6a71ffb25c2591b02ec1"
+    },
+    {
+      "id": "bgm_ch02",
+      "decoded_peak": 0.39914077520370483,
+      "sha256": "8b0ce469750b1e86508d6adb950f6ac4889cea104805077c6d13718ba9d29234"
+    },
+    {
+      "id": "bgm_ch03",
+      "decoded_peak": 0.3988640010356903,
+      "sha256": "5c9cc33fd1d6c64fdfd941cc10329443c440ef584aeaab9f630ee855a7526e17"
+    },
+    {
+      "id": "bgm_ch04",
+      "decoded_peak": 0.3970862627029419,
+      "sha256": "bf75800895cdbde68dc790b8e558fdabcf7b66d7b458f8fccf4a83c884d9b4a0"
+    },
+    {
+      "id": "bgm_ch05",
+      "decoded_peak": 0.3986295461654663,
+      "sha256": "8dcdd137782b0739449085543e0024451043c956f827ce8bf10aa676d60343cc"
+    },
+    {
+      "id": "bgm_ending",
+      "decoded_peak": 0.4013866186141968,
+      "sha256": "deac77f4e0b21a8a867079b66a045189bac0c960a23371c6e1ec5b2095262edc"
+    },
+    {
+      "id": "bgm_title",
+      "decoded_peak": 0.39872631430625916,
+      "sha256": "b9175fad7fcbf73e3a55c3785bbc534180ce33e97e2d79e227010c62cb39bedf"
+    },
+    {
+      "id": "chapter_clear",
+      "decoded_peak": 0.6176923513412476,
+      "sha256": "5a56bb0d89a161f944a7654fa82fed0a6aca7b43470ab4d2ceca5ab2007474d8"
+    },
+    {
+      "id": "cloud_catch",
+      "decoded_peak": 0.6174796223640442,
+      "sha256": "7dd5429a05e5bae390439dea0e68711def4d46c0fd4dbef29f33e40a336262b5"
+    },
+    {
+      "id": "envelope_open",
+      "decoded_peak": 0.5397951602935791,
+      "sha256": "b728f38d14bafbdbbea963027d7f03063c79d6e1171f151f2162381bdcfb6fce"
+    },
+    {
+      "id": "fall",
+      "decoded_peak": 0.6176165342330933,
+      "sha256": "b547ebc2ca204370b35a5b0a4cf244b082ff4689674c23a8cdb4375bee200ef6"
+    },
+    {
+      "id": "finish_fall",
+      "decoded_peak": 0.6175764799118042,
+      "sha256": "20adbddc8a8aeaf51194d4d59a76808706a6da80ea0b9b0b4f7b18463dfee999"
+    },
+    {
+      "id": "finish_success",
+      "decoded_peak": 0.6173934936523438,
+      "sha256": "892d009a924e57fb04a7d02cf641b49df68e82b272636c7bb2d28a4d4987fcf7"
+    },
+    {
+      "id": "finish_timeout",
+      "decoded_peak": 0.6174073815345764,
+      "sha256": "954e921cbae940b600b97f998691bf96692db46c3eef1aada1934b9a542bf351"
+    },
+    {
+      "id": "hint_end",
+      "decoded_peak": 0.6182776689529419,
+      "sha256": "1e2cc12ce36389d94808521267a30c7758c56289ec982ced707ce9411e23ed12"
+    },
+    {
+      "id": "hint_show",
+      "decoded_peak": 0.6191419363021851,
+      "sha256": "599799e5ab5a14834d0a7e82e7471ac93bd18aecb9d7c70aef4e1278e1cc8ec6"
+    },
+    {
+      "id": "jump",
+      "decoded_peak": 0.6174344420433044,
+      "sha256": "64e2ec58b5a67bbebf5b0e354c317e5a36deee8d8fd54c1b8172f9a6202116f5"
+    },
+    {
+      "id": "land_safe",
+      "decoded_peak": 0.6175505518913269,
+      "sha256": "d79fdac312107bcd58621821e10d7e688830a6f7ce5cc7da071f0e379062731c"
+    },
+    {
+      "id": "parcel_return",
+      "decoded_peak": 0.617440938949585,
+      "sha256": "42e03c58bf3f6828f0cb9f093543e39d84f6f768e1d5ee9d1cd817e02e2476f1"
+    },
+    {
+      "id": "reaction_duck",
+      "decoded_peak": 0.6174176931381226,
+      "sha256": "f286d03e922e000c7ef365e112a7a65308425e9da8f269c5348e46725b42ddb2"
+    },
+    {
+      "id": "reaction_pigeon",
+      "decoded_peak": 0.6175411939620972,
+      "sha256": "ce7adce12ee017f512943f76094df519e07fbef10f6b0cacc020e6a83523141d"
+    },
+    {
+      "id": "reaction_potato",
+      "decoded_peak": 0.6174740195274353,
+      "sha256": "ca48876c71657bab4d31115a370215c09893d4c061d13220786bcd6ce6a0e551"
+    },
+    {
+      "id": "reaction_rabbit",
+      "decoded_peak": 0.6175062656402588,
+      "sha256": "bafb4534103dc5d1e2112ece7ddbdd90eda20ec375a7c49403a97dd16f807dbc"
+    },
+    {
+      "id": "rescue",
+      "decoded_peak": 0.6142418384552002,
+      "sha256": "faf71e6edc537e2c4a58914cfa6acf020a4d07c512414f69e1c4b3e0cbff6be5"
+    },
+    {
+      "id": "stamp",
+      "decoded_peak": 0.62285315990448,
+      "sha256": "2e1d2e9e9bb11e1f81bb5b0323a0529d79d57ce627a957227952e5eff8b68aa8"
+    },
+    {
+      "id": "tile_crack",
+      "decoded_peak": 0.496223509311676,
+      "sha256": "9242eed1ea04ef163d5dc5d2ea22572c1d1892bf7c70182091a5a31eb58fc16c"
+    },
+    {
+      "id": "timer_warning",
+      "decoded_peak": 0.6172249913215637,
+      "sha256": "95c7b5cedd2675e3a3379d738d8393b726d09fff46bad458b202260105932653"
+    },
+    {
+      "id": "ui_back",
+      "decoded_peak": 0.6175410747528076,
+      "sha256": "052e71a3d490087efff3d7f0d1a51c5bbfc649ebddcb57d50675e468b9e19a80"
+    },
+    {
+      "id": "ui_click",
+      "decoded_peak": 0.6109463572502136,
+      "sha256": "e4a3bd615de087ecc071d9063e44cc057f715052dd6e884285eb69a679e1f688"
+    },
+    {
+      "id": "ui_locked",
+      "decoded_peak": 0.6168609857559204,
+      "sha256": "44a8fd98fb1bbeab27dd3292f9a8b3dc1961726ac4d61546224039ea48ddf981"
+    },
+    {
+      "id": "ui_toggle_off",
+      "decoded_peak": 0.6174865365028381,
+      "sha256": "3921f56b1fd107c0ce1f288e6a62d787ce75a4769f28e16c4ba60a5d3e48b66c"
+    },
+    {
+      "id": "ui_toggle_on",
+      "decoded_peak": 0.6174312233924866,
+      "sha256": "8057b6761aafb66837760ab24d25abf92e40054c240b1be9e902e9ebf49ac68d"
+    },
+    {
+      "id": "unlock",
+      "decoded_peak": 0.6180872917175293,
+      "sha256": "1f71a3297056bcf9cfba16dc78ecd0224fb288747c7d4789abb05d6c595b3bd2"
+    }
+  ]
+}

@@ -23,11 +23,11 @@ export const characterLayout = {
   },
 };
 export function poseFor(actor, clock, landedAt) {
-  if (actor.state === 'jump') return 'jump';
+  if (actor.state === 'jump') return 420-(actor.until-clock)>=300?'descent':'jump';
   if (actor.state === 'finished' || actor.state === 'rescued') return actor.state;
   if (actor.state === 'fall') {
     const elapsed = 1400 - (actor.until - clock);
-    return elapsed < 150 ? 'land' : elapsed < 600 ? 'hover' : elapsed < 1050 ? 'fall' : 'rescued';
+    return elapsed < 600 ? 'hover' : elapsed < 1050 ? 'fall' : 'rescued';
   }
   return landedAt !== undefined && clock - landedAt < 160 ? 'land' : 'idle';
 }

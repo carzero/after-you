@@ -20,10 +20,12 @@ test('draft art is loaded, poses freeze with pause, rescue layers reset on retry
   await expect(page.locator('.tile.cracking')).toHaveCount(1);
   await page.clock.runFor(180);await expect(player.locator('[data-pose="hover"]')).toBeVisible();
   await page.locator('#pause').click();await page.clock.runFor(1000);await expect(player.locator('[data-pose="hover"]')).toBeVisible();
-  await page.locator('#resume').click();await page.clock.runFor(430);
+  // Resume intentionally discards the first RAF delta; stay clear of the 600ms boundary.
+  await page.locator('#resume').click();await page.clock.runFor(470);
   await expect(player.locator('[data-pose="fall"]')).toBeVisible();await page.screenshot({path:'test-results/art-fall-375.png'});
   await page.clock.runFor(450);await expect(page.locator('#rescue-scene')).toBeVisible();
-  await expect(page.locator('#rescue-scene [data-pose="rescued"]')).toBeVisible();
+  await expect(page.locator('#rescue-scene [data-pose="rescued"]')).toBeHidden();
+  await page.clock.runFor(110);await expect(page.locator('#rescue-scene [data-pose="rescued"]')).toBeVisible();
   await page.screenshot({path:'test-results/art-rescue-375.png'});
   await page.clock.runFor(400);await expect(page.locator('#result')).toBeVisible();
   await expect(page.locator('#result-art .in-box')).toBeVisible();

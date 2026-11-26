@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "events": {
+    "jump": {
+      "asset": "jump",
+      "at": "accepted movement input"
+    },
+    "land_safe": {
+      "asset": "land_safe",
+      "at": "landing committed"
+    },
+    "tile_crack": {
+      "asset": "tile_crack",
+      "at": "unsafe landing committed; failure t=0"
+    },
+    "fall": {
+      "asset": "fall",
+      "at": "failure t=600ms"
+    },
+    "rescue": {
+      "asset": "rescue",
+      "at": "failure t=1400ms, original event contract"
+    },
+    "finish": {
+      "by_outcome": {
+        "success": "finish_success",
+        "fall": "finish_fall",
+        "timeout": "finish_timeout"
+      },
+      "policy": "map actual game outcome enum explicitly; stop previous sounds first, then play one result cue; if rescue and finish coexist in same drainEvents batch, suppress rescue audio and prefer result cue"
+    }
+  },
+  "optional_events": [
+    "ui_click",
+    "ui_back",
+    "ui_toggle_on",
+    "ui_toggle_off",
+    "ui_locked",
+    "hint_show",
+    "hint_end",
+    "timer_warning",
+    "unlock",
+    "chapter_clear",
+    "stamp",
+    "envelope_open",
+    "parcel_return",
+    "cloud_catch"
+  ],
+  "reaction_policy": "player only, max once per 1500ms, skip during result and loud SFX; synthetic nonverbal motifs not voice recordings",
+  "mix": {
+    "music": 0.45,
+    "sfx": 0.65,
+    "npc_sfx": 0.2,
+    "max_sfx_voices": 4,
+    "result_priority": 100
+  },
+  "pause": "stop all active sources; resume only from user gesture; do not replay drained events",
+  "loop": "use decoded WAV AudioBuffer sample-accurate full-length looping; OGG alternate requires target-browser decode-length check; HTML looping only a listening preview"
+}

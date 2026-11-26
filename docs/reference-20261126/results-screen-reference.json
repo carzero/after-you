@@ -1,0 +1,55 @@
+{
+  "success": {
+    "title": "무사히 도착했어요",
+    "subtitle": "다음 발판도 잘 부탁해요.",
+    "art": "finished",
+    "primary": "다음 스테이지",
+    "action": "next_stage",
+    "secondary": "한 번 더",
+    "secondaryAction": "retry",
+    "note": "기록은 게임 데이터로 표시"
+  },
+  "fall": {
+    "title": "구름 회수 완료",
+    "subtitle": "놀라셨죠? 다시 모셔다드릴게요.",
+    "art": "rescued",
+    "primary": "다시 출발",
+    "action": "retry",
+    "secondary": "스테이지 선택",
+    "secondaryAction": "stage_select",
+    "note": "실패 사유: 위험 발판"
+  },
+  "timeout": {
+    "title": "접수 시간이 끝났어요",
+    "subtitle": "다음엔 조금만 더 서둘러 볼까요?",
+    "art": "idle",
+    "icon": "timer",
+    "primary": "다시 출발",
+    "action": "retry",
+    "secondary": "스테이지 선택",
+    "secondaryAction": "stage_select",
+    "note": "실패 사유: 시간 종료"
+  },
+  "chapter": {
+    "title": "구름 정거장 완료",
+    "subtitle": "1챕터의 세 스테이지를 건넜어요.",
+    "art": "finished",
+    "icon": "chapter_complete",
+    "primary": "참가자 해금 보기",
+    "action": "show_unlock",
+    "secondary": "스테이지 선택",
+    "secondaryAction": "stage_select",
+    "note": "다음 챕터는 준비 중이에요."
+  },
+  "unlock": {
+    "title": "함께 갈 준비 완료!",
+    "subtitle": "네 참가자를 선택할 수 있어요.",
+    "art": "grid",
+    "icon": "unlock",
+    "primary": "참가자 선택",
+    "action": "character_select",
+    "secondary": "스테이지 선택",
+    "secondaryAction": "stage_select",
+    "note": "네 캐릭터의 플레이 성능은 같아요."
+  }
+}

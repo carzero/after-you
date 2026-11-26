@@ -1,0 +1,313 @@
+{
+  "chapters": {
+    "ch01": {
+      "back_cloud_1": "integration/layers/ch01/back_cloud_1",
+      "back_cloud_2": "integration/layers/ch01/back_cloud_2",
+      "back_cloud_3": "integration/layers/ch01/back_cloud_3",
+      "collapse": "integration/layers/ch01/collapse",
+      "crack": "integration/layers/ch01/crack",
+      "finish": "integration/layers/ch01/finish",
+      "front_left": "integration/layers/ch01/front_left",
+      "front_right": "integration/layers/ch01/front_right",
+      "landmark": "integration/layers/ch01/landmark",
+      "sky": "integration/layers/ch01/sky",
+      "start": "integration/layers/ch01/start",
+      "tile": "integration/layers/ch01/tile"
+    },
+    "ch02": {
+      "back_cloud_1": "integration/layers/ch02/back_cloud_1",
+      "back_cloud_2": "integration/layers/ch02/back_cloud_2",
+      "back_cloud_3": "integration/layers/ch02/back_cloud_3",
+      "collapse": "integration/layers/ch02/collapse",
+      "crack": "integration/layers/ch02/crack",
+      "finish": "integration/layers/ch02/finish",
+      "front_left": "integration/layers/ch02/front_left",
+      "front_right": "integration/layers/ch02/front_right",
+      "landmark": "integration/layers/ch02/landmark",
+      "mail_balloon": "integration/layers/ch02/mail_balloon",
+      "mailbox": "integration/layers/ch02/mailbox",
+      "sky": "integration/layers/ch02/sky",
+      "start": "integration/layers/ch02/start",
+      "tile": "integration/layers/ch02/tile",
+      "windsock": "integration/layers/ch02/windsock"
+    },
+    "ch03": {
+      "back_cloud_1": "integration/layers/ch03/back_cloud_1",
+      "back_cloud_2": "integration/layers/ch03/back_cloud_2",
+      "back_cloud_3": "integration/layers/ch03/back_cloud_3",
+      "barricade": "integration/layers/ch03/barricade",
+      "collapse": "integration/layers/ch03/collapse",
+      "crack": "integration/layers/ch03/crack",
+      "crates": "integration/layers/ch03/crates",
+      "finish": "integration/layers/ch03/finish",
+      "front_left": "integration/layers/ch03/front_left",
+      "front_right": "integration/layers/ch03/front_right",
+      "landmark": "integration/layers/ch03/landmark",
+      "lantern": "integration/layers/ch03/lantern",
+      "sky": "integration/layers/ch03/sky",
+      "start": "integration/layers/ch03/start",
+      "tile": "integration/layers/ch03/tile"
+    },
+    "ch04": {
+      "bench": "integration/layers/ch04/bench",
+      "collapse": "integration/layers/ch04/collapse",
+      "crack": "integration/layers/ch04/crack",
+      "finish": "integration/layers/ch04/finish",
+      "landmark": "integration/layers/ch04/landmark",
+      "sky": "integration/layers/ch04/sky",
+      "star": "integration/layers/ch04/star",
+      "start": "integration/layers/ch04/start",
+      "ticket_machine": "integration/layers/ch04/ticket_machine",
+      "tile": "integration/layers/ch04/tile",
+      "back_cloud_1": "integration/clouds/ch04/back",
+      "back_cloud_2": "integration/clouds/ch04/back",
+      "front_left": "integration/clouds/ch04/front_left",
+      "front_right": "integration/clouds/ch04/front_right"
+    },
+    "ch05": {
+      "bell": "integration/layers/ch05/bell",
+      "collapse": "integration/layers/ch05/collapse",
+      "crack": "integration/layers/ch05/crack",
+      "finish": "integration/layers/ch05/finish",
+      "landmark": "integration/layers/ch05/landmark",
+      "paper_stack": "integration/layers/ch05/paper_stack",
+      "sky": "integration/layers/ch05/sky",
+      "stamp": "integration/layers/ch05/stamp",
+      "start": "integration/layers/ch05/start",
+      "tile": "integration/layers/ch05/tile",
+      "back_cloud_1": "integration/clouds/ch05/back",
+      "back_cloud_2": "integration/clouds/ch05/back",
+      "front_left": "integration/clouds/ch05/front_left",
+      "front_right": "integration/clouds/ch05/front_right"
+    }
+  },
+  "descent": {
+    "potato": {
+      "path": "assets/potato/descent.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "anchor": [
+        630,
+        1100
+      ],
+      "scale": 0.085,
+      "sha256": "8239da902f426c3d5558412aac4095741e9238957be2200ffa54a1f5b5cf3453",
+      "source": "착지 직전의 감자 회사원.png",
+      "anchorStatus": "manual draft: foot midpoint / airborne projection, requires game validation"
+    },
+    "pigeon": {
+      "path": "assets/pigeon/descent.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "anchor": [
+        620,
+        1112
+      ],
+      "scale": 0.085,
+      "sha256": "208b347e283a0d6eb34b523f57db84b15d419b5b269257904c0463c673b49cc8",
+      "source": "착지 직전의 졸린 비둘기.png",
+      "anchorStatus": "manual draft: foot midpoint / airborne projection, requires game validation"
+    },
+    "duck": {
+      "path": "assets/duck/descent.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "anchor": [
+        620,
+        1125
+      ],
+      "scale": 0.085,
+      "sha256": "6d8e4684f5581fb241b9f3dc54f4597f6f11bb72e08ec1cf9ee190969b70f235",
+      "source": "착지 직전의 왕관 쓴 노란 오리.png",
+      "anchorStatus": "manual draft: foot midpoint / airborne projection, requires game validation"
+    },
+    "rabbit": {
+      "path": "assets/rabbit/descent.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "anchor": [
+        560,
+        1175
+      ],
+      "scale": 0.085,
+      "sha256": "489e4425cff5e42b72dfeda9c3d1796be5a2b30d23d26a385133717d2a6dea9d",
+      "source": "착지 직전의 근육질 토끼.png",
+      "anchorStatus": "manual draft: foot midpoint / airborne projection, requires game validation"
+    }
+  },
+  "audio": [
+    {
+      "id": "bgm_ch01",
+      "duration": 34.28570833333333,
+      "loop": true
+    },
+    {
+      "id": "bgm_ch02",
+      "duration": 24,
+      "loop": true
+    },
+    {
+      "id": "bgm_ch03",
+      "duration": 33.103458333333336,
+      "loop": true
+    },
+    {
+      "id": "bgm_ch04",
+      "duration": 43.63635416666666,
+      "loop": true
+    },
+    {
+      "id": "bgm_ch05",
+      "duration": 35.5555625,
+      "loop": true
+    },
+    {
+      "id": "bgm_ending",
+      "duration": 40,
+      "loop": true
+    },
+    {
+      "id": "bgm_title",
+      "duration": 36.92308333333333,
+      "loop": true
+    },
+    {
+      "id": "chapter_clear",
+      "duration": 1.5,
+      "loop": false
+    },
+    {
+      "id": "cloud_catch",
+      "duration": 0.35,
+      "loop": false
+    },
+    {
+      "id": "envelope_open",
+      "duration": 0.5,
+      "loop": false
+    },
+    {
+      "id": "fall",
+      "duration": 0.45,
+      "loop": false
+    },
+    {
+      "id": "finish_fall",
+      "duration": 0.65,
+      "loop": false
+    },
+    {
+      "id": "finish_success",
+      "duration": 1.1,
+      "loop": false
+    },
+    {
+      "id": "finish_timeout",
+      "duration": 0.72,
+      "loop": false
+    },
+    {
+      "id": "hint_end",
+      "duration": 0.25,
+      "loop": false
+    },
+    {
+      "id": "hint_show",
+      "duration": 0.55,
+      "loop": false
+    },
+    {
+      "id": "jump",
+      "duration": 0.28,
+      "loop": false
+    },
+    {
+      "id": "land_safe",
+      "duration": 0.26,
+      "loop": false
+    },
+    {
+      "id": "parcel_return",
+      "duration": 0.48,
+      "loop": false
+    },
+    {
+      "id": "reaction_duck",
+      "duration": 0.48,
+      "loop": false
+    },
+    {
+      "id": "reaction_pigeon",
+      "duration": 0.48,
+      "loop": false
+    },
+    {
+      "id": "reaction_potato",
+      "duration": 0.48,
+      "loop": false
+    },
+    {
+      "id": "reaction_rabbit",
+      "duration": 0.48,
+      "loop": false
+    },
+    {
+      "id": "rescue",
+      "duration": 0.38,
+      "loop": false
+    },
+    {
+      "id": "stamp",
+      "duration": 0.23,
+      "loop": false
+    },
+    {
+      "id": "tile_crack",
+      "duration": 0.15,
+      "loop": false
+    },
+    {
+      "id": "timer_warning",
+      "duration": 0.35,
+      "loop": false
+    },
+    {
+      "id": "ui_back",
+      "duration": 0.18,
+      "loop": false
+    },
+    {
+      "id": "ui_click",
+      "duration": 0.1,
+      "loop": false
+    },
+    {
+      "id": "ui_locked",
+      "duration": 0.18,
+      "loop": false
+    },
+    {
+      "id": "ui_toggle_off",
+      "duration": 0.18,
+      "loop": false
+    },
+    {
+      "id": "ui_toggle_on",
+      "duration": 0.18,
+      "loop": false
+    },
+    {
+      "id": "unlock",
+      "duration": 1,
+      "loop": false
+    }
+  ]
+}

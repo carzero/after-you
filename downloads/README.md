@@ -1,3 +1,15 @@
+# 최신 게임 v0.9 · 2026-11-26
+
+배경·구름 v03·타이틀/결과·착지/구조 전환·실제 BGM 및 효과음 통합. 무한 스테이지와 온라인 서버 순위 규칙 유지.
+
+- [게임 실행 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.9.zip)
+- [최신 실행 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.9.zip)
+- [온라인 서버 배포 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Server_v0.9.zip)
+
+게임 ZIP을 압축 해제하고 AFTER_YOU.html을 실제 Chrome·Edge·Safari에서 여세요. HTML 원본 링크를 바로 열면 코드가 텍스트로 보일 수 있습니다. 다운로드판은 오프라인 연습판이며 온라인 순위는 서버 배포본에 접속해야 합니다.
+
+이하 이전 버전 자료를 보존합니다.
+
 # 최신 게임 v0.8 · 포즈 통합 2026-11-24
 
 기본 28포즈 보정과 등록 좌표, 비둘기·오리·토끼 국소 호흡 적용.

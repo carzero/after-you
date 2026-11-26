@@ -1,0 +1,42 @@
+{
+  "clouds": [
+    {
+      "file": "assets/ch04_back_new.png",
+      "removed_nonzero_alpha_pixels": 10725,
+      "core_unchanged": true,
+      "size_unchanged": true
+    },
+    {
+      "file": "assets/ch04_front_left_new.png",
+      "removed_nonzero_alpha_pixels": 12425,
+      "core_unchanged": true,
+      "size_unchanged": true
+    },
+    {
+      "file": "assets/ch04_front_right_new.png",
+      "removed_nonzero_alpha_pixels": 4236,
+      "core_unchanged": true,
+      "size_unchanged": true
+    },
+    {
+      "file": "assets/ch05_back_new.png",
+      "removed_nonzero_alpha_pixels": 21708,
+      "core_unchanged": true,
+      "size_unchanged": true
+    },
+    {
+      "file": "assets/ch05_front_left_new.png",
+      "removed_nonzero_alpha_pixels": 5200,
+      "core_unchanged": true,
+      "size_unchanged": true
+    },
+    {
+      "file": "assets/ch05_front_right_new.png",
+      "removed_nonzero_alpha_pixels": 14374,
+      "core_unchanged": true,
+      "size_unchanged": true
+    }
+  ],
+  "removed_total": 68668,
+  "browser_mobile_game": "not run"
+}
