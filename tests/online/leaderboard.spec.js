@@ -24,7 +24,7 @@ test('independent browsers submit server-validated records and see the same shar
     const nextRoute=await a.locator('#hint-map span').allTextContents();await expect(a.locator('#left')).toBeEnabled({timeout:5000});
     await a.locator(nextRoute[0].includes('↖')?'#right':'#left').click();
     await expect(a.locator('#online-result')).toContainText('최고 8층 기록 확인');
-    await expect(a.locator('#result-text')).toContainText('STAGE 2 → STAGE 1');
+    await expect(a.locator('#result-text')).toContainText('2구간 → 1구간');
     await a.locator('#retry').click();await expect(a.locator('#stage-label')).toContainText('01');
     expect(failures).toEqual([]);
   }finally{await one.close();await two.close();}

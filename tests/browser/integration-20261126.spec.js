@@ -28,7 +28,7 @@ test('descent, unsafe outcome, actor mask, result and retry retain the game time
  await page.clock.runFor(200);await expect(page.locator('#rescue-scene')).toBeVisible();await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','hidden');
  await page.clock.runFor(260);await expect(page.locator('#rescue-scene .recovery-person')).toHaveCSS('visibility','visible');await expect(page.locator('#rescue-scene .rescue-cover')).toHaveCount(1);
  await page.screenshot({path:'test-results/integrated-rescue.png'});
- await page.clock.runFor(2300);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('STAGE 1 → STAGE 1');
+ await page.clock.runFor(2300);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('1구간 → 1구간');
  const active=await page.evaluate(()=>window.__audioSources.filter(e=>e.active));expect(active.length).toBeLessThanOrEqual(1);
  await page.locator('#retry').click();await expect(page.locator('#result')).toBeHidden();await expect(page.locator('#rescue-scene')).toBeHidden();
 });
@@ -43,4 +43,4 @@ test('new title and dedicated edge clouds keep the center clear at 320px',async(
  await page.screenshot({path:`test-results/integrated-${theme}-320.png`});}
 });
 
-test('timeout result and retry preserve the stage and actual failure reason',async({page})=>{await ready(page);await page.clock.runFor(40);await page.clock.fastForward(40000);await expect(page.locator('#result-title')).toHaveText('접수 시간이 끝났어요.');await expect(page.locator('#result-text')).toContainText('STAGE 1');await expect(page.locator('#next')).toBeHidden();await page.locator('#retry').click();await expect(page.locator('#progress')).toHaveText('0 / 8');});
+test('timeout result and retry preserve the stage and actual failure reason',async({page})=>{await ready(page);await page.clock.runFor(40);await page.clock.fastForward(40000);await expect(page.locator('#result-title')).toHaveText('접수 시간이 끝났어요.');await expect(page.locator('#result-text')).toContainText('1구간');await expect(page.locator('#next')).toBeHidden();await page.locator('#retry').click();await expect(page.locator('#progress')).toHaveText('0 / 8');});

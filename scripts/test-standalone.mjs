@@ -2,7 +2,7 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const html = await fs.readFile(new URL('../downloads/AFTER_YOU_Playtest_v0.9.4.html', import.meta.url), 'utf8');
+const html = await fs.readFile(new URL('../downloads/AFTER_YOU_Playtest_v0.9.5.html', import.meta.url), 'utf8');
 assert(!/<script\s+type="module"/.test(html), 'Standalone must use a classic self-contained script');
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium', args: ['--no-sandbox'] });
 try {

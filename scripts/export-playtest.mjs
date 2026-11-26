@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { execFileSync } from 'node:child_process';
-const version=process.env.AFTER_YOU_VERSION || 'v0.9.4';
+const version=process.env.AFTER_YOU_VERSION || 'v0.9.5';
 const root=path.resolve(new URL('..',import.meta.url).pathname);
 const out=path.resolve(process.argv[2]||'/workspace/shared/downloads');await fs.mkdir(out,{recursive:true});
 const temp=await fs.mkdtemp(path.join(os.tmpdir(),'after-you-export-'));

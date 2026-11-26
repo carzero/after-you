@@ -5,5 +5,5 @@ test('fall is readable and cloud catch rests before result; pause freezes the re
  await page.clock.runFor(900);await expect(page.locator('#rescue-scene .recovery-person')).toBeVisible();await expect(page.locator('.rescue-caption')).toHaveText('구름이 받아줬어요!');
  await page.clock.runFor(800);await expect(page.locator('#result')).toBeHidden();await expect(page.locator('#message')).toContainText('구름이 받아줬어요');
  await page.screenshot({path:'test-results/cloud-catch-rest.png'});
- await page.locator('#pause').click();await page.clock.runFor(3000);await expect(page.locator('#result')).toBeHidden();await page.locator('#resume').click();await page.clock.runFor(600);await expect(page.locator('#result')).toBeHidden();await page.clock.runFor(600);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('STAGE 1 → STAGE 1');
+ await page.locator('#pause').click();await page.clock.runFor(3000);await expect(page.locator('#result')).toBeHidden();await page.locator('#resume').click();await page.clock.runFor(600);await expect(page.locator('#result')).toBeHidden();await page.clock.runFor(600);await expect(page.locator('#result')).toBeVisible();await expect(page.locator('#result-text')).toContainText('1구간 → 1구간');
 });

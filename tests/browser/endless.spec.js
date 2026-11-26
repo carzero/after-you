@@ -7,7 +7,7 @@ test('clear stage one then fall on stage two: return to one with shorter hint on
   await expect(page.locator('#result-text')).toContainText('최고 8층');
   await page.locator('#next').click();await expect(page.locator('#hint-map span')).toHaveCount(10);await page.clock.runFor(2450);
   await page.locator('#right').click();await page.clock.runFor(4400);
-  await expect(page.locator('#result-text')).toContainText('STAGE 2 → STAGE 1');await expect(page.locator('#result-text')).toContainText('최고 8층');
+  await expect(page.locator('#result-text')).toContainText('2구간 → 1구간');await expect(page.locator('#result-text')).toContainText('최고 8층');
   await page.locator('#retry').click();await expect(page.locator('#stage-label')).toContainText('01');await expect(page.locator('#progress')).toHaveText('0 / 8');
   await page.clock.runFor(2700);await page.locator('#left').click();await page.clock.runFor(440);
   await expect(page.locator('.hud small').first()).toContainText('최고 8층');
