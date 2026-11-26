@@ -16,7 +16,7 @@ export function icon(id){return iconSources[`../assets/runtime/art-20261121/icon
 export function characterArt(id,pose='idle',motion){
  if(pose==='descent'){
   const e=integration.descent[id],scale=idleRegistration[id].scale;
-  return `<svg class="character-art" data-art-character="${id}" data-pose="descent" data-registered-pose="true" viewBox="0 0 128 154" aria-hidden="true"><image href="${artUrl('integration/descent/'+id)}" x="${64-e.anchor[0]*scale}" y="${154-e.anchor[1]*scale}" width="${e.size[0]*scale}" height="${e.size[1]*scale}"/></svg>`;
+  return `<svg class="character-art" data-art-character="${id}" data-pose="descent" data-registered-pose="true" viewBox="0 0 128 154" aria-hidden="true"><g><image href="${artUrl('integration/descent/'+id)}" x="${64-e.anchor[0]*scale}" y="${154-e.anchor[1]*scale}" width="${e.size[0]*scale}" height="${e.size[1]*scale}"/></g></svg>`;
  }
 
  const asset=registered.assets.find(e=>e.character===id&&e.state===pose);
@@ -41,12 +41,12 @@ export function characterArt(id,pose='idle',motion){
  const registration=characterRegistration[id];if(!registration)throw Error(`Unknown character: ${id}`);
  pose=characterLayout[id][pose]?pose:'idle';const layout=characterLayout[id][pose],scale=registration.scale;
  const file=catalog.characters[id][pose],[width,height]=catalog.sizes[file];
- return `<svg class="character-art" data-art-character="${id}" data-pose="${pose}" viewBox="0 0 128 154" aria-hidden="true"><image href="${artUrl(file)}" x="${64-layout.foot[0]*scale}" y="${154-layout.foot[1]*scale}" width="${width*scale}" height="${height*scale}"/></svg>`;
+ return `<svg class="character-art" data-art-character="${id}" data-pose="${pose}" viewBox="0 0 128 154" aria-hidden="true"><g><image href="${artUrl(file)}" x="${64-layout.foot[0]*scale}" y="${154-layout.foot[1]*scale}" width="${width*scale}" height="${height*scale}"/></g></svg>`;
 }
 export function portrait(id){return artImage(`ui/${id}`,'character-portrait');}
 export function artImage(file,className=''){return `<img class="${className}" src="${artUrl(file)}" alt="" aria-hidden="true" draggable="false">`;}
 const cache=new Map();
-function load(url){if(!cache.has(url))cache.set(url,new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve();img.onerror=()=>{cache.delete(url);reject(Error('Art image failed to load'));};img.src=url;}));return cache.get(url);}
+function load(url){if(!cache.has(url))cache.set(url,new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>{Promise.resolve(img.decode?.()).then(resolve,()=>{cache.delete(url);reject(Error('Art image failed to load'));});};img.onerror=()=>{cache.delete(url);reject(Error('Art image failed to load'));};img.src=url;}));return cache.get(url);}
 export function filesForTheme(theme='ch01'){
  const characters=Object.values(catalog.characters).flatMap(poses=>Object.values(poses));
  const ui=['title','invitation','stamp','potato','pigeon','duck','rabbit'].map(id=>`ui/${id}`);

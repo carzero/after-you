@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { execFileSync } from 'node:child_process';
-const version=process.env.AFTER_YOU_VERSION || 'v0.9';
+const version=process.env.AFTER_YOU_VERSION || 'v0.9.1';
 const root=path.resolve(new URL('..',import.meta.url).pathname);
 const out=path.resolve(process.argv[2]||'/workspace/shared/downloads');await fs.mkdir(out,{recursive:true});
 const temp=await fs.mkdtemp(path.join(os.tmpdir(),'after-you-export-'));
@@ -32,7 +32,7 @@ try {
   for(const dir of ['server','dist'])await fs.cp(path.join(root,dir),path.join(pack,dir),{recursive:true});
   for(const file of ['game.js','progression.js'])await fs.copyFile(path.join(root,'src',file),path.join(pack,'src',file));
   await fs.copyFile(path.join(root,'docs/ONLINE.md'),path.join(pack,'README.md'));
-  await fs.writeFile(path.join(pack,'package.json'),JSON.stringify({name:'after-you-online',version:version.slice(1)+'.0',private:true,type:'module',engines:{node:'>=24'},scripts:{start:'node server/index.mjs'}},null,2));
+  await fs.writeFile(path.join(pack,'package.json'),JSON.stringify({name:'after-you-online',version:version.slice(1).split('.').length===2?version.slice(1)+'.0':version.slice(1),private:true,type:'module',engines:{node:'>=24'},scripts:{start:'node server/index.mjs'}},null,2));
   const zip=path.join(out,name+'.zip');await fs.rm(zip,{force:true});
   execFileSync('zip',['-qr',zip,name],{cwd:temp});
   console.log(`Exports written to ${out}`);

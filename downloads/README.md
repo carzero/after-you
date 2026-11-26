@@ -1,3 +1,13 @@
+# 최신 v0.9.1 · 플레이 중 깜빡임 수정
+
+- [Cloudflare CMD 업데이트 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Cloudflare_CMD_v0.9.1.zip)
+- [오프라인 게임 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Playtest_v0.9.1.zip)
+- [최신 소스 ZIP](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Source_v0.9.1.zip)
+
+이미 배포한 PC에서는 CMD ZIP을 모두 풀고 **UPDATE.cmd**를 실행하세요. 이전 로그인으로 동일 Worker를 갱신하며, 순위 저장소 설정을 변경하지 않습니다. 완료 후 게임에서 Ctrl+F5로 새로고침하세요.
+
+이하 이전 버전을 보존합니다.
+
 # Windows CMD로 Cloudflare 배포
 
 **[Cloudflare CMD 배포 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Cloudflare_CMD_v0.9.zip)**

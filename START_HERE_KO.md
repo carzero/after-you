@@ -1,4 +1,4 @@
-# 다음 에이전트 시작 안내 · 게임 v0.9 · 자료 통합 2026-11-26
+# 다음 에이전트 시작 안내 · 게임 v0.9.1 · 자료 통합 2026-11-26
 
 현재 작업 폴더의 소스·실행용 아트·서버·테스트·빌드·연습 HTML을 담은 인계본이다. package.json version 0.1.0은 최초 프로젝트 표기이며 실행 인계 버전은 v0.6이다.
 
@@ -76,3 +76,7 @@ GitHub 다운로드 목록: https://github.com/carzero/after-you/tree/handoff/v0
 ## Cloudflare 배포 준비 · 2026-11-26
 
 `docs/CLOUDFLARE.md`, `wrangler.jsonc`, `cloudflare/worker.js`가 추가됐습니다. 게임은 v0.9이며 Cloudflare용 영구 순위 API를 준비했습니다. `server/validate-run.mjs`를 Node와 Worker가 공유합니다. 실제 배포 여부는 배포 URL/Cloudflare CLI 성공 결과로 확인해야 하며 준비 시점에는 인증·API 네트워크 접근이 미설정입니다.
+
+## v0.9.1 · 플레이 화면 깜빡임 수정
+
+`docs/RENDER_FIX_20261126.md` 참고. RAF마다 SVG를 재생성하지 않고 keyed DOM 갱신을 사용합니다. 기존 Cloudflare 배포 사용자는 CMD v0.9.1 ZIP의 UPDATE.cmd로 재배포합니다. Worker 이름과 영구 저장소는 동일하게 유지합니다.

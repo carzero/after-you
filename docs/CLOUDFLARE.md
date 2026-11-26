@@ -49,3 +49,7 @@ Workers & Pages에서 GitHub 저장소 `carzero/after-you`, 브랜치 `handoff/v
 `downloads/AFTER_YOU_Cloudflare_CMD_v0.9.zip`은 Git 없이 배포할 수 있는 독립 묶음입니다. Node.js 24 이상 설치 후 전체 압축을 풀고 루트의 `DEPLOY.cmd`를 실행하세요. 의존성 설치, 브라우저 로그인, 빌드/배포를 순서대로 수행합니다. 원본 비밀값이나 기존 순위 DB는 포함하지 않습니다.
 
 재포장: `python3 scripts/package-cloudflare.py`. ZIP 내부 해시와 ASCII/CRLF 배치 파일을 확인했고, 압축 해제본의 빌드와 Workers dry-run도 통과했습니다. Linux 환경이므로 Windows CMD 자체의 실제 실행/로그인 승인은 사용자 PC에서 진행해야 합니다.
+
+## v0.9.1 업데이트
+
+사용자가 v0.9 배포 주소로 https://after-you.kaelsiem.workers.dev 를 알려주었습니다. 이 환경에서는 해당 도메인 접근이 차단되어 원격 확인은 하지 못했습니다. 수정판 v0.9.1은 AFTER_YOU_Cloudflare_CMD_v0.9.1.zip의 UPDATE.cmd로 동일 계정/Worker에 재배포합니다. Worker 이름·Durable Object binding·migration과 저장소 이름은 변경하지 않았습니다.

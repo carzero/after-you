@@ -1,3 +1,4 @@
+import { patchMarkup } from './dom-patch.js';
 import './style.css';
 import { Game, STAGES, PEOPLE, JUMP_MS, FALL_MS } from './game.js';
 import { loadSave, storeSave, recordWin } from './save.js';
@@ -28,7 +29,7 @@ document.querySelector('#app').innerHTML = `
   <section class="heading"><div class="eyebrow">A LITTLE COURAGE, PLEASE</div><h1>먼저 가세요<span>AFTER YOU</span></h1><p>소원은 간절합니다. 먼저 갈 생각은 없습니다.</p></section>
   <section class="game-card" aria-label="구름 정거장 게임">
     <div class="hud"><div><small>CHAPTER 01 · 구름 정거장</small><strong id="stage-label">첫 번째 양보</strong></div><button id="pause" class="icon-button" aria-label="일시정지" disabled>${icon('pause')}</button><div class="timer"><strong id="timer">35</strong><small>남은 시간</small></div></div>
-    <div class="scene" id="scene"><div id="scene-art">${sceneArtwork(activeTheme)}</div><div id="board"></div><div id="hint-map" class="hint-map" aria-label="안전 경로 미리보기"></div><div class="flight-sign">${artImage('props/no_flying_v001')}<span>비행 금지</span></div><div id="world-effects" aria-hidden="true"></div><div id="actors"><div id="rescue-scene" hidden></div></div><button id="skip-rescue" hidden>연출 건너뛰기 ↗</button><div class="start-island">CLOUD STATION <span>출발</span></div><div class="scene-caption">배경·모션·사운드 통합 초안</div></div>
+    <div class="scene" id="scene"><div id="scene-art">${sceneArtwork(activeTheme)}</div><div id="board"></div><div id="hint-map" class="hint-map" aria-label="안전 경로 미리보기"></div><div class="flight-sign">${artImage('props/no_flying_v001')}<span>비행 금지</span></div><div id="world-effects" aria-hidden="true"></div><div id="actors"><div id="actor-list"></div><div id="rescue-scene" hidden></div></div><button id="skip-rescue" hidden>연출 건너뛰기 ↗</button><div class="start-island">CLOUD STATION <span>출발</span></div><div class="scene-caption">배경·모션·사운드 통합 초안</div></div>
     <div class="status-line"><span class="status-dot"></span><p id="message" role="status" aria-live="polite">두 발판 중 하나는 안전합니다.</p><span id="progress">0 / 8</span></div>
     <div class="controls"><button id="left" disabled>${icon('arrow_left')}왼쪽</button><button id="right" disabled>오른쪽${icon('arrow_right')}</button></div>
   </section>
@@ -244,15 +245,15 @@ function render() {
       tiles += `<div class="tile ${state} ${cracking ? 'cracking' : collapsing ? 'collapsing' : ''} ${lit ? 'hint' : ''}" data-row="${row}" data-side="${side}" style="--collapse-opacity:${Math.max(0,1-(age-150)/450)};height:${Math.min(35, spacing * .62)}px;bottom:${tileY(row)}px;left:${side === 0 ? 27 : 59}%">${state !== 'broken' || cracking || collapsing ? artImage(chapterFile(activeTheme,cracking ? 'crack' : collapsing ? 'collapse' : 'tile'),'tile-art') : ''}<span>${state === 'safe' ? icon('safe_check') : state === 'broken' ? '×' : lit ? '✦' : String(row + 1).padStart(2, '0')}</span></div>`;
     }
   }
-  $('board').innerHTML = tiles;
+  patchMarkup($('board'),tiles);
   $('hint-map').hidden = !hint;
-  $('hint-map').innerHTML = hint ? `<small>길을 기억하세요 · 전체 경로</small><div>${hint.map((side, row) => `<span><b>${row + 1}</b>${side === 0 ? '↖' : '↗'}</span>`).join('')}</div>` : '';
-  $('world-effects').innerHTML = g.actors.flatMap((actor, i) => {
+  patchMarkup($('hint-map'), hint ? `<small>길을 기억하세요 · 전체 경로</small><div>${hint.map((side, row) => `<span><b>${row + 1}</b>${side === 0 ? '↖' : '↗'}</span>`).join('')}</div>` : '');
+  patchMarkup($('world-effects'), g.actors.flatMap((actor, i) => {
     if (actor.state === 'rescued') return [];
     const x = actor.row < 0 ? 18 + i * 19 : (actor.side === 0 ? 32 : 64) + (i - 1.5) * 2.8;
     return worldEffects(g.clock, jumped.get(actor.id), landed.get(actor.id), reducedMotion).map(effect => `<div class="world-effect ${effect.kind}" style="left:${x}%;bottom:${tileY(actor.row)+5}px;opacity:${effect.opacity}">${artImage(`vfx/${effect.kind}_v01`)}</div>`);
-  }).join('');
-  $('actors').innerHTML = g.actors.map((actor, i) => {
+  }).join(''));
+  patchMarkup($('actor-list'), g.actors.map((actor, i) => {
     if (actor.state === 'rescued' || actor.state === 'finished' && !actor.player) return '';
     let row = actor.row, jumpHeight = 0, angle = 0, opacity = 1;
     if (actor.state === 'jump') { const t = 1 - (actor.until - g.clock) / JUMP_MS; row += t; jumpHeight = Math.sin(t * Math.PI) * (reducedMotion ? 0 : 25); }
@@ -265,15 +266,15 @@ function render() {
     const rescue=actor.state==='fall'?rescueFrame(FALL_MS-(actor.until-g.clock),reducedMotion):null;
     const x = actor.row < 0 && actor.state !== 'jump' ? 18 + i * 19 : (actor.side === 0 ? 32 : 64) + (i - 1.5) * 2.8;
     return `<div class="actor ${actor.player ? 'player' : 'npc'} ${actor.state}" data-actor="${actor.id}" style="left:${x}%;bottom:${y}px;opacity:1;transform:translateX(-50%) rotate(${angle}deg);z-index:${50 - Math.round(row * 2)}"><div class="actor-visual" style="opacity:${opacity};visibility:${rescue&&!rescue.actorVisible?'hidden':'visible'}">${actor.player ? '<span class="you">나</span>' : ''}${characterArt(actor.id, g.phase === 'hint' ? 'idle' : actingPose(actor,g.clock,landed.get(actor.id),g.observed), actor.state === 'idle' && ['hint','playing'].includes(g.phase) ? {clock:g.clock,index:i,reducedMotion} : undefined)}<small>${actor.player ? names[actor.id] : actor.state === 'fall' ? '어…?' : ['','먼저 가세요','왕이 먼저?','준비 운동 중'][i]}</small></div>${rescue&&rescue.cloudOpacity>0?`<div class="actor-cloud" style="opacity:${rescue.cloudOpacity};transform:translateY(${rescue.cloudY}px)">${artImage('integration/rescue/cloud')}</div>`:''}</div>`;
-  }).join('')+'<div id="rescue-scene" hidden></div>';
+  }).join(''));
   const recoveryActive = player.state === 'fall' && FALL_MS - (player.until - g.clock) >= 1050 && !g.result;
   $('rescue-scene').hidden = !recoveryActive;
   if (recoveryActive) {
     const transition=rescueFrame(FALL_MS-(player.until-g.clock),reducedMotion);
-    $('rescue-scene').innerHTML = recoveryArt(player.id, false, reducedMotion);
     $('rescue-scene').style.zIndex='55';
-    $('rescue-scene').querySelector('.recovery-person').style.visibility=transition.actorVisible?'visible':'hidden';
-    $('rescue-scene').insertAdjacentHTML('beforeend',`<div class="rescue-cover" style="opacity:${transition.cloudOpacity};transform:translateY(${transition.cloudY}px)">${artImage('integration/rescue/cloud')}</div>`);
+    const rescued=recoveryArt(player.id,false,reducedMotion).replace('class="recovery-person"',`class="recovery-person" style="visibility:${transition.actorVisible?'visible':'hidden'}"`);
+    patchMarkup($('rescue-scene'),rescued+`<div class="rescue-cover" style="opacity:${transition.cloudOpacity};transform:translateY(${transition.cloudY}px)">${artImage('integration/rescue/cloud')}</div>`);
+
   }
   $('timer').textContent = String(Math.ceil(g.remaining / 1000)).padStart(2, '0');
   $('timer').classList.toggle('urgent', g.remaining < 10000);

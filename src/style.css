@@ -33,3 +33,4 @@
 .lobby-panel .lobby-art{grid-template-rows:minmax(0,1fr)}.lobby-art .title-art{min-height:0;max-height:100%;height:100%;align-self:stretch}.lobby-art .lobby-logo{max-height:100%;align-self:center}
 /* Runtime layer crops already omit transparent padding: no legacy image expansion. */
 .scene .tile .tile-art{inset:0;width:100%;height:100%;object-fit:fill}
+#actor-list{display:contents}

@@ -1,0 +1,12 @@
+{
+  "release": "0.9.1",
+  "date": "2026-11-26",
+  "unit_server_cases": 32,
+  "browser_cases": 22,
+  "cloudflare_local_two_browser_case": 1,
+  "sprite_identity_and_no_detach_regression": "passed",
+  "standalone_offline_start_move": "passed",
+  "production_update_performed_here": false,
+  "production_verification": "requires redeployment on previously authenticated PC; remote domain blocked here",
+  "windows_cmd": "ASCII/CRLF packaging checked; native CMD execution not performed on Linux"
+}
