@@ -1,3 +1,9 @@
+# Windows CMD로 Cloudflare 배포
+
+**[Cloudflare CMD 배포 ZIP 다운로드](https://github.com/carzero/after-you/raw/refs/heads/handoff/v0.4/downloads/AFTER_YOU_Cloudflare_CMD_v0.9.zip)**
+
+Node.js 24 이상 설치 후 ZIP을 모두 풀고 `DEPLOY.cmd`를 실행하세요. 의존성 설치 → 브라우저 Cloudflare 로그인 → 게임 및 영구 순위 서버 배포를 진행합니다. Git 설치는 필요 없습니다. 비밀값은 포함하지 않습니다.
+
 # 최신 게임 v0.9 · 2026-11-26
 
 배경·구름 v03·타이틀/결과·착지/구조 전환·실제 BGM 및 효과음 통합. 무한 스테이지와 온라인 서버 순위 규칙 유지.

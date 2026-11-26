@@ -43,3 +43,9 @@ Workers & Pages에서 GitHub 저장소 `carzero/after-you`, 브랜치 `handoff/v
 ## 준비 검사 결과 · 2026-11-26
 
 공통 및 Cloudflare API 단위 검사 32개, Workerd+SQLite의 실제 두 브라우저 순위 검사 1개, Node 서버의 동일 검사 1개 통과. Worker dry-run 빌드와 ASSETS/RANKINGS 바인딩 확인 완료. 아직 Cloudflare 인증/네트워크 연결이 없어 운영 배포 명령은 실행하지 않았으며 공개 URL은 없습니다.
+
+## Windows CMD 전용 ZIP
+
+`downloads/AFTER_YOU_Cloudflare_CMD_v0.9.zip`은 Git 없이 배포할 수 있는 독립 묶음입니다. Node.js 24 이상 설치 후 전체 압축을 풀고 루트의 `DEPLOY.cmd`를 실행하세요. 의존성 설치, 브라우저 로그인, 빌드/배포를 순서대로 수행합니다. 원본 비밀값이나 기존 순위 DB는 포함하지 않습니다.
+
+재포장: `python3 scripts/package-cloudflare.py`. ZIP 내부 해시와 ASCII/CRLF 배치 파일을 확인했고, 압축 해제본의 빌드와 Workers dry-run도 통과했습니다. Linux 환경이므로 Windows CMD 자체의 실제 실행/로그인 승인은 사용자 PC에서 진행해야 합니다.

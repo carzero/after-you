@@ -17,7 +17,7 @@
     "export:playtest": "node scripts/export-playtest.mjs",
     "dev:cloudflare": "wrangler dev --port 8792",
     "deploy:cloudflare": "npm run build && wrangler deploy",
-    "check:cloudflare": "npm run build && wrangler deploy --dry-run --outdir /tmp/after-you-worker-dry-run",
+    "check:cloudflare": "npm run build && wrangler deploy --dry-run --outdir .wrangler/deploy-dry-run",
     "test:cloudflare": "npm run build && playwright test -c playwright.cloudflare.config.js"
   },
   "devDependencies": {
