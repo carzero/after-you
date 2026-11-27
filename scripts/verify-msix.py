@@ -11,7 +11,11 @@ with zipfile.ZipFile(p) as z:
  alphabet='0123456789abcdefghjkmnpqrstvwxyz'
  publisher_id=''.join(alphabet[int(bits[n:n+5],2)] for n in range(0,65,5))
  assert identity['name']+'_'+publisher_id=='Carzero.44873CDC3E8F_28zrs787qra7r'
- app=manifest.find('p:Applications/p:Application',ns);exe=app.get('Executable').replace('\\','/');data=z.read(exe)
+ assert manifest.find('p:Properties/p:DisplayName',ns).text==identity['displayName']=='먼저 가세요'
+ app=manifest.find('p:Applications/p:Application',ns)
+ visual=app.find('{http://schemas.microsoft.com/appx/manifest/uap/windows10}VisualElements')
+ assert visual.get('DisplayName')==identity['displayName']
+ exe=app.get('Executable').replace('\\','/');data=z.read(exe)
  assert data[:2]==b'MZ';pe=struct.unpack_from('<I',data,0x3c)[0];assert data[pe:pe+4]==b'PE\0\0';assert struct.unpack_from('<H',data,pe+4)[0]==0x8664
  bm=ET.fromstring(z.read('AppxBlockMap.xml'));count=0
  for file in bm:

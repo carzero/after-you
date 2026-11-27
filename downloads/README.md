@@ -1,3 +1,9 @@
+# Microsoft Store 수정 제출 · 1.0.1.0
+
+예약 이름 `먼저 가세요`로 표시 이름을 수정했습니다.
+
+[MSIX 제출 파일](AFTER_YOU_Store_1.0.1.0_x64.msix) · [MSIXUPLOAD](AFTER_YOU_Store_1.0.1.0_x64.msixupload) · [스토어 소스 ZIP](AFTER_YOU_Store_Source_1.0.1.0.zip)
+
 # Microsoft Store 제출 파일 · 1.0.0.0
 
 [MSIX 업로드 파일](AFTER_YOU_Store_1.0.0.0_x64.msix) · [MSIXUPLOAD 대체 제출 파일](AFTER_YOU_Store_1.0.0.0_x64.msixupload) · [스토어 소스 ZIP](AFTER_YOU_Store_Source_1.0.0.0.zip)

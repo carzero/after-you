@@ -1,6 +1,6 @@
 # Microsoft Store 제출 · AFTER YOU
 
-제출 파일은 `AFTER_YOU_Store_1.0.0.0_x64.msix`입니다. `.msixupload`도 같은 MSIX를 포함하는 제출 컨테이너로 함께 제공합니다. 둘 중 하나만 Partner Center의 **제출 → 패키지**에 업로드하세요. 일반 게임 실행 ZIP을 올리는 것이 아닙니다.
+제출 파일은 `AFTER_YOU_Store_1.0.1.0_x64.msix`입니다. `.msixupload`도 같은 MSIX를 포함하는 제출 컨테이너로 함께 제공합니다. 둘 중 하나만 Partner Center의 **제출 → 패키지**에 업로드하세요. 일반 게임 실행 ZIP을 올리는 것이 아닙니다.
 
 ## 제품 연결
 
@@ -9,7 +9,7 @@
 - Package Identity Name: `Carzero.44873CDC3E8F`
 - Publisher: `CN=99365CE3-28E4-4942-9E0A-91393500C01C`
 - PublisherDisplayName: `카제로 Carzero`
-- Store 패키지 버전: `1.0.0.0` (게임 콘텐츠: `0.10.1`)
+- Store 패키지 버전: `1.0.1.0` (게임 콘텐츠: `0.10.1`)
 - 아키텍처: x64
 - 대상: Windows 10 2004 / 빌드 19041 이상, Windows 11
 
@@ -41,6 +41,10 @@ Windows x64 실행 파일을 실제 컴파일했고, Microsoft의 MSIX Packaging
 
 루트 저장소에서는 `npm ci`, `npm run build` 후 `deploy/microsoft-store/BUILD_STORE.cmd`를 실행합니다. 소스 ZIP에는 이미 빌드된 `dist/`가 들어 있습니다.
 
-생성 위치: `build/store/AFTER_YOU_Store_1.0.0.0_x64.msix`와 `.msixupload`
+생성 위치: `build/store/AFTER_YOU_Store_1.0.1.0_x64.msix`와 `.msixupload`
 
-다음 제출부터는 Store 버전을 올려야 합니다. 예: `BUILD_STORE.cmd -PackageVersion 1.0.1.0`. Store의 네 번째 버전 숫자는 0으로 유지하세요. 새 게임 콘텐츠는 먼저 `dist/`를 갱신하고 `identity.json`의 `gameVersion`도 맞춰 주세요.
+다음 제출부터는 Store 버전을 올려야 합니다. 예: `BUILD_STORE.cmd -PackageVersion 1.0.2.0`. Store의 네 번째 버전 숫자는 0으로 유지하세요. 새 게임 콘텐츠는 먼저 `dist/`를 갱신하고 `identity.json`의 `gameVersion`도 맞춰 주세요.
+
+## 표시 이름 수정
+
+예약된 이름은 **먼저 가세요**입니다. Package/Properties/DisplayName과 Application/VisualElements/DisplayName을 모두 이 값과 정확히 일치시켰습니다. 영문 부제는 예약되지 않았으므로 패키지 표시 이름에는 넣지 않습니다. 수정 제출본 버전은 1.0.1.0입니다.

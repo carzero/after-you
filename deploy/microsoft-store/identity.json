@@ -2,9 +2,9 @@
   "name": "Carzero.44873CDC3E8F",
   "publisher": "CN=99365CE3-28E4-4942-9E0A-91393500C01C",
   "publisherDisplayName": "카제로 Carzero",
-  "displayName": "먼저 가세요 · AFTER YOU",
+  "displayName": "먼저 가세요",
   "description": "길을 기억하고, 먼저 갈 용기를 내는 구름 위 눈치 게임.",
-  "packageVersion": "1.0.0.0",
+  "packageVersion": "1.0.1.0",
   "gameVersion": "0.10.1",
   "serviceOrigin": "https://after-you.kaelsiem.workers.dev"
 }
