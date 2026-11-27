@@ -1,3 +1,7 @@
+# v0.10.1 · 근육 토끼 크기 보정
+
+[업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.10.1.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.10.1.zip) · [소스 ZIP](AFTER_YOU_Source_v0.10.1.zip)
+
 # v0.10.0 · 아이템 추가
 
 [업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.10.0.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.10.0.zip) · [소스 ZIP](AFTER_YOU_Source_v0.10.0.zip)

@@ -1,3 +1,4 @@
+import { rabbitActingRegistration, rabbitDescentScale } from './rabbit-registration.js';
 import integration from './integration-catalog.json';
 import registered from './pose-catalog.json';
 import { placePose } from './pose-placement.js';
@@ -15,7 +16,7 @@ export function artUrl(file){if(file.startsWith('integration/')){const url=integ
 export function icon(id){return iconSources[`../assets/runtime/art-20261121/icons/${id}.svg`].replace(/\srole="img"|\saria-label="[^"]*"|<title>.*?<\/title>/g,'').replace('<svg ','<svg class="ui-icon" aria-hidden="true" focusable="false" ').replaceAll('#514237','currentColor');}
 export function characterArt(id,pose='idle',motion){
  if(pose==='descent'){
-  const e=integration.descent[id],scale=idleRegistration[id].scale;
+  const e=integration.descent[id],scale=id==='rabbit'?rabbitDescentScale:idleRegistration[id].scale;
   return `<svg class="character-art" data-art-character="${id}" data-pose="descent" data-registered-pose="true" viewBox="0 0 128 154" aria-hidden="true"><g><image href="${artUrl('integration/descent/'+id)}" x="${64-e.anchor[0]*scale}" y="${154-e.anchor[1]*scale}" width="${e.size[0]*scale}" height="${e.size[1]*scale}"/></g></svg>`;
  }
 
@@ -40,8 +41,10 @@ export function characterArt(id,pose='idle',motion){
  }
  const registration=characterRegistration[id];if(!registration)throw Error(`Unknown character: ${id}`);
  pose=characterLayout[id][pose]?pose:'idle';const layout=characterLayout[id][pose],scale=registration.scale;
+ const calibrated=id==='rabbit'?rabbitActingRegistration[pose]:null;
+ const poseScale=calibrated?.scale??scale,foot=calibrated?.foot??layout.foot;
  const file=catalog.characters[id][pose],[width,height]=catalog.sizes[file];
- return `<svg class="character-art" data-art-character="${id}" data-pose="${pose}" viewBox="0 0 128 154" aria-hidden="true"><g><image href="${artUrl(file)}" x="${64-layout.foot[0]*scale}" y="${154-layout.foot[1]*scale}" width="${width*scale}" height="${height*scale}"/></g></svg>`;
+ return `<svg class="character-art" data-art-character="${id}" data-pose="${pose}" viewBox="0 0 128 154" aria-hidden="true"><g><image href="${artUrl(file)}" x="${64-foot[0]*poseScale}" y="${154-foot[1]*poseScale}" width="${width*poseScale}" height="${height*poseScale}"/></g></svg>`;
 }
 export function portrait(id){return artImage(`ui/${id}`,'character-portrait');}
 export function artImage(file,className=''){return `<img class="${className}" src="${artUrl(file)}" alt="" aria-hidden="true" draggable="false">`;}

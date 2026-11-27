@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,zipfile,os
 root=Path(__file__).resolve().parent.parent
-version=os.environ.get('AFTER_YOU_VERSION','v0.10.0')
+version=os.environ.get('AFTER_YOU_VERSION','v0.10.1')
 out=root/f'downloads/AFTER_YOU_Cloudflare_CMD_{version}.zip'
 prefix=f'AFTER_YOU_Cloudflare_CMD_{version}/'
 files=[root/name for name in ['.gitignore','.node-version','README.md','START_HERE_KO.md','index.html','package.json','package-lock.json','vite.config.js','wrangler.jsonc','playwright.config.js','playwright.online.config.js','playwright.cloudflare.config.js']]
