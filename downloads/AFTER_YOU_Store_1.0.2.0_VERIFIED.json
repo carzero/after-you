@@ -1,0 +1,14 @@
+{
+  "file": "downloads/AFTER_YOU_Store_1.0.2.0_x64.msix",
+  "bytes": 10027961,
+  "sha256": "7d9d2d0343690482d02eb9a1301f4b4f880b1c756bde9eb0f3dc16a6101011c0",
+  "verified_files": 297,
+  "package": {
+    "Name": "Carzero.44873CDC3E8F",
+    "Publisher": "CN=99365CE3-28E4-4942-9E0A-91393500C01C",
+    "Version": "1.0.2.0",
+    "ProcessorArchitecture": "x64"
+  },
+  "family": "Carzero.44873CDC3E8F_28zrs787qra7r",
+  "signed": false
+}

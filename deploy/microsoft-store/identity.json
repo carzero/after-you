@@ -4,7 +4,7 @@
   "publisherDisplayName": "카제로 Carzero",
   "displayName": "먼저 가세요",
   "description": "길을 기억하고, 먼저 갈 용기를 내는 구름 위 눈치 게임.",
-  "packageVersion": "1.0.1.0",
+  "packageVersion": "1.0.2.0",
   "gameVersion": "0.10.1",
   "serviceOrigin": "https://after-you.kaelsiem.workers.dev"
 }

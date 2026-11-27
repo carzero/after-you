@@ -1,3 +1,9 @@
+# Microsoft Store 개인정보처리방침 · 1.0.2.0
+
+[MSIX 제출 파일](AFTER_YOU_Store_1.0.2.0_x64.msix) · [MSIXUPLOAD](AFTER_YOU_Store_1.0.2.0_x64.msixupload) · [소스 ZIP](AFTER_YOU_Store_Source_1.0.2.0.zip)
+
+[공개 개인정보처리방침](https://github.com/carzero/after-you/blob/handoff/v0.4/docs/PRIVACY.md)
+
 # Microsoft Store 수정 제출 · 1.0.1.0
 
 예약 이름 `먼저 가세요`로 표시 이름을 수정했습니다.
