@@ -14,3 +14,10 @@ test-results-online/
 .env.*
 
 test-results-cloudflare/
+
+# Windows Store build outputs and local signing material
+deploy/microsoft-store/bin/
+deploy/microsoft-store/obj/
+build/store/
+*.pfx
+*.cer

@@ -1,3 +1,9 @@
+# Microsoft Store 제출 파일 · 1.0.0.0
+
+[MSIX 업로드 파일](AFTER_YOU_Store_1.0.0.0_x64.msix) · [MSIXUPLOAD 대체 제출 파일](AFTER_YOU_Store_1.0.0.0_x64.msixupload) · [스토어 소스 ZIP](AFTER_YOU_Store_Source_1.0.0.0.zip)
+
+[제출 안내](../docs/store/README_KO.md). 업로드 파일 둘 중 하나만 사용하세요. 스토어 제출용 미서명 파일이며, Windows 설치·실행과 WACK는 이 환경에서 검증하지 못했습니다.
+
 # v0.10.1 · 근육 토끼 크기 보정
 
 [업데이트 ZIP](AFTER_YOU_Cloudflare_CMD_v0.10.1.zip) · [게임 실행 ZIP](AFTER_YOU_Playtest_v0.10.1.zip) · [소스 ZIP](AFTER_YOU_Source_v0.10.1.zip)
